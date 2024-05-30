@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+
+  {% include ds-site-header.html %}
+
+  <div class="container">
+    <main>
+
+      <div class="row">
+        <div class="col-3">
+          {% include ds-site-sidebar.html %}
+        </div>
+        <div class="col-9">
+          {{ content }}
+        </div>
+
+      </div>
+
+
+    </main>
+  </div>
+
+  {% include ds-site-footer.html %}
+
+</body>
+</html>

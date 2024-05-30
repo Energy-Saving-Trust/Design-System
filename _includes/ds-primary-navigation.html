@@ -1,4 +1,9 @@
-<a href="/" class="">Home</a>
-<a href="/guidelines/" class="">Guidelines</a>
-<a href="/components/" class="">Components</a>
-<a href="/patterns/" class="">Patterns</a>
+<ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
+  {% for item in site.nav %}
+    {% if item.url == page.dir %}
+      <li><a href="{{ item.url }}" class="nav-link px-2 link-secondary">{{ item.name }}</a></li>
+    {% else %}
+      <li><a href="{{ item.url }}" class="nav-link px-2 link-body-emphasis">{{ item.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
