@@ -1,5 +1,9 @@
 // Import Bootstrap V 5.3.3
 @import 'bootstrap/bootstrap';
 
-// Import EST
+// Import EST DS elements
 @import 'est/_est-custom-component';
+
+// Import DS site-specific elements
+@import 'ds-site/_code-examples';
+@import 'ds-site/_code-highlight';
