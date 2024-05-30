@@ -1,0 +1,45 @@
+.ds-example-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.ds-example-wrapper > div:first-child {
+  border-top-left-radius: .5rem !important;
+  border-top-right-radius: .5rem !important;
+}
+
+.ds-example-wrapper > div:last-child {
+  border-bottom-left-radius: .5rem !important;
+  border-bottom-right-radius: .5rem !important;
+}
+
+.ds-example-preview {
+  border: 1px solid #dee2e6;
+  position: relative;
+  padding: 50px 25px;
+  hr {
+    border-top: 1px solid #dee2e6;
+    opacity: 1;
+    margin: 25px 0;
+  }
+}
+
+.ds-example-tabs {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  position: relative;
+  padding: 10px 25px;
+}
+
+.ds-example-code {
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  position: relative;
+  padding: 25px 25px 25px 25px;
+}
+
+pre {
+  margin-bottom: 0;
+}

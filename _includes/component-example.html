@@ -1,0 +1,15 @@
+<div class="ds-example-wrapper">
+  <div class="ds-example-preview">
+    {{ include.code_render }}
+  </div>
+  <div class="ds-example-tabs">
+  HTML
+  </div>
+  <div class="ds-example-code">
+    {% if include.code_example %}
+      <pre><code class="language-html">{{ include.code_example | strip | escape }}</code></pre>
+    {% else %}
+      <pre><code class="language-html">{{ include.code_render | strip | escape }}</code></pre>
+    {% endif %}
+  </div>
+</div>
