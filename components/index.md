@@ -1,6 +1,10 @@
 ---
 title: Components
-layout: default
+layout: content
+section: components
+side_bar: false
 ---
 
-# Components12
+# Components
+
+Introduction to Components goes here.
