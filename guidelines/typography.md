@@ -5,18 +5,22 @@ section: guidelines
 ---
 
 
-# Choosing energy efficient appliances
+# H1 Choosing energy efficient appliances
 
 
-## What should I look for when choosing energy efficient appliances?
+## H2 What should I look for when choosing energy efficient appliances?
 
 When you’re buying a new appliance for your home, look for its energy label. The energy label tells you how much energy that appliance uses, comparing it to similar appliances. This can help you find appliances that use the least amount of energy.
 
 You should also consider the size of the appliance you need. Only buy the size you need, as larger items will use more energy and end up costing you more. For example, you buy a family-sized dishwasher but never manage to fill it with dirty dishes each time you use it. You may be wasting energy and therefore money on your electricity bills.
 
-## How do energy labels work?
+### H3 How do energy labels work?
 
 Appliances are tested for how much energy they use during typical use. This gives them a rating on a scale of A to G, with A being the most efficient product of its class, and G being the least efficient. Some appliances (e.g. ovens) use an older scale, from A+++ to G, with A+++ being the most efficient.
+
+- qweqwe
+- qweqweqwe
+- qweqweqwe
 
 In general, energy ratings are categorised by the product’s size. This means that two appliances with the same energy rating might use different amounts of electricity if they’re different sizes.
 
