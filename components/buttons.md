@@ -8,10 +8,7 @@ section: components
 
 Buttons documentation goes here.
 
-
-#### Examples of the code render/preview blocks
-
-Render and preview use the same code block:
+## Base classes
 
 {% capture code_render %}
 <button type="button" class="btn btn-primary">Primary</button>
@@ -20,22 +17,45 @@ Render and preview use the same code block:
 
 {% include component-example.html code_render=code_render %}
 
-Render and preview use different code blocks:
+## Sizes
 
 {% capture code_render %}
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render %}
+
+## Variants
+
+{% capture code_render %}
+<!-- Grassy green -->
 <button type="button" class="btn btn-success">Success</button>
+<!-- Deep rose -->
 <button type="button" class="btn btn-danger">Danger</button>
+<!-- Honey yellow -->
 <button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button>
 {% endcapture %}
 
-{% capture code_example %}
-<button type="button" class="btn btn-primary">Primary</button>
+{% include component-example.html code_render=code_render %}
+
+## Outline buttons
+
+{% capture code_render %}
+<!-- Grassy green -->
+<button type="button" class="btn btn-outline-success">Success</button>
+<!-- Deep rose -->
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<!-- Honey yellow -->
+<button type="button" class="btn btn-outline-warning">Warning</button>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render code_example=code_example %}
+{% include component-example.html code_render=code_render %}
+
+## Close button
+
+{% capture code_render %}
+<button type="button" class="btn-close" aria-label="Close"></button>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render %}
