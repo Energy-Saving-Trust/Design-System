@@ -2,7 +2,7 @@
   @extend .btn;
   @include heading-style($h6-size);
   background-color: $body-color;
-  border-radius: $border-radius-btn;
+  border-radius: $border-radius-reg;
   color: #fff;
   padding: 14px 27px;
   border: $border-width-1 solid $body-color;
@@ -35,7 +35,7 @@ $btn-close-width: 20px;
   @extend .btn-close;
   width: $btn-close-width;
   height: $btn-close-width;
-  padding: 10px;
+  padding: 9px;
   opacity: 1;
   background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat;
   position: relative;
@@ -46,5 +46,8 @@ $btn-close-width: 20px;
   &:focus {
     border: $border-width-1 solid $body-color;
     border-radius: 0;
+  }
+  .alert-dismissible & {
+    padding: 9px;
   }
 }

@@ -1,0 +1,15 @@
+//Input Mixins
+
+.est-select {
+  @extend .form-select;
+  @include input-style();
+  &:invalid {
+    color: $neutral;
+  }
+  [disabled] {
+    color: $neutral;
+  }
+  option {
+    color: $body-color;
+  }
+}

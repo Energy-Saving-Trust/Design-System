@@ -1,0 +1,26 @@
+.est-alert {
+  @extend .alert;
+  background-color: $info-bg;
+  @include body-style($b3-size, $line-height);
+  min-height: 42px;
+  h2 {
+    @include heading-style($h6-size);
+    margin-bottom: 1rem;
+  }
+  .icon {
+    margin-right: 8px;
+    margin-top: -4px;
+  }
+}
+
+.est-alert__warning {
+  background-color: $warning-bg;
+}
+
+.est-alert__caution {
+  background-color: $danger-bg;
+}
+
+.est-alert__success {
+  background-color: $success-bg;
+}

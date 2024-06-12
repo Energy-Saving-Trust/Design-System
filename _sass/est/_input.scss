@@ -1,3 +1,19 @@
+//Input Mixins
+
+@mixin input-style() {
+  border: $border-width-1 solid $body-color;
+  border-radius: $border-radius-reg;
+  padding: 11px;
+  @include body-style($b1-size, $b1-line-height);
+  &::placeholder {
+    color: $grey-700;
+  }
+  &:focus {
+    border: $border-width-1 solid $body-color;
+    box-shadow: 0px 0px 0px 4px $grey-200;
+  }
+}
+
 .est-field-row {
   margin-bottom: 20px;
 }
@@ -5,9 +21,9 @@
 .est-label {
   @include heading-style($h6-size);
   span {
-    color: $warning;
+    color: $danger;
   }
-  + .est-input {
+  + .est-input, + .est-select {
     margin-top: 1em;
   }
 }
@@ -23,17 +39,7 @@
 
 .est-input {
   @extend .form-control;
-  border: $border-width-1 solid $body-color;
-  border-radius: $border-radius-btn;
-  padding: 11px;
-  @include body-style($b1-size, $b1-line-height);
-  &::placeholder {
-    color: $grey-700;
-  }
-  &:focus {
-    border: $border-width-1 solid $body-color;
-    box-shadow: 0px 0px 0px 4px $grey-200;
-  }
+  @include input-style();
 }
 
 textarea {
