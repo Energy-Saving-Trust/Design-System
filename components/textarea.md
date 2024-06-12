@@ -8,17 +8,20 @@ section: components
 
 Textarea documentation goes here.
 
-## Text area example:
+## Example
 
 {% capture code_render %}
-<div class="est-field-group est-field-row">
-  <label for="example_field1" class="est-label">What is your reason for contacting us?</label>
-  <textarea class="est-input" id="example_field1"></textarea>
+<div class="form-group mb-4">
+  <label for="exampleFormControlTextarea1" class="form-label">Description<span>*</span></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
-<div class="est-field-group est-field-row">
-  <label for="example_field2" class="est-label">More info<span>*</span></label>
-  <p class="est-help-text">Helper text goes here</p>
-  <textarea class="est-input" id="example_field2"></textarea>
+
+<div class="form-group">
+  <label for="exampleFormControlTextarea1" class="form-label">Tell us a bit more about your enquiry</label>
+  <div id="passwordHelpBlock" class="form-text">
+    Do not include personal or financial information.
+  </div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
 {% endcapture %}
 

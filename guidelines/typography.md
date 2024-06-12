@@ -5,6 +5,19 @@ section: guidelines
 ---
 
 
+
+# h1. Bootstrap heading
+
+## h2. Bootstrap heading
+
+### h3. Bootstrap heading
+
+#### h4. Bootstrap heading
+
+##### h5. Bootstrap heading
+
+###### h6. Bootstrap heading
+
 # Choosing energy efficient appliances
 
 

@@ -1,13 +1,109 @@
 // Import Bootstrap V 5.3.3
-@import 'bootstrap/bootstrap';
+@import "bootstrap/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/functions";
+@import "bootstrap/variables-est-bootsrap";
+@import "bootstrap/maps";
+
+// Vendor
+@import "bootstrap/vendor/rfs";
+
+// Deprecate
+@import "bootstrap/mixins/deprecate";
+
+// Helpers
+@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/mixins/color-scheme";
+@import "bootstrap/mixins/image";
+@import "bootstrap/mixins/resize";
+@import "bootstrap/mixins/visually-hidden";
+@import "bootstrap/mixins/reset-text";
+@import "bootstrap/mixins/text-truncate";
+
+// Utilities
+@import "bootstrap/mixins/utilities";
+
+// Components
+@import "bootstrap/mixins/alert";
+@import "bootstrap/mixins/backdrop";
+@import "est/mixins/buttons";
+@import "bootstrap/mixins/caret";
+@import "bootstrap/mixins/pagination";
+@import "bootstrap/mixins/lists";
+@import "bootstrap/mixins/list-group";
+@import "bootstrap/mixins/forms";
+@import "bootstrap/mixins/table-variants";
+
+// Skins
+@import "bootstrap/mixins/border-radius";
+@import "bootstrap/mixins/box-shadow";
+@import "bootstrap/mixins/gradients";
+@import "bootstrap/mixins/transition";
+
+// Layout
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/container";
+@import "bootstrap/mixins/grid";
+
+@import "bootstrap/utilities";
+
+// Layout & components
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/icons";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+
+@import "bootstrap/forms/floating-labels";
+@import "bootstrap/forms/form-check";
+@import "bootstrap/forms/form-control";
+@import "bootstrap/forms/form-range";
+@import "bootstrap/forms/form-select";
+@import "est/forms/form-text";
+@import "bootstrap/forms/input-group";
+@import "est/forms/labels";
+@import "bootstrap/forms/validation";
+
+
+@import "est/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/offcanvas";
+@import "bootstrap/placeholders";
+
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";
+// scss-docs-end import-stack
 
 // Import EST DS elements
 @import 'est/_est-custom-component';
-@import 'est/_colours';
-@import 'est/_fonts';
-@import 'est/_base';
-@import 'est/_buttons';
-@import 'est/_input';
 
 // Import DS site-specific elements
 @import 'ds-site/_code-examples';
