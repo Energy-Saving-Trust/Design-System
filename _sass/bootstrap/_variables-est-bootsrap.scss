@@ -60,7 +60,7 @@ $pink:          #d63384 !default;
 $deeprose:      #B7133A !default;
 $orange:        #fd7e14 !default;
 $honeyyellow:   #FFAF0A !default;
-$grassygreen:   #198754 !default;
+$grassygreen:   #65A346 !default;
 $teal:          #20c997 !default;
 $cyan:          #0dcaf0 !default;
 // scss-docs-end color-variables
@@ -183,6 +183,7 @@ $clearskyblue-700: shade-color($clearskyblue, 40%) !default;
 $clearskyblue-800: shade-color($clearskyblue, 60%) !default;
 $clearskyblue-900: shade-color($clearskyblue, 80%) !default;
 
+$deepblue-50: tint-color($deepblue, 90%) !default;
 $deepblue-100: tint-color($deepblue, 80%) !default;
 $deepblue-200: tint-color($deepblue, 60%) !default;
 $deepblue-300: tint-color($deepblue, 40%) !default;
@@ -338,9 +339,13 @@ $cyans: (
 $primary:       $gray-900 !default;
 $secondary:     $gray-900 !default;
 $success:       $grassygreen !default;
-$info:          $cyan !default;
+//$success-bg:    $grassygreen-100 !default;
+$info:          $deepblue !default;
+$info-bg:       $clearskyblue-200 !default;
 $warning:       $honeyyellow !default;
+//$warning-bg:    $honeyyellow-100 !default;
 $danger:        $deeprose !default;
+//$danger-bg:     $deeprose-100 !default;
 $light:         $gray-100 !default;
 //$dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -1295,25 +1300,28 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
+$accordion-padding-y:                     2.75rem !default;
+$accordion-padding-x:                     1.18rem !default;
 $accordion-color:                         $body-color !default; // Sass variable because of $accordion-button-icon
 $accordion-bg:                            $body-bg !default;
 $accordion-border-width:                  $border-width !default;
-$accordion-border-color:                  var(--#{$prefix}border-color) !default;
+$accordion-border-color:                  $grey-800 !default;
 $accordion-border-radius:                 $border-radius !default;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
 
+$accordion-header-font-size:              $h4-font-size !default;
+$accordion-header-font-weight:            $font-weight-medium !default;
+
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  $accordion-color !default;
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-bg:              $grey-800 !default;
+$accordion-button-active-color:           #fff !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
@@ -1486,6 +1494,10 @@ $alert-bg-scale:                -80% !default;
 $alert-border-scale:            -70% !default;
 $alert-color-scale:             40% !default;
 $alert-dismissible-padding-r:   $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side
+$alert-font-size:               $small-font-size !default; 
+$alert-line-height:             $line-height-sm !default;
+$alert-icon-dimension:          1rem !default;
+$alert-icon-gap:                0.5rem !default;
 // scss-docs-end alert-variables
 
 
