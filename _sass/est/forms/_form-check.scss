@@ -6,6 +6,9 @@
   display: block;
   min-height: $form-check-min-height;
   padding-left: $form-check-padding-start;
+  padding-right: $form-check-padding-end;
+  padding-top: $form-check-padding-top;
+  padding-bottom: $form-check-padding-bottom;
   margin-bottom: $form-check-margin-bottom;
 
   .form-check-input {
@@ -68,6 +71,7 @@
         background-image: escape-svg($form-check-input-checked-bg-image), var(--#{$prefix}gradient);
       } @else {
         background-image: escape-svg($form-check-input-checked-bg-image);
+        background-size: $form-check-input-checked-bg-image-size;
       }
     }
 
@@ -111,6 +115,8 @@
 .form-check-label {
   color: $form-check-label-color;
   cursor: $form-check-label-cursor;
+  font-size: $form-check-label-size;
+  line-height: $form-check-label-line-height;
 }
 
 //
