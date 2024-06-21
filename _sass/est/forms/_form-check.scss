@@ -50,6 +50,7 @@
   &[type="radio"] {
     // stylelint-disable-next-line property-disallowed-list
     border-radius: $form-check-radio-border-radius;
+    border: $form-check-radio-border;
   }
 
   &:active {
@@ -67,15 +68,17 @@
     border-color: $form-check-input-checked-border-color;
 
     &[type="checkbox"] {
+      background-size: $form-check-input-checked-bg-image-size;
       @if $enable-gradients {
         background-image: escape-svg($form-check-input-checked-bg-image), var(--#{$prefix}gradient);
       } @else {
         background-image: escape-svg($form-check-input-checked-bg-image);
-        background-size: $form-check-input-checked-bg-image-size;
       }
     }
 
     &[type="radio"] {
+      background-color: $form-check-radio-checked-bg-color;
+      background-size: $form-check-radio-checked-bg-image-size;
       @if $enable-gradients {
         background-image: escape-svg($form-check-radio-checked-bg-image), var(--#{$prefix}gradient);
       } @else {

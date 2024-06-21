@@ -927,12 +927,15 @@ $form-check-input-active-filter:          brightness(90%) !default;
 $form-check-input-bg:                     $input-bg !default;
 $form-check-input-border:                 1px solid $gray-900 !default;
 $form-check-input-border-radius:          0.35rem !default;
+$form-check-radio-border:                 1px solid $gray-800 !default;
 $form-check-radio-border-radius:          50% !default;
 $form-check-input-focus-border:           $gray-900 !default;
 $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color:          $gray-800 !default;
 $form-check-input-checked-bg-color:       $gray-800 !default;
+$form-check-radio-checked-bg-color:       transparent !default;
+$form-check-radio-checked-bg-image-size:  1.8rem !default;
 $form-check-input-checked-border-color:   $gray-800 !default;
 
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.5306 1.28062L6.53055 13.2806C6.4609 13.3503 6.37818 13.4057 6.28713 13.4434C6.19609 13.4812 6.09849 13.5006 5.99993 13.5006C5.90137 13.5006 5.80377 13.4812 5.71272 13.4434C5.62168 13.4057 5.53896 13.3503 5.4693 13.2806L0.219304 8.03061C0.0785732 7.88988 -0.000488281 7.69901 -0.000488281 7.49999C-0.000488281 7.30097 0.0785732 7.1101 0.219304 6.96936C0.360034 6.82863 0.550906 6.74957 0.749929 6.74957C0.948952 6.74957 1.13982 6.82863 1.28055 6.96936L5.99993 11.6897L17.4693 0.219364C17.61 0.0786339 17.8009 -0.000427248 17.9999 -0.000427246C18.199 -0.000427245 18.3898 0.0786339 18.5306 0.219364C18.6713 0.360095 18.7503 0.550967 18.7503 0.74999C18.7503 0.949013 18.6713 1.13988 18.5306 1.28062Z' fill='white'/></svg>") !default;
