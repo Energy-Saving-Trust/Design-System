@@ -53,7 +53,7 @@
 // Layout & components
 @import "bootstrap/root";
 @import "bootstrap/reboot";
-@import "bootstrap/type";
+@import "est/type";
 @import "bootstrap/icons";
 @import "bootstrap/images";
 @import "bootstrap/containers";
@@ -79,7 +79,7 @@
 @import "bootstrap/navbar";
 @import "bootstrap/card";
 @import "est/accordion";
-@import "bootstrap/breadcrumb";
+@import "est/breadcrumb";
 @import "bootstrap/pagination";
 @import "bootstrap/badge";
 @import "est/alert";
@@ -94,6 +94,8 @@
 @import "bootstrap/spinners";
 @import "bootstrap/offcanvas";
 @import "bootstrap/placeholders";
+@import "est/back-to-top";
+@import "est/hint";
 
 // Helpers
 @import "bootstrap/helpers";
