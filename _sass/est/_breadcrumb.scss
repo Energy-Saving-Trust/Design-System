@@ -8,6 +8,7 @@
   --#{$prefix}breadcrumb-border-radius: #{$breadcrumb-border-radius};
   --#{$prefix}breadcrumb-divider-color: #{$breadcrumb-divider-color};
   --#{$prefix}breadcrumb-item-padding-x: #{$breadcrumb-item-padding-x};
+  --#{$prefix}breadcrumb-item-margin-x: #{$breadcrumb-item-margin-x};
   --#{$prefix}breadcrumb-item-active-color: #{$breadcrumb-active-color};
   // scss-docs-end breadcrumb-css-vars
 
@@ -23,14 +24,26 @@
 
 .breadcrumb-item {
   // The separator between breadcrumbs (by default, a forward-slash: "/")
+  position: relative;
+  margin-right: var(--#{$prefix}breadcrumb-item-margin-x);
+  font-size: $breadcrumb-font-size;
+  a {
+    text-decoration: none;
+  }
   + .breadcrumb-item {
     padding-left: var(--#{$prefix}breadcrumb-item-padding-x);
 
     &::before {
-      float: left; // Suppress inline spacings and underlining of the separator
-      padding-right: var(--#{$prefix}breadcrumb-item-padding-x);
-      color: var(--#{$prefix}breadcrumb-divider-color);
-      content: var(--#{$prefix}breadcrumb-divider, escape-svg($breadcrumb-divider)) #{"/* rtl:"} var(--#{$prefix}breadcrumb-divider, escape-svg($breadcrumb-divider-flipped)) #{"*/"};
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid $breadcrumb-divider-color;
     }
   }
 

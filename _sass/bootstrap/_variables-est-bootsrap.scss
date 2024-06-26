@@ -1603,15 +1603,16 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size:              null !default;
+$breadcrumb-font-size:              0.82rem !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
-$breadcrumb-item-padding-x:         .5rem !default;
+$breadcrumb-item-padding-x:         1rem !default;
+$breadcrumb-item-margin-x:          0.76rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
-$breadcrumb-divider-color:          $gray-600 !default;
+$breadcrumb-divider-color:          #1F201F !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                url("data:image/svg+xml,<svg viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg'><rect width='16' height='16' /><polygon points='13,8 5,16 5,0' /></svg>") !default;
+$breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
