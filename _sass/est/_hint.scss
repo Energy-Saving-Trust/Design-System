@@ -1,0 +1,37 @@
+.hint-link {
+  position: relative;
+  padding: 8px 13px 8px 31px;
+  color: $hint-link-text-color;
+  &::before {
+    content: "";
+      position: absolute;
+      left: 11.5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid $hint-link-before-color;
+  }
+  &[aria-expanded="true"]{
+    background-color: $hint-link-active-bg-color;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    text-decoration: none;
+    color: $hint-link-active-text-color;
+    &::before {
+      border-left: 10px solid $hint-link-active-before-color;
+      transform: rotate(90deg);
+      top: 35%;
+    }
+  }
+}
+
+.hint-body {
+  background-color: $hint-body-bg-color;
+  padding: 13px;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}

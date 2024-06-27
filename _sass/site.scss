@@ -53,7 +53,7 @@
 // Layout & components
 @import "bootstrap/root";
 @import "bootstrap/reboot";
-@import "bootstrap/type";
+@import "est/type";
 @import "bootstrap/icons";
 @import "bootstrap/images";
 @import "bootstrap/containers";
@@ -61,7 +61,7 @@
 @import "bootstrap/tables";
 
 @import "bootstrap/forms/floating-labels";
-@import "bootstrap/forms/form-check";
+@import "est/forms/form-check";
 @import "bootstrap/forms/form-control";
 @import "bootstrap/forms/form-range";
 @import "bootstrap/forms/form-select";
@@ -78,11 +78,11 @@
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
 @import "bootstrap/card";
-@import "bootstrap/accordion";
-@import "bootstrap/breadcrumb";
+@import "est/accordion";
+@import "est/breadcrumb";
 @import "bootstrap/pagination";
 @import "bootstrap/badge";
-@import "bootstrap/alert";
+@import "est/alert";
 @import "bootstrap/progress";
 @import "bootstrap/list-group";
 @import "bootstrap/close";
@@ -94,6 +94,8 @@
 @import "bootstrap/spinners";
 @import "bootstrap/offcanvas";
 @import "bootstrap/placeholders";
+@import "est/back-to-top";
+@import "est/hint";
 
 // Helpers
 @import "bootstrap/helpers";

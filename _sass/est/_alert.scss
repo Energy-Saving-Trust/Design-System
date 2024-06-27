@@ -1,0 +1,81 @@
+//
+// Base styles
+//
+
+.alert {
+  // scss-docs-start alert-css-vars
+  --#{$prefix}alert-bg: transparent;
+  --#{$prefix}alert-padding-x: #{$alert-padding-x};
+  --#{$prefix}alert-padding-y: #{$alert-padding-y};
+  --#{$prefix}alert-margin-bottom: #{$alert-margin-bottom};
+  --#{$prefix}alert-color: inherit;
+  --#{$prefix}alert-border-color: transparent;
+  --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
+  --#{$prefix}alert-border-radius: #{$alert-border-radius};
+  --#{$prefix}alert-font-size: #{$alert-font-size};
+  --#{$prefix}alert-line-height: #{$alert-line-height};
+  // scss-docs-end alert-css-vars
+
+  position: relative;
+  padding: var(--#{$prefix}alert-padding-y) var(--#{$prefix}alert-padding-x);
+  margin-bottom: var(--#{$prefix}alert-margin-bottom);
+  color: var(--#{$prefix}alert-color);
+  background-color: var(--#{$prefix}alert-bg);
+  border: var(--#{$prefix}alert-border);
+  font-size: var(--#{$prefix}alert-font-size);
+  line-height: var(--#{$prefix}alert-line-height);
+  @include border-radius(var(--#{$prefix}alert-border-radius));
+}
+
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  padding-right: $alert-dismissible-padding-r;
+
+  // Adjust close link position
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: $stretched-link-z-index + 1;
+    padding: $alert-padding-y $alert-padding-x;
+  }
+}
+
+// Alerts with icons
+//
+// Wrap the icon and corresponding text in a container with this class to set default positioning
+
+.alert-icon {
+  display: flex;
+  gap: $alert-icon-gap;
+  align-items: flex-start;
+  .icon {
+    max-width: $alert-icon-dimension;
+    max-height: $alert-icon-dimension;
+  }
+}
+
+
+// scss-docs-start alert-modifiers
+// Generate contextual modifier classes for colorizing the alert.
+
+@each $state, $value in $theme-colors {
+  $alert-background: shift-color($value, $alert-bg-scale);
+  $alert-border: none;
+  $alert-color: $primary;
+
+  @if (contrast-ratio($alert-background, $alert-color) < $min-contrast-ratio) {
+    $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
+  }
+  @if ($state == 'info') {
+    $alert-background: $info-bg;
+  }
+  .alert-#{$state} {
+    @include alert-variant($alert-background, $alert-border, $alert-color);
+  }
+}
+// scss-docs-end alert-modifiers

@@ -1,0 +1,56 @@
+.back-to-top {
+  // scss-docs-start btt-css-vars
+  --#{$prefix}btt-padding-x: #{$btt-padding-x};
+  --#{$prefix}btt-padding-y: #{$btt-padding-y};
+  @include rfs($btn-font-size, --#{$prefix}btn-font-size);
+  --#{$prefix}btt-font-weight: #{$btt-font-weight};
+  --#{$prefix}btt-line-height: #{$btt-line-height};
+  --#{$prefix}btt-color: #{$body-color};
+  --#{$prefix}btt-bg: #{$btt-bg};;
+  --#{$prefix}btt-border-width: #{$btt-border-width};
+  --#{$prefix}btt-border-color: #{$btt-bg};
+  --#{$prefix}btt-border-radius: #{$btt-border-radius};
+  --#{$prefix}btt-hover-bg: #{$btt-hover-bg};
+  --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
+  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+  --#{$prefix}btt-active-border-color: #{$btt-active-border-color};
+  --#{$prefix}btt-active-shadow: #{$btt-active-box-shadow};
+  // scss-docs-end btt-css-vars
+
+  display: inline-block;
+  padding: var(--#{$prefix}btt-padding-y) var(--#{$prefix}btt-padding-x);
+  font-family: var(--#{$prefix}btn-font-family);
+  @include font-size(var(--#{$prefix}btt-font-size));
+  font-weight: var(--#{$prefix}btt-font-weight);
+  line-height: var(--#{$prefix}btt-line-height);
+  color: var(--#{$prefix}btt-color);
+  background-color: var(--#{$prefix}btt-bg);
+  text-align: center;
+  text-decoration: underline;
+  white-space: $btn-white-space;
+  vertical-align: middle;
+  cursor: if($enable-button-pointers, pointer, null);
+  user-select: none;
+  border: var(--#{$prefix}btt-border-width) solid var(--#{$prefix}btt-border-color);
+  @include border-radius(var(--#{$prefix}btt-border-radius));
+  @include transition($btn-transition);
+
+  &:hover {
+    background-color: var(--#{$prefix}btt-hover-bg);
+    border-color: var(--#{$prefix}btt-hover-bg);
+  }
+
+  &:active {
+    border-color: var(--#{$prefix}btt-active-border-color);
+    @include box-shadow(var(--#{$prefix}btt-active-shadow));
+  }
+  &::after {
+    content: '';
+    background: transparent escape-svg($btt-arrow) center / $btt-arrow-width auto no-repeat; 
+    width: $btt-arrow-width;
+    height: $btt-arrow-height;
+    display: inline-block;
+    margin-bottom: ($btt-arrow-height / 5.6) * -1;
+    margin-left: 0.6rem;
+  }
+}
