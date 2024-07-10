@@ -53,13 +53,13 @@ Cards documentation goes here.
 ## Simple article card:
 
 {% capture code_render %}
-<a href="#" class="card card-simple-article" style="width: 20.59rem">
+<div class="card card-simple-article" style="width: 20.59rem">
   <div class="card-body">
-    <h5 class="card-title">Article title link</h5>
+    <a class="card-title-link" href="#"><h5 class="card-title">Article title link</h5></a>
     <h6 class="card-subtitle mb-3 text-muted">17 May 2024</h6>
     <p class="card-text">Our response to the July 2024 energy price cap announcement, with commentary from Energy Saving Trust chief executive Mike Thornton.</p>
   </div>
-</a>
+</div>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
@@ -89,7 +89,7 @@ Cards documentation goes here.
     <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>
     <h6 class="card-subtitle">17 May 2024</h6>
     <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
-    <a href="#" class="arrow-link">Sign-up now</a>
+    <a aria-label="Avoid these seven common mistakes that waste energy: Sign-up now" href="#" class="arrow-link">Sign-up now</a>
   </div>
 </div>
 {% endcapture %}
