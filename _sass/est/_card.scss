@@ -75,8 +75,11 @@
     border-top: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
     .card-title-link {
       text-decoration: none;
-      &:hover {
+      &:hover, &:focus {
         text-decoration: underline;
+        outline: none;
+        border: none;
+        box-shadow: none;
       }
     }
     .card-title {

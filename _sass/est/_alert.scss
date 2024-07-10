@@ -42,7 +42,7 @@
     right: 0;
     z-index: $stretched-link-z-index + 1;
     padding: $alert-padding-y $alert-padding-x;
-    &:focus, &:focus-visible {
+    &:focus {
       outline: 2px solid transparent;
       box-shadow: 0 0 0 3px $focus-color-light, 0 0 0 6px $focus-color-dark;
     }
