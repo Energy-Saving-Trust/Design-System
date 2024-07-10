@@ -142,3 +142,38 @@ ul.list-square li:before {
     content: "\2014\00A0"; // em dash, nbsp
   }
 }
+
+//
+// Links
+//
+
+@mixin active-state() {
+  border: 2px solid transparent;
+  border-radius: $border-radius-sm;
+  &:active {
+    border-color: var(--#{$prefix}btn-active-border-color);
+    box-shadow: $btn-active-box-shadow;
+  }
+}
+
+.cta-link {
+  display: inline-block;
+  text-decoration: none;
+  @include active-state();
+}
+
+.arrow-link {
+  position: relative;
+  text-decoration: none;
+  &:after {
+    background-image: $card-arrow-link-img;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    width: 0.88rem;
+    height: 0.73rem;
+  }
+}
