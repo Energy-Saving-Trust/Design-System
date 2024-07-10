@@ -52,7 +52,7 @@
 
 // Layout & components
 @import "bootstrap/root";
-@import "bootstrap/reboot";
+@import "est/reboot";
 @import "est/type";
 @import "bootstrap/icons";
 @import "bootstrap/images";
@@ -85,7 +85,7 @@
 @import "est/alert";
 @import "bootstrap/progress";
 @import "bootstrap/list-group";
-@import "bootstrap/close";
+@import "est/close";
 @import "bootstrap/toasts";
 @import "bootstrap/modal";
 @import "bootstrap/tooltip";
@@ -97,6 +97,7 @@
 @import "est/back-to-top";
 @import "est/hint";
 @import "est/card";
+@import "est/focus-states";
 
 // Helpers
 @import "bootstrap/helpers";

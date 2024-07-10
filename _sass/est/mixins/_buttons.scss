@@ -68,9 +68,3 @@
   --#{$prefix}btn-border-radius: #{$border-radius};
 }
 // scss-docs-end btn-size-mixin
-
-.btn {
-  &:focus-visible {
-    outline: -webkit-focus-ring-color auto 1px !important;
-  }
-}

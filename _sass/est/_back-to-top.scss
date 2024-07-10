@@ -40,9 +40,9 @@
     border-color: var(--#{$prefix}btt-hover-bg);
   }
 
-  &:active {
-    border-color: var(--#{$prefix}btt-active-border-color);
-    @include box-shadow(var(--#{$prefix}btt-active-shadow));
+  &:focus, &:focus-visible {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px $focus-color-light, 0 0 0 6px $focus-color-dark;
   }
   &::after {
     content: '';
