@@ -19,7 +19,6 @@
   --#{$prefix}card-border-color: #{$card-border-color};
   --#{$prefix}card-hover-border-color: #{$card-hover-border-color};
   --#{$prefix}card-hover-drop-shadow: #{$card-hover-drop-shadow};
-  --#{$prefix}card-focus-border-width: #{$card-focus-border-width};
   --#{$prefix}card-focus-border-color: #{$card-focus-border-color};
   --#{$prefix}card-focus-drop-shadow: #{$card-focus-drop-shadow};
   --#{$prefix}card-border-radius: #{$card-border-radius};
@@ -77,6 +76,11 @@
     .card-title {
       margin: var(--#{$prefix}card-title-sm-spacer-y) 0 $card-padding 0;
     }
+    &:hover, &:focus {
+      border: none;
+      border-top: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
+      box-shadow: none;
+    }
   }
 
   &.card-borderless {
@@ -125,7 +129,7 @@
   }
 
   &:focus {
-    border: var(--#{$prefix}card-focus-border-width) solid var(--#{$prefix}card-focus-border-color);
+    border: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-focus-border-color);
     @include box-shadow(var(--#{$prefix}card-focus-drop-shadow));
   }
 
