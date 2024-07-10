@@ -64,6 +64,7 @@ ul:not([class]), ul.list-square {
     padding-left: 1.2em;
     position: relative;
     margin-bottom: 0.7rem;
+    line-height: 1.5;
     &:before {
       content: '';
       width: 6px;
@@ -72,13 +73,19 @@ ul:not([class]), ul.list-square {
       border-radius: 100%;
       display: inline-block;
       position: absolute;
-      top: ($line-height-base * $font-size-base) / 2;
+      top: 0.75em;
       left: 0;
       transform: translateY(-50%);
     }
     ul {
       margin-top: 0.7rem;
     }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
