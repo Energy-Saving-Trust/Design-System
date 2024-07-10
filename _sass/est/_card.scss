@@ -76,7 +76,7 @@
     .card-title {
       margin: var(--#{$prefix}card-title-sm-spacer-y) 0 $card-padding 0;
     }
-    &:hover, &:focus {
+    &:hover, &:active {
       border: none;
       border-top: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
       box-shadow: none;
@@ -86,7 +86,7 @@
   &.card-borderless {
     border: none;
     padding: 0;
-    &:hover, &:focus {
+    &:hover, &:active {
       border: none;
       box-shadow: none;
     }
@@ -128,7 +128,7 @@
     @include box-shadow(var(--#{$prefix}card-hover-drop-shadow));
   }
 
-  &:focus {
+  &:active {
     border: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-focus-border-color);
     @include box-shadow(var(--#{$prefix}card-focus-drop-shadow));
   }
