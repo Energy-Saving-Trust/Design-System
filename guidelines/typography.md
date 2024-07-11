@@ -70,3 +70,12 @@ We tend not to think to switch these off, but as they’re often on for 24 hours
 Fortunately there are several products available to help cut down your standby electricity consumption. These include standby savers that let you turn all your appliances off standby in one go. Some come with timers and others come with a single off-switch.
 
 EU regulations specify that non-networked electrical devices sold after 2013 can’t have a standby power greater than 0.5W. But with many households using more electronic gadgets, it’s worth looking at your standby usage.
+
+
+_________
+
+Creating typography guidelines is crucial for maintaining consistency, readability, and visual appeal in any design project. Here is a comprehensive guide to help you establish effective typography guidelines:
+
+### 1. **Typeface Selection**
+- **Primary Typeface:** Choose a versatile and legible typeface that will be used for headings, body text, and other significant text elements.
+- **Secondary Typeface:** Select a complementary typeface for accents
