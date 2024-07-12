@@ -31,7 +31,7 @@ We are always striving to make things simpler. This means removing pages, conten
 
 It is hard to make something simple, and easy to make something complicated.   
 
-## Always design with content  
+## Always design with real content  
 
 Design starts with content. What do we want to say? What information do we want to convey? What action do we want someone to take based on that? The design then grows from there. The content needs to be designed alongside the functionality, user interface, and other interactive elements of the service.   
 
@@ -39,7 +39,7 @@ Design starts with content. What do we want to say? What information do we want 
 
 We always design for the most constraints first. Typically this means a mobile-first approach or designing for less space, time, lower comprehension. This is because it is easier to scale up then scale down a design.    
 
-##Prioritise accessibility
+## Prioritise accessibility
 
 At Energy Saving Trust, we always consider how our design will work for people with diverse needs and situations. We do this firstly because it is the right thing to do and secondly because it is a legal requirement for government provided services to be WCAG compliant.  
 
