@@ -10,6 +10,13 @@ For digital we focus on the core colours and use neutral colours for foundationa
 As part of our commitment to accessibility, we never create a design that relies solely on colour to communicate essential information. 
 This means for graphs, diagrams, and notices, we always include text and iconography to accompany to indicate states like danger, success, or warning.
 
+### Colours for messages
+![Status colours](https://github.com/user-attachments/assets/e9929b5a-3cf9-4411-8561-8eb71e08351f)
+
+## Default text colours
+![Text colours](https://github.com/user-attachments/assets/c5490ad2-e30e-4f5b-a7cf-4657c86af3c6)
+
+
 ## Core colours
 We use core colours and shades of our core colours to communicate and highlight important information. For each colour you can see acceptable shade variations as well as the accessibility of each shade on light or dark backgrounds. 
 
