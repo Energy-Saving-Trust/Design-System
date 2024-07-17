@@ -592,7 +592,7 @@ $font-family-code:            var(--#{$prefix}font-monospace) !default;
 // $font-size-base affects the font size of the body text
 $font-size-root:              17px !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm:                $font-size-base * .875 !default;
+$font-size-sm:                $font-size-base * .82 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
 $font-weight-lighter:         lighter !default;
@@ -657,7 +657,7 @@ $display-line-height: $headings-line-height !default;
 $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             .875em !default;
+$small-font-size:             .82em !default;
 
 $sub-sup-font-size:           .75em !default;
 
@@ -1092,8 +1092,8 @@ $form-floating-transition:        opacity .1s ease-in-out, transform .1s ease-in
 // Form validation
 
 // scss-docs-start form-feedback-variables
-$form-feedback-margin-top:          $form-text-margin-top !default;
-$form-feedback-font-size:           $form-text-font-size !default;
+$form-feedback-margin-top:          0.5rem !default;
+$form-feedback-font-size:           $small-font-size !default;
 $form-feedback-font-style:          $form-text-font-style !default;
 $form-feedback-valid-color:         $success !default;
 $form-feedback-invalid-color:       $danger !default;
@@ -1315,13 +1315,25 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
+$card-spacer-y:                     0 !default;
+$card-spacer-x:                     0 !default;
+$card-bottom-img-spacer-y:          27px !default;
+$card-title-spacer-y:               32px !default;
+$card-title-sm-spacer-y:            24px !default;
+$card-title-font-size:              1.24rem !default;
+$card-subtitle-margin-bottom:       32px !default;  
+$card-subtitle-font-size:           0.82rem !default;
+$card-subtitle-color:               $grey-700 !default;
+$card-subtitle-font-weight:         400 !default;
 $card-border-width:                 $border-width !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                $border-radius !default;
+$card-border-color:                 $grey-200 !default;
+$card-border-radius:                $border-radius-lg !default;
+$card-hover-border-color:           $grey-400 !default;
+$card-hover-drop-shadow:            0 0 0 2px $card-border-color !default;
+$card-focus-border-color:           $grey-900 !default;
+$card-focus-drop-shadow:            0 0 0 4px $card-border-color !default;
 $card-box-shadow:                   null !default;
+$card-padding:                      30px;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
@@ -1332,6 +1344,10 @@ $card-color:                        null !default;
 $card-bg:                           $white !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
+$card-text-font-size:               1rem !default;
+$card-transition:                   $transition-base !default;
+$card-arrow-link-font-weight:       600 !default;
+$card-arrow-link-img:               url("data:image/svg+xml,%3Csvg%20width='18'%20height='15'%20viewBox='0%200%2018%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M9.44446%201.07959L16.0556%207.30181L9.44446%2013.524'%20stroke='%231B1F22'%20stroke-width='2'/%3E%3Cpath%20d='M16.0556%207.30176H0.944458'%20stroke='%231B1F22'%20stroke-width='2'/%3E%3C/svg%3E") !default;
 // scss-docs-end card-variables
 
 // Accordion
@@ -1368,7 +1384,6 @@ $accordion-icon-color:                    $accordion-button-color !default;
 $accordion-icon-active-color:             $accordion-button-active-color !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
-
 $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end accordion-variables
