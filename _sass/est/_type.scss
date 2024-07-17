@@ -151,8 +151,9 @@ ul.list-square li:before {
   border: 2px solid transparent;
   border-radius: $border-radius-sm;
   &:active {
-    border-color: var(--#{$prefix}btn-active-border-color);
-    box-shadow: $btn-active-box-shadow;
+    outline: 1px solid $focus-color-light;
+    box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
+    border-radius: 5px;
   }
 }
 
