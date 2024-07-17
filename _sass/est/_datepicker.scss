@@ -1,3 +1,9 @@
+$year-chev: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.20492 2.46532e-07L0.794922 1.41L5.37492 6L0.79492 10.59L2.20492 12L8.20492 6L2.20492 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
+$month-chev: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.49001 1.30959e-06L6.08001 1.41L10.66 6L6.08001 10.59L7.49001 12L13.49 6L7.49001 1.30959e-06Z' fill='%231B1F22'/%3E%3Cpath d='M1.40996 2.46532e-07L-4.30665e-05 1.41L4.57996 6L-4.46716e-05 10.59L1.40995 12L7.40996 6L1.40996 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
+$year-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.20492 2.46532e-07L0.794922 1.41L5.37492 6L0.79492 10.59L2.20492 12L8.20492 6L2.20492 2.46532e-07Z' fill='%23ffffff'/%3E%3C/svg%3E") !default;
+$month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.49001 1.30959e-06L6.08001 1.41L10.66 6L6.08001 10.59L7.49001 12L13.49 6L7.49001 1.30959e-06Z' fill='%23ffffff'/%3E%3Cpath d='M1.40996 2.46532e-07L-4.30665e-05 1.41L4.57996 6L-4.46716e-05 10.59L1.40995 12L7.40996 6L1.40996 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
+
+
 .sr-only {
   position: absolute;
   top: -2000em;
@@ -34,9 +40,11 @@
   height: 50px;
   padding: 0px 10px;
   background-color: white;
-  color: black;
+  color: $grey-700;
   border: 1px solid $grey-800;
   border-radius: $border-radius;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .datepicker button.icon {
@@ -51,19 +59,6 @@
   // color: hsl(216deg 89% 51%);
 }
 
-.datepicker button.icon:focus {
-  outline: none;
-  padding: 2px;
-  border-width: 2px;
-  background-color: #def;
-}
-
-.datepicker input:focus {
-  background-color: #def;
-  outline: 2px solid #005a9c;
-  outline-offset: 1px;
-}
-
 .datepicker-dialog {
   position: absolute;
   width: 320px;
@@ -73,24 +68,29 @@
   border-radius: 5px;
   padding: 0;
   background-color: #fff;
+  border: 1px solid $grey-500;
+  border-radius: 6px;
+  box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 .datepicker-dialog .header {
   cursor: default;
   // background-color: hsl(216deg 80% 51%);
-  padding: 7px;
+  padding: 16px 20px 7px 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: $grey-900;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .datepicker-dialog h2 {
   margin: 0;
   padding: 0;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
+  font-weight: 600;
   color: $grey-900;
   text-transform: none;
   font-weight: bold;
@@ -114,10 +114,50 @@
 .datepicker-dialog .prev-month,
 .datepicker-dialog .next-month,
 .datepicker-dialog .next-year {
-  padding: 4px;
-  width: 24px;
-  height: 24px;
-  color: $grey-900;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  background-size: auto 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    background-color: $deepblue-50;
+    border: none;
+  }
+  &:active, &:focus {
+    background-color: $grey-800;
+    border: none;
+  }
+}
+
+.datepicker-dialog .prev-year {
+  background-image: $year-chev;
+  transform: rotate(180deg);
+  &:active, &:focus {
+    background-image: $year-chev-white;
+  }
+}
+
+.datepicker-dialog .prev-month {
+  background-image: $month-chev;
+  transform: rotate(180deg);
+  &:active, &:focus {
+    background-image: $month-chev-white;
+  }
+}
+
+.datepicker-dialog .next-month {
+  background-image: $month-chev;
+  &:active, &:focus {
+    background-image: $month-chev-white;
+  }
+}
+
+.datepicker-dialog .next-year {
+  background-image: $year-chev;
+  &:active, &:focus {
+    background-image: $year-chev-white;
+  }
 }
 
 .datepicker-dialog .prev-year:focus,
@@ -134,27 +174,30 @@
 .datepicker-dialog .prev-month:hover,
 .datepicker-dialog .next-month:hover,
 .datepicker-dialog .next-year:hover {
-  padding: 3px;
-  border: 1px solid $grey-900;
   border-radius: 4px;
 }
 
 .datepicker-dialog .dialog-ok-cancel-group {
   text-align: right;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 1em;
+  margin: 0;
+  border-top: 1px solid $grey-300;
+  padding: 11px 20px;
 }
 
 .datepicker-dialog .dialog-ok-cancel-group button {
-  padding: 6px;
-  margin-left: 17px;
-  width: 5em;
+  padding: 7px 27px;
+  margin-left: 10px;
   background-color: $grey-900;
-  font-size: 0.85em;
+  font-size: 1rem;
   color: white;
   outline: none;
   border-radius: 5px;
+  border: 1px solid $grey-900;
+  font-weight: 600;
+  &:first-of-type {
+    background-color: white;
+    color: $grey-900;
+  }
 }
 
 .datepicker-dialog .dialog-button:focus {
@@ -173,14 +216,15 @@
 
 .datepicker-dialog .month-year {
   display: inline-block;
-  width: 12em;
+  width: auto;
   text-align: center;
+  padding: 0 10px;
 }
 
 .datepicker-dialog table.dates {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
   border: none;
   border-collapse: separate;
 }
@@ -188,13 +232,26 @@
 .datepicker-dialog table.dates th,
 .datepicker-dialog table.dates td {
   text-align: center;
-  background: $grey-900;
+  background: white;
   color: black;
   border: none;
 }
 
+.datepicker-dialog table thead {
+  margin-bottom: 17px;
+}
+
+.datepicker-dialog table.dates th {
+  font-weight: 400;
+  font-size: 0.94rem;
+  padding-bottom: 17px;
+}
+
 .datepicker-dialog table.dates tr {
   border: 1px solid black;
+}
+.datepicker-dialog table.dates tbody tr:last-of-type {
+  position: absolute;
 }
 
 .datepicker-dialog table.dates td {
@@ -204,44 +261,61 @@
   height: 40px;
   width: 40px;
   border-radius: 5px;
-  font-size: 15px;
-  background: #eee;
+  font-size: 1rem;
+  background: white;
 }
 
 .datepicker-dialog table.dates td.disabled {
-  padding: 2px;
+  padding: 2px 2px 0 2px;
   border: none;
   height: 41px;
   width: 41px;
 }
 
-.datepicker-dialog table.dates td:focus,
 .datepicker-dialog table.dates td:hover {
   padding: 0;
   background-color: $deepblue-50;
-  color: black;
+  color: $grey-900;
+}
+.datepicker-dialog table.dates td:focus {
+  box-shadow: none;
+  background-color: $grey-800;
+  color: white;
 }
 
-.datepicker-dialog table.dates td:focus {
-  padding: 1px;
-  border: 2px solid rgb(100 100 100);
-  outline: 0;
+.datepicker-dialog table.dates td[tabindex="0"]:focus {
+  color: white;
 }
 
 .datepicker-dialog table.dates td:not(.disabled):hover {
-  padding: 2px;
-  border: 1px solid rgb(100 100 100);
+  padding: 2px 2px 0 2px;
 }
 
 .datepicker-dialog table.dates td[aria-selected] {
   padding: 1px;
-  border: 2px dotted rgb(100 100 100);
+  position: relative;
+  font-weight: 600;
+  &:focus {
+    &:after {
+      background-color: white;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 2px);
+    bottom: 4px;
+    width: 4px;
+    height: 4px;
+    background-color: $grey-900;
+    border-radius: 100%;
+  }
 }
 
-.datepicker-dialog table.dates td[aria-selected]:focus {
-  padding: 1px;
-  border: 2px solid rgb(100 100 100);
-}
+// .datepicker-dialog table.dates td[aria-selected]:focus {
+//   padding: 1px;
+//   border: 2px solid rgb(100 100 100);
+// }
 
 .datepicker-dialog table.dates td[tabindex="0"] {
   // background-color: hsl(216deg 80% 51%);
@@ -249,9 +323,8 @@
 }
 
 .datepicker-dialog .dialog-message {
-  padding-top: 0.25em;
-  padding-left: 1em;
-  height: 1.75em;
-  // background: hsl(216deg 80% 51%);
+  padding: 0 20px;
+  margin: 10px 0 15px 0;
   color: $grey-900;
+  font-size: 0.82rem;
 }

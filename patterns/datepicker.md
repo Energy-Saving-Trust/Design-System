@@ -28,12 +28,8 @@ Date picker documentation goes here.
   </div>
   <div id="id-datepicker-1" class="datepicker-dialog" role="dialog" aria-modal="true" aria-label="Choose Date">
     <div class="header">
-      <button type="button" class="prev-year" aria-label="previous year">
-        <span class="fas fa-angle-double-left fa-lg"></span>
-      </button>
-      <button type="button" class="prev-month" aria-label="previous month">
-        <span class="fas fa-angle-left fa-lg"></span>
-      </button>
+      <button type="button" class="prev-year" aria-label="previous year"></button>
+      <button type="button" class="prev-month" aria-label="previous month"></button>
       <h2 id="id-grid-label" class="month-year" aria-live="polite">February 2020</h2>
       <button type="button" class="next-month" aria-label="next month">
         <span class="fas fa-angle-right fa-lg"></span>
@@ -112,11 +108,11 @@ Date picker documentation goes here.
         </tbody>
       </table>
     </div>
+    <div class="dialog-message" aria-live="polite"></div>
     <div class="dialog-ok-cancel-group">
       <button class="dialog-button" value="cancel">Cancel</button>
       <button class="dialog-button" value="ok">OK</button>
     </div>
-    <div class="dialog-message" aria-live="polite"></div>
   </div>
 </div>
 {% endcapture %}

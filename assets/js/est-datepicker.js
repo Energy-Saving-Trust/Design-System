@@ -35,7 +35,7 @@ class DatePickerDialog {
       'December',
     ];
 
-    this.messageCursorKeys = 'Cursor keys can navigate dates';
+    this.messageCursorKeys = 'You can use the cursor keys to select a date';
     this.lastMessage = '';
 
     this.textboxNode = cdp.querySelector('input[type="text"');
