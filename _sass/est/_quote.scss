@@ -1,0 +1,63 @@
+.blockquote-wrapper {
+  padding: 80px 20px 40px 20px;
+  position: relative;
+  border-radius: $border-radius;
+  &.green {
+    background: $blockquote-bg-green;  
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: $blockquote-img center / 100% auto no-repeat;
+  }
+  blockquote, blockquote p {
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  .blockquote-footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    span {
+      margin-top: 10px;
+      display: inline-block;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.blockquote-img {
+  border-radius: $border-radius;
+  display: flex;
+  .blockquote-wrapper, .blockquote-bg-img {
+    flex: 0 0 50%;
+  }
+  .blockquote-wrapper:after {
+    width: 30px;
+    height: 30px;
+  }
+  .blockquote-footer, .blockquote-footer span {
+    color: $grey-900;
+  }
+  .blockquote-bg-img {
+    border-radius: $border-radius;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .blockquote, .blockquote p {
+    font-size: 1rem;
+  }
+  .blockquote-footer {
+    font-size: 0.94rem;
+    margin-top: 30px;
+  }
+  &.yellow {
+    background: $blockquote-bg-yellow;
+  }
+}
