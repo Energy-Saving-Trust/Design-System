@@ -86,9 +86,8 @@
 
   &:focus {
     z-index: 3;
-    border-color: var(--#{$prefix}accordion-btn-focus-border-color);
-    outline: 0;
-    box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px $focus-color-light, 0 0 0 6px $focus-color-dark;
   }
 }
 

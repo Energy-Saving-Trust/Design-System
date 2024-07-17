@@ -53,14 +53,9 @@
     border: $form-check-radio-border;
   }
 
-  &:active {
-    filter: $form-check-input-active-filter;
-  }
-
   &:focus {
-    border-color: $form-check-input-focus-border;
-    outline: 0;
-    box-shadow: $form-check-input-focus-box-shadow;
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px $focus-color-light, 0 0 0 6px $focus-color-dark;
   }
 
   &:checked {

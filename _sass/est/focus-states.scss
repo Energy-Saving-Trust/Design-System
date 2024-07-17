@@ -1,0 +1,5 @@
+:focus {
+  outline: 2px solid $focus-color-light;
+  box-shadow: 0 0 0 3px $focus-color-light, 0 0 0 6px $focus-color-dark;
+  border-radius: 5px;
+}
