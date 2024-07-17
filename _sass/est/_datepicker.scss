@@ -1,0 +1,257 @@
+.sr-only {
+  position: absolute;
+  top: -2000em;
+  left: -3000em;
+}
+
+.datepicker {
+  margin-top: 1em;
+  position: relative;
+}
+
+.datepicker .group {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  width: 350px;
+  grid-gap: 10px;
+}
+
+.datepicker .desc {
+  font-weight: 400;
+  color: $grey-700;
+  width: 350px;
+}
+
+.datepicker label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $grey-900;
+}
+
+.datepicker input {
+  margin: 0;
+  height: 50px;
+  padding: 0px 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid $grey-800;
+  border-radius: $border-radius;
+}
+
+.datepicker button.icon {
+  position: relative;
+  margin: 0;
+  padding: 2px 4px 4px 4px;
+  background-color: $grey-900;
+  border-radius: 5px;
+}
+
+.datepicker .fa-calendar-alt {
+  // color: hsl(216deg 89% 51%);
+}
+
+.datepicker button.icon:focus {
+  outline: none;
+  padding: 2px;
+  border-width: 2px;
+  background-color: #def;
+}
+
+.datepicker input:focus {
+  background-color: #def;
+  outline: 2px solid #005a9c;
+  outline-offset: 1px;
+}
+
+.datepicker-dialog {
+  position: absolute;
+  width: 320px;
+  clear: both;
+  // border: 3px solid hsl(216deg 80% 51%);
+  margin-top: 0.15em;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.datepicker-dialog .header {
+  cursor: default;
+  // background-color: hsl(216deg 80% 51%);
+  padding: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $grey-900;
+  display: flex;
+  justify-content: space-around;
+}
+
+.datepicker-dialog h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1em;
+  color: $grey-900;
+  text-transform: none;
+  font-weight: bold;
+  border: none;
+}
+
+.datepicker-dialog button {
+  border-style: none;
+  background: transparent;
+}
+
+.datepicker-dialog button::-moz-focus-inner {
+  border: 0;
+}
+
+.datepicker-dialog .dates {
+  width: 320px;
+}
+
+.datepicker-dialog .prev-year,
+.datepicker-dialog .prev-month,
+.datepicker-dialog .next-month,
+.datepicker-dialog .next-year {
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  color: $grey-900;
+}
+
+.datepicker-dialog .prev-year:focus,
+.datepicker-dialog .prev-month:focus,
+.datepicker-dialog .next-month:focus,
+.datepicker-dialog .next-year:focus {
+  padding: 2px;
+  border: 2px solid $grey-900;
+  border-radius: 4px;
+  outline: 0;
+}
+
+.datepicker-dialog .prev-year:hover,
+.datepicker-dialog .prev-month:hover,
+.datepicker-dialog .next-month:hover,
+.datepicker-dialog .next-year:hover {
+  padding: 3px;
+  border: 1px solid $grey-900;
+  border-radius: 4px;
+}
+
+.datepicker-dialog .dialog-ok-cancel-group {
+  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.datepicker-dialog .dialog-ok-cancel-group button {
+  padding: 6px;
+  margin-left: 17px;
+  width: 5em;
+  background-color: $grey-900;
+  font-size: 0.85em;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+.datepicker-dialog .dialog-button:focus {
+  padding: 4px;
+  border: 2px solid black;
+}
+
+.datepicker-dialog .dialog-button:hover {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.datepicker-dialog .fa-calendar-alt {
+  // color: hsl(216deg 89% 51%);
+}
+
+.datepicker-dialog .month-year {
+  display: inline-block;
+  width: 12em;
+  text-align: center;
+}
+
+.datepicker-dialog table.dates {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  border: none;
+  border-collapse: separate;
+}
+
+.datepicker-dialog table.dates th,
+.datepicker-dialog table.dates td {
+  text-align: center;
+  background: $grey-900;
+  color: black;
+  border: none;
+}
+
+.datepicker-dialog table.dates tr {
+  border: 1px solid black;
+}
+
+.datepicker-dialog table.dates td {
+  padding: 3px;
+  margin: 0;
+  line-height: inherit;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  background: #eee;
+}
+
+.datepicker-dialog table.dates td.disabled {
+  padding: 2px;
+  border: none;
+  height: 41px;
+  width: 41px;
+}
+
+.datepicker-dialog table.dates td:focus,
+.datepicker-dialog table.dates td:hover {
+  padding: 0;
+  background-color: $deepblue-50;
+  color: black;
+}
+
+.datepicker-dialog table.dates td:focus {
+  padding: 1px;
+  border: 2px solid rgb(100 100 100);
+  outline: 0;
+}
+
+.datepicker-dialog table.dates td:not(.disabled):hover {
+  padding: 2px;
+  border: 1px solid rgb(100 100 100);
+}
+
+.datepicker-dialog table.dates td[aria-selected] {
+  padding: 1px;
+  border: 2px dotted rgb(100 100 100);
+}
+
+.datepicker-dialog table.dates td[aria-selected]:focus {
+  padding: 1px;
+  border: 2px solid rgb(100 100 100);
+}
+
+.datepicker-dialog table.dates td[tabindex="0"] {
+  // background-color: hsl(216deg 80% 51%);
+  color: $grey-900;
+}
+
+.datepicker-dialog .dialog-message {
+  padding-top: 0.25em;
+  padding-left: 1em;
+  height: 1.75em;
+  // background: hsl(216deg 80% 51%);
+  color: $grey-900;
+}

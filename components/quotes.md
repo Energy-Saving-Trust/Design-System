@@ -6,7 +6,7 @@ section: components
 
 # Quotes
 
-Input documentation goes here.
+Metrics documentation goes here.
 
 
 
