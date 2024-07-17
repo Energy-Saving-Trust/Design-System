@@ -23,16 +23,10 @@ Validation documentation goes here.
   <div class="col-md-6">
     <label for="validationCustom01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
   </div>
   <div class="col-md-6">
     <label for="validationCustom02" class="form-label">Last name</label>
     <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
   </div>
   <div class="col-12">
     <label for="validationCustom03" class="form-label">City</label>

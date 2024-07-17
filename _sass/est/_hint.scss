@@ -2,6 +2,7 @@
   position: relative;
   padding: 8px 13px 8px 31px;
   color: $hint-link-text-color;
+  display: inline-block;
   &::before {
     content: "";
       position: absolute;

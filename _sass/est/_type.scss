@@ -159,6 +159,10 @@ ul.list-square li:before {
 .cta-link {
   display: inline-block;
   text-decoration: none;
+  &:hover {
+    color: $gray-800;
+    text-decoration: underline;
+  }
   @include active-state();
 }
 
