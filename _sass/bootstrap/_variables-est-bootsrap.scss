@@ -183,7 +183,7 @@ $clearskyblue-700: shade-color($clearskyblue, 40%) !default;
 $clearskyblue-800: shade-color($clearskyblue, 60%) !default;
 $clearskyblue-900: shade-color($clearskyblue, 80%) !default;
 
-$deepblue-50: tint-color($deepblue, 90%) !default;
+$deepblue-50: #E1EDFA !default;
 $deepblue-100: tint-color($deepblue, 80%) !default;
 $deepblue-200: tint-color($deepblue, 60%) !default;
 $deepblue-300: tint-color($deepblue, 40%) !default;
@@ -1644,7 +1644,7 @@ $hint-link-text-color:              $deepblue !default;
 $hint-link-before-color:            $hint-link-text-color !default; 
 $hint-link-active-text-color:       #212529 !default;
 $hint-link-active-before-color:     $hint-link-active-text-color !default;
-$hint-body-bg-color:                #E1EDFA !default;
+$hint-body-bg-color:                $deepblue-50 !default;
 $hint-link-active-bg-color:         $hint-body-bg-color !default;  
 // scss-docs-end hint-variables
 
@@ -1673,6 +1673,7 @@ $carousel-caption-padding-y:         1.25rem !default;
 $carousel-caption-spacer:            1.25rem !default;
 
 $carousel-control-icon-width:        2rem !default;
+
 $carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !default;
 $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>") !default;
 
