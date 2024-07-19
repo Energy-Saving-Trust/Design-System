@@ -1,8 +1,8 @@
 ## Introduction 
 
-Accessibility is a fundamental aspect of the design and development process and a priority for every product we create. Accessibility in design ensures that products are usable by as many people as possible, and improves the experience for all users, including those with disabilities.  
+At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is apriority for every product we create, and improves the experience for _all_ our users. 
 
-Accessibility has been considered and ‘baked in’ to the Design System wherever possible. By following these accessibility guidelines, we ensure that our products are usable and inclusive for all users, regardless of their abilities. 
+While accessibility has been considered and ‘baked in’ to the Design System wherever possible, the following accessibility guidelines ensure that our products are usable and inclusive for all users, regardless of their abilities. 
 
 These guidelines lay out how we approach design with accessibility as a priority at Energy Saving Trust. 
 
