@@ -1630,7 +1630,7 @@ $breadcrumb-item-margin-x:          0.76rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          #1F201F !default;
-$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-active-color:           $gray-700 !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
@@ -1648,6 +1648,11 @@ $hint-body-bg-color:                $deepblue-50 !default;
 $hint-link-active-bg-color:         $hint-body-bg-color !default;  
 // scss-docs-end hint-variables
 
+// Search
+$search-input-text-color:           #1F201F !default;
+$search-input-placeholder-color:    $grey-700;
+$search-button-icon:                url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22' fill='%23{$carousel-control-color}'><path d='M15.912 14.0755C17.1828 12.3411 17.752 10.1907 17.5057 8.05461C17.2594 5.9185 16.2157 3.95418 14.5835 2.55464C12.9512 1.15509 10.8508 0.42354 8.70247 0.506332C6.5541 0.589124 4.51621 1.48016 2.9965 3.00117C1.47679 4.52218 0.587341 6.56099 0.506098 8.70972C0.424855 10.8585 1.15781 12.9586 2.55832 14.5901C3.95884 16.2215 5.92363 17.264 8.05961 17.5088C10.1956 17.7536 12.3452 17.1828 14.0785 15.9105H14.0772C14.1165 15.963 14.1585 16.0129 14.2058 16.0615L19.2587 21.1151C19.5048 21.3614 19.8387 21.4999 20.1868 21.5C20.535 21.5001 20.8689 21.3619 21.1152 21.1158C21.3615 20.8697 21.4999 20.5358 21.5 20.1876C21.5001 19.8394 21.3619 19.5054 21.1158 19.2591L16.0629 14.2054C16.016 14.1579 15.9655 14.1153 15.912 14.0755ZM16.2506 9.0297C16.2506 9.97778 16.0639 10.9166 15.7011 11.7925C15.3384 12.6684 14.8066 13.4643 14.1363 14.1347C13.466 14.805 12.6703 15.3368 11.7945 15.6996C10.9187 16.0625 9.98005 16.2492 9.03211 16.2492C8.08416 16.2492 7.1455 16.0625 6.26972 15.6996C5.39393 15.3368 4.59817 14.805 3.92787 14.1347C3.25757 13.4643 2.72587 12.6684 2.3631 11.7925C2.00034 10.9166 1.81363 9.97778 1.81363 9.0297C1.81363 7.11497 2.57415 5.27866 3.92787 3.92474C5.2816 2.57083 7.11765 1.8102 9.03211 1.8102C10.9466 1.8102 12.7826 2.57083 14.1363 3.92474C15.4901 5.27866 16.2506 7.11497 16.2506 9.0297Z' fill='%23{$carousel-control-color}'/></svg>") !default;
+$search-sidebar-button-border:      #E9EBED !default;
 
 // Carousel
 
