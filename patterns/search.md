@@ -24,3 +24,21 @@ Search documentation goes here.
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
+
+## Large search
+
+{% capture code_render %}
+<div class="large-search-wrap col-10">
+  <form action="/search" method="get" class="large-search-container est-search-container">
+    <label for="search-input" class="visually-hidden">Search:</label>
+    <input type="search" id="large-search-input" name="query" class="search-input" placeholder="Search" aria-label="Search" oninput="showSuggestions()">
+    <button type="button" class="clear-search" aria-label="Clear search" onclick="document.getElementById('large-search-input').value = '';">
+      &#x2715;
+    </button>
+    <button type="submit" class="search-button" aria-label="Submit search"></button>
+  </form>
+  <div id="suggestions-container" class="suggestions-container" style="display:none;"></div>
+</div>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render %}

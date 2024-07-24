@@ -46,3 +46,47 @@
     background-position: center;
   }
 }
+
+.large-search-wrap {
+  .large-search-container {
+    .search-button {
+      border-left: none;
+    }
+    input {
+      padding: 22px 100px 22px 60px;
+      font-size: 1rem;
+    }
+  }
+  .suggestions-container {
+    margin-top: 20px;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    ul {
+      li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &:before {
+          display: none;
+        }
+        ~ li {
+          margin-top: 10px;
+        }
+        button {
+          display: block;
+          width: 100%;
+          padding: 21px 21px 21px 60px;
+          transition: all 0.3 ease;
+          background-color: transparent;
+          border: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: $search-input-text-color;
+          text-align: left;
+          &:hover {
+            background-color: $deepblue-50;
+          }
+        }
+      }
+    }
+  }
+}
