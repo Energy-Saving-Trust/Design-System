@@ -12,13 +12,13 @@ class DatePickerDialog {
     this.buttonLabelChoose = 'Choose Date';
     this.buttonLabelChange = 'Change Date';
     this.dayLabels = [
-      'Sunday',
       'Monday',
       'Tuesday',
       'Wednesday',
       'Thursday',
       'Friday',
       'Saturday',
+      'Sunday',
     ];
     this.monthLabels = [
       'January',
@@ -38,7 +38,7 @@ class DatePickerDialog {
     this.messageCursorKeys = 'You can use the cursor keys to select a date';
     this.lastMessage = '';
 
-    this.textboxNode = cdp.querySelector('input[type="text"');
+    this.textboxNode = cdp.querySelector('input[type="text"]');
     this.buttonNode = cdp.querySelector('.group button');
     this.dialogNode = cdp.querySelector('[role="dialog"]');
     this.messageNode = this.dialogNode.querySelector('.dialog-message');
@@ -319,7 +319,7 @@ class DatePickerDialog {
 
     const daysInMonth = getDays(newDate.getFullYear(), newDate.getMonth() + 1);
 
-    // If lastDat is not initialized set to current date
+    // If lastDate is not initialized set to current date
     this.lastDate = this.lastDate ? this.lastDate : currentDate.getDate();
 
     if (this.lastDate > daysInMonth) {
@@ -420,20 +420,20 @@ class DatePickerDialog {
     }
 
     this.textboxNode.value =
-      d.getMonth() + 1 + '/' + d.getDate() + '/' + d.getFullYear();
+      d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
     this.setDateForButtonLabel();
   }
 
   getDateFromTextbox() {
     const parts = this.textboxNode.value.split('/');
-    const month = parseInt(parts[0]);
-    const day = parseInt(parts[1]);
+    const day = parseInt(parts[0]);
+    const month = parseInt(parts[1]);
     let year = parseInt(parts[2]);
 
     if (
       parts.length === 3 &&
-      Number.isInteger(month) &&
       Number.isInteger(day) &&
+      Number.isInteger(month) &&
       Number.isInteger(year)
     ) {
       if (year < 100) {
@@ -442,7 +442,7 @@ class DatePickerDialog {
       this.focusDay = new Date(year, month - 1, day);
       this.selectedDay = new Date(this.focusDay);
     } else {
-      // If not a valid date (MM/DD/YY) initialize with todays date
+      // If not a valid date (DD/MM/YY) initialize with today's date
       this.focusDay = new Date();
       this.selectedDay = new Date(0, 0, 1);
     }
@@ -459,8 +459,8 @@ class DatePickerDialog {
     ) {
       const day = new Date(
         parseInt(parts[2]),
-        parseInt(parts[0]) - 1,
-        parseInt(parts[1])
+        parseInt(parts[1]) - 1,
+        parseInt(parts[0])
       );
 
       let label = this.buttonLabelChange;
