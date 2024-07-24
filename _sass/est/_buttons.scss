@@ -103,6 +103,9 @@
     opacity: var(--#{$prefix}btn-disabled-opacity);
     @include box-shadow(none);
   }
+  & + .btn {
+    margin-left: $btn-spacing;
+  }
 }
 
 
