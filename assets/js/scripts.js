@@ -24,7 +24,7 @@
             var fieldLabel = '';
             // Find the label text
             if (field.labels && field.labels.length > 0) {
-              fieldLabel = field.labels[0].innerText;
+              fieldLabel = field.labels[0].innerText.replace('(required)', '').trim();
             } else {
               fieldLabel = field.getAttribute('aria-label') || field.name || 'Field';
             }
