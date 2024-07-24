@@ -20,16 +20,16 @@ Validation documentation goes here.
   <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/></svg>Please review the following errors</div>
   <div id="errorList" class="error-list"></div>
   </div>
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">First name</label>
+  <div class="col-md-12">
+    <label for="validationCustom01" class="form-label">First name (required)</label>
     <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
   </div>
-  <div class="col-md-6">
-    <label for="validationCustom02" class="form-label">Last name</label>
+  <div class="col-md-12">
+    <label for="validationCustom02" class="form-label">Last name (required)</label>
     <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
   </div>
   <div class="col-12">
-    <label for="validationCustom03" class="form-label">City</label>
+    <label for="validationCustom03" class="form-label">City (required)</label>
     <input type="text" class="form-control" id="validationCustom03" required>
     <div class="invalid-feedback">
       Please provide a valid city.
