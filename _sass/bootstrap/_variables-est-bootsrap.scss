@@ -1560,15 +1560,22 @@ $alert-icon-gap:                0.5rem !default;
 // Progress bars
 
 // scss-docs-start progress-variables
-$progress-height:                   1rem !default;
-$progress-font-size:                $font-size-base * .75 !default;
+$progress-height:                   1.18rem !default;
+$progress-reading-height:           0.47rem !default;
+$progress-font-size:                0.82rem !default;
 $progress-bg:                       $gray-200 !default;
-$progress-border-radius:            $border-radius !default;
+$progress-step-empty-bg:            $gray-200 !default;
+$progress-border-radius:            3px !default;
+$progress-reading-border-radius:    0px !default;
+$progress-step-border-radius:       1px !default;
 $progress-box-shadow:               $box-shadow-inset !default;
 $progress-bar-color:                $white !default;
-$progress-bar-bg:                   $primary !default;
+$progress-bar-bg:                   $grey-800 !default;
+$progress-steps-bg:                 transparent !default;
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
+$progress-step-label-margin-top:    17px !default;
+$progress-step-label-margin-left:   3px !default;
 // scss-docs-end progress-variables
 
 
