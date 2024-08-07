@@ -45,6 +45,10 @@
   border-top: ($table-border-width * 2) solid $table-group-separator-color;
 }
 
+th {
+  font-weight: 600;
+}
+
 //
 // Change placement of captions with a class
 //
