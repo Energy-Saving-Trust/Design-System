@@ -27,9 +27,7 @@
   position: relative;
   margin-right: var(--#{$prefix}breadcrumb-item-margin-x);
   font-size: $breadcrumb-font-size;
-  a {
-    text-decoration: none;
-  }
+  
   + .breadcrumb-item {
     padding-left: var(--#{$prefix}breadcrumb-item-padding-x);
 
