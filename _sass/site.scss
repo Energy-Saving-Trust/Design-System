@@ -34,7 +34,7 @@
 @import "bootstrap/mixins/pagination";
 @import "bootstrap/mixins/lists";
 @import "bootstrap/mixins/list-group";
-@import "bootstrap/mixins/forms";
+@import "est/mixins/forms";
 @import "bootstrap/mixins/table-variants";
 
 // Skins
@@ -52,7 +52,7 @@
 
 // Layout & components
 @import "bootstrap/root";
-@import "bootstrap/reboot";
+@import "est/reboot";
 @import "est/type";
 @import "bootstrap/icons";
 @import "bootstrap/images";
@@ -68,7 +68,7 @@
 @import "est/forms/form-text";
 @import "bootstrap/forms/input-group";
 @import "est/forms/labels";
-@import "bootstrap/forms/validation";
+@import "est/forms/validation";
 
 
 @import "est/buttons";
@@ -80,12 +80,12 @@
 @import "bootstrap/card";
 @import "est/accordion";
 @import "est/breadcrumb";
-@import "bootstrap/pagination";
+@import "est/pagination";
 @import "bootstrap/badge";
 @import "est/alert";
 @import "bootstrap/progress";
 @import "bootstrap/list-group";
-@import "bootstrap/close";
+@import "est/close";
 @import "bootstrap/toasts";
 @import "bootstrap/modal";
 @import "bootstrap/tooltip";
@@ -95,7 +95,15 @@
 @import "bootstrap/offcanvas";
 @import "bootstrap/placeholders";
 @import "est/back-to-top";
+@import "est/quote";
 @import "est/hint";
+@import "est/metrics";
+@import "est/datepicker";
+@import "est/card";
+@import "est/focus-states";
+@import "est/search";
+@import "est/progress";
+@import "est/tables";
 
 // Helpers
 @import "bootstrap/helpers";

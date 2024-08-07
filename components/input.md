@@ -19,7 +19,7 @@ Input documentation goes here.
 </div>
 
 <div>
-  <label for="exampleFormControlInput2" class="form-label">Email address<span>*</span></label>
+  <label for="exampleFormControlInput2" class="form-label">Email address (required)</label>
   <div id="passwordHelpBlock" class="form-text">
     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
   </div>

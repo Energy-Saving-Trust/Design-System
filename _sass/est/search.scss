@@ -1,0 +1,92 @@
+.est-search-container {
+  position: relative;
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  /* Remove the clear button (x) in Firefox */
+  input[type="search"]::-moz-search-cancel-button {
+    -moz-appearance: none;
+    appearance: none;
+  }
+  input {
+    width: 100%;
+    padding: 22px 100px 22px 22px;
+    border-radius: $border-radius;
+    font-size: 0.82rem;
+    border: 1px solid $grey-800;
+    color: $search-input-text-color;
+    &::placeholder {
+      color: $search-input-placeholder-color;
+    }
+  }
+  .clear-search {
+    position: absolute;
+    right: 60px;
+    top: 14px;
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+  }
+  .search-button {
+    height: calc(100% - 2px);
+    position: absolute;
+    right: 0;
+    top: 1px;
+    padding: 0 29px;
+    border: none;
+    border-left: 1px solid $search-sidebar-button-border;
+    background-image: $search-button-icon;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+  }
+}
+
+.large-search-wrap {
+  .large-search-container {
+    .search-button {
+      border-left: none;
+    }
+    input {
+      padding: 22px 100px 22px 60px;
+      font-size: 1rem;
+    }
+  }
+  .suggestions-container {
+    margin-top: 20px;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    ul {
+      li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &:before {
+          display: none;
+        }
+        ~ li {
+          margin-top: 10px;
+        }
+        button {
+          display: block;
+          width: 100%;
+          padding: 21px 21px 21px 60px;
+          transition: all 0.3 ease;
+          background-color: transparent;
+          border: none;
+          font-size: 1rem;
+          font-weight: 400;
+          color: $search-input-text-color;
+          text-align: left;
+          &:hover {
+            background-color: $deepblue-50;
+          }
+        }
+      }
+    }
+  }
+}

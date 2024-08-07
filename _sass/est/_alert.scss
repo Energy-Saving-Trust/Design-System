@@ -42,6 +42,10 @@
     right: 0;
     z-index: $stretched-link-z-index + 1;
     padding: $alert-padding-y $alert-padding-x;
+    &:focus {
+      outline: 1px solid transparent;
+      box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
+    }
   }
 }
 

@@ -27,9 +27,7 @@
   position: relative;
   margin-right: var(--#{$prefix}breadcrumb-item-margin-x);
   font-size: $breadcrumb-font-size;
-  a {
-    text-decoration: none;
-  }
+  
   + .breadcrumb-item {
     padding-left: var(--#{$prefix}breadcrumb-item-padding-x);
 
@@ -41,9 +39,15 @@
       transform: translateY(-50%);
       width: 0;
       height: 0;
-      border-top: 4px solid transparent;
-      border-bottom: 4px solid transparent;
-      border-left: 4px solid $breadcrumb-divider-color;
+      border-top: $breadcrumb-divider-size solid transparent;
+      border-bottom: $breadcrumb-divider-size solid transparent;
+      border-left: $breadcrumb-divider-size solid $breadcrumb-divider-color;
+    }
+  }
+
+  &:hover {
+    a {
+      color: var(--#{$prefix}breadcrumb-item-active-color);
     }
   }
 
