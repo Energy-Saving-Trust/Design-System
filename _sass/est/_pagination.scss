@@ -1,0 +1,122 @@
+.pagination {
+  // scss-docs-start pagination-css-vars
+  --#{$prefix}pagination-padding-x: #{$pagination-padding-x};
+  --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
+  @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
+  --#{$prefix}pagination-color: #{$pagination-color};
+  --#{$prefix}pagination-bg: #{$pagination-bg};
+  --#{$prefix}pagination-border-width: #{$pagination-border-width};
+  --#{$prefix}pagination-border-color: #{$pagination-border-color};
+  --#{$prefix}pagination-border-radius: #{$pagination-border-radius};
+  --#{$prefix}pagination-hover-color: #{$pagination-hover-color};
+  --#{$prefix}pagination-hover-bg: #{$pagination-hover-bg};
+  --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
+  --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
+  --#{$prefix}pagination-focus-box-shadow: #{$pagination-focus-box-shadow};
+  --#{$prefix}pagination-active-color: #{$pagination-active-color};
+  --#{$prefix}pagination-active-bg: #{$pagination-active-bg};
+  --#{$prefix}pagination-active-border-color: #{$pagination-active-border-color};
+  --#{$prefix}pagination-disabled-color: #{$pagination-disabled-color};
+  --#{$prefix}pagination-disabled-bg: #{$pagination-disabled-bg};
+  --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
+  --#{$prefix}pagination-previous-icon: #{escape-svg($pagination-previous-icon)};
+  // scss-docs-end pagination-css-vars
+
+  display: flex;
+  @include list-unstyled();
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
+  @include font-size(var(--#{$prefix}pagination-font-size));
+  color: var(--#{$prefix}pagination-color);
+  text-decoration: if($link-decoration == none, null, none);
+  background-color: var(--#{$prefix}pagination-bg);
+  @include transition($pagination-transition);
+
+  &:hover {
+    z-index: 2;
+    color: var(--#{$prefix}pagination-hover-color);
+    text-decoration: if($link-hover-decoration == underline, none, null);
+    background-color: var(--#{$prefix}pagination-hover-bg);
+  }
+
+  &:focus {
+    z-index: 3;
+    color: var(--#{$prefix}pagination-focus-color);
+    background-color: var(--#{$prefix}pagination-focus-bg);
+    outline: $pagination-focus-outline;
+    box-shadow: var(--#{$prefix}pagination-focus-box-shadow);
+  }
+
+  &.active,
+  .active > & {
+    z-index: 3;
+    color: var(--#{$prefix}pagination-active-color);
+    @include gradient-bg(var(--#{$prefix}pagination-active-bg));
+  }
+
+  &.disabled,
+  .disabled > & {
+    color: var(--#{$prefix}pagination-disabled-color);
+    pointer-events: none;
+    background-color: var(--#{$prefix}pagination-disabled-bg);
+  }
+}
+
+.page-item {
+  .page-link {
+    @include border-radius(var(--#{$prefix}pagination-border-radius));
+  }
+  &:first-child {
+    .page-link {
+      display: flex;
+      align-items: center;
+      &::before {
+        flex-shrink: 0;
+        width: 10px;
+        height: 17px;
+        margin-right: 12.5px;
+        content: "";
+        background-image: var(--#{$prefix}pagination-previous-icon);
+        background-repeat: no-repeat;
+        background-size: 10px;
+      }
+    }
+  }
+  &:last-child {
+    .page-link {
+      display: flex;
+      align-items: center;
+      &::after {
+        flex-shrink: 0;
+        width: 10px;
+        height: 17px;
+        margin-left: 12.5px;
+        content: "";
+        background-image: var(--#{$prefix}pagination-previous-icon);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        transform: scaleX(-1);
+      }
+    }
+  }
+  &:not(:first-child) .page-link {
+    margin-left: $pagination-margin-start;
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $pagination-border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $pagination-border-radius-sm);
+}

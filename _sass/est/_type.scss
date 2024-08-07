@@ -182,3 +182,20 @@ ul.list-square li:before {
     height: 0.73rem;
   }
 }
+
+.contents-table {
+  .h5 {
+    margin-bottom: 1em;
+  }
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: $deepblue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
