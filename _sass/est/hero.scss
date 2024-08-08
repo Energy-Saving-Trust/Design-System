@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-gap: 0;
+  min-height: 50vh;
+  margin: 0;
+}
+
+.hero-left {
+  padding: 20vh 40px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &.honeyyellow {
+    background-color: $honeyyellow;
+  }
+  &.deepblue {
+    background-color: $deepblue;
+  }
+  &.grassygreen {
+    background-color: $grassygreen;
+  }
+}
+
+.hero-left .group {
+  position: relative;
+  display: block;
+  width: 94%;
+  margin-left: calc((100vw - 1323px) / 2);
+}
+
+.hero-left .group .description {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.hero-left .group h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.hero-right {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
