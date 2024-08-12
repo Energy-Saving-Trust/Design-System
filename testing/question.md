@@ -10,7 +10,7 @@ section: testing
   }
 </style>
 
-<div id="progress-bar" class="progress progress-steps">
+<div id="progress-bar" class="progress progress-steps mb-5">
   <div class="progress-steps-grid">
     <div class="progress-step">
       <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -46,7 +46,7 @@ section: testing
 </div>
 
 <fieldset id="automatic-address">
-  <legend><h2 class="h4 mb-2">What is your primary address?</h2></legend>
+  <legend><h2 class="h4 mb-2 mt-3">What is your primary address?</h2></legend>
   <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Help me answer this question
   </a>
@@ -55,7 +55,7 @@ section: testing
       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
     </div>
   </div>
-  <div class="mb-4">
+  <div class="mb-4 mt-4">
     <label for="address_2" class="form-label">House number or name (optional)</label>
     <div class="form-text">Example: Unit 7, The Lodge</div>
     <input type="text" class="form-control" id="address_2">
@@ -66,7 +66,7 @@ section: testing
   Please leave a space between the two parts of the postcode.</div>
     <input required type="text" class="form-control" id="postcode">
   </div>
-  <a href="#manual-entry">Enter my address manually</a>
+  <a style="color:#15487A" href="#manual-entry">Enter my address manually</a>
 </fieldset>
 
 <fieldset id="address-found" class="hidden">
@@ -91,7 +91,7 @@ section: testing
       </label>
     </div>
   </div>
-  <a href="#manual-entry">Enter my address manually</a>
+  <a style="color:#15487A" href="#manual-entry">Enter my address manually</a>
 </fieldset>
 
 <fieldset id="manual-address" class="hidden">
@@ -126,17 +126,17 @@ section: testing
   Please leave a space between the two parts of the postcode.</div>
     <input type="text" class="form-control" id="postcode">
   </div>
-  <p>Skip manual entry. <a href="#automatic-entry">Find my address</a></p>
+  <p>Skip manual entry. <a style="color:#15487A" href="#automatic-entry">Find my address</a></p>
 </fieldset>
 
-<div id="address-buttons" class="d-flex justify-content-between">
+<div id="address-buttons" class="d-flex justify-content-between mt-5">
   <button type="button" class="btn btn-secondary">Back</button>
   <button type="button" class="btn btn-primary">Next</button>
 </div>
 
-<div class="hidden" id="completed">
-  <h2>Task successfully completed</h2>
-  <button type="button" class="btn btn-primary">Next task</button>
+<div style="display: flex;flex-direction: column;justify-content: center;align-items: center;" class="hidden mt-5" id="completed">
+  <h2 style="text-align: center">Task successfully completed</h2>
+  <button type="button" class="btn btn-primary mt-4">Next task</button>
 </div>
 
 <script>
