@@ -4,21 +4,21 @@ layout: content
 section: testing
 ---
 
-<div class="contents-table">
+<div class="contents-table mt-5 mb-5">
   <h2 class="h5">On this page</h2>
   <ul>
     <li><a href="#funding">Funding by country</a></li>
     <li><a href="#heat-pumps">Reading around heat pumps</a></li>
-    <li><a href="">Related articles</a></li>
-    <li><a href="">Costs and savings</a></li>
-    <li><a href="">Is cavity wall insulation right for your home?</a></li>
+    <li><a href="#related">Related articles</a></li>
+    <li><a href="#costs">Costs and savings</a></li>
+    <li><a href="#cavity">Is cavity wall insulation right for your home?</a></li>
   </ul>
 </div>
 
-<p>You could get financial help to improve your home’s energy efficiency so that keeping warm costs you less.
+<p class="mb-5">You could get financial help to improve your home’s energy efficiency so that keeping warm costs you less.
 Select where you live from the drop-down menus to see what support is available.</p>
 
-<div class="accordion accordion-flush" id="funding">
+<div class="accordion accordion-flush mb-5" id="funding">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -89,7 +89,7 @@ Select where you live from the drop-down menus to see what support is available.
 
 <h2 id="heat-pumps">Financial support</h2>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary mb-5 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
   I need some advice
 </button>
 
@@ -114,29 +114,29 @@ Select where you live from the drop-down menus to see what support is available.
   </div>
 </div>
 
-<h3>Winter Fuel Payment</h3>
+<h3 class="h5 mb-4">Winter Fuel Payment</h3>
 
 <p>If you were born before 25 September 1957, you should be eligible for the <a href="">Winter Fuel Payment</a>. Your age and other factors affect how much you’ll get, but it should be between £250 and £600. These amounts also include the <a href="">Pensioner Cost of Living Payment</a>, which is between £150 and £300. This payment is to give you extra help with your energy bills during the winter.</p>
 
-<h4>Cold Weather Payment for England, Wales and Northern Ireland</h4>
+<h4 class="h6 mt-4">Cold Weather Payment for England, Wales and Northern Ireland</h4>
 <p>To help with the coldest periods for households in England, Wales and Northern Ireland, there’s also the <a href="">Cold Weather Payment.</a></p>
 
 <p>This is a £25 payment to help with bills for each seven-day period of sub-zero conditions.
 You qualify for this payment if you’re receiving certain benefits and live in England, Wales or Northern Ireland.
 The scheme reopens for applications on 1 November 2023 for winter 2023/2024.</p>
 
-<h4>Winter Heating Payment for Scotland</h4>
+<h4 class="h6 mt-4">Winter Heating Payment for Scotland</h4>
 <p>If you live in Scotland and are on a low income, you’ll get a £50 <a href="">Winter Heating Payment</a> each year to help towards heating costs, whatever the weather.</p>
 
-<h4>Warm Home Discount for England, Scotland and Wales</h4>
+<h4 class="h6 mt-4">Warm Home Discount for England, Scotland and Wales</h4>
 <p>If you live in Great Britain (excluding Northern Ireland) you might be eligible for the the <a href="">Warm Home Discount</a>.
 This is another winter-only payment of £140 towards energy bills for those who claim the Guarantee Credit element of Pension Credit or are on a low income.</p>
 <p>The scheme is open between October 2023 and March 2024. You need to apply via your electricity supplier but they need to be part of the scheme. Here’s a <a href="">list of suppliers who take part</a>.</p>
 
-<h4>Financial support for renewable technology</h4>
+<h4 class="h6 mt-4">Financial support for renewable technology</h4>
 <p>If you want to go even further and install renewable energy technology in your home, read our guide to <a href="">financial support for renewable technology</a>.</p>
 
-<div class="d-flex flex-wrap justify-content-between" style="gap: 40px;">
+<div id="related" class="d-flex flex-wrap justify-content-between mt-5" style="gap: 40px;">
   <div class="card card-button card-borderless" style="flex: 1 1 calc(50% - 1.5rem);">
   <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
     <div class="card-body">
@@ -157,7 +157,7 @@ This is another winter-only payment of £140 towards energy bills for those who 
   </div>
 </div>
 
-<div class="d-flex flex-wrap justify-content-between" style="gap: 20px;">
+<div id="costs" class="d-flex flex-wrap justify-content-between mt-5" style="gap: 20px;">
   <div class="card card-simple-article" style="flex: 1 1 calc(33% - 40px);">
     <div class="card-body">
       <a class="card-title-link" href="#"><h5 class="card-title">Renewable energy</h5></a>
@@ -181,7 +181,7 @@ This is another winter-only payment of £140 towards energy bills for those who 
   </div>
 </div>
 
-<div class="d-flex flex-wrap justify-content-between" style="gap: 20px;">
+<div id="cavity" class="d-flex flex-wrap justify-content-between mt-5" style="gap: 20px;">
   <a href="#" class="card card-article" style="flex: 1 1 calc(33% - 40px);">
     <div class="card-body">
       <h5 class="card-title">Policy briefing: accelerating retrofit through advice and information</h5>

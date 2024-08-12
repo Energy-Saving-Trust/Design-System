@@ -15,6 +15,10 @@
     float: left;
     margin-left: $form-check-padding-start * -1;
   }
+
+  label {
+    max-width: 350px;
+  }
 }
 
 .form-check-reverse {
