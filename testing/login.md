@@ -11,7 +11,7 @@ section: testing
 </style>
 
 <div id="login-wrap">
-  <h2>Log in</h2>
+  <h2 class="mt-5 mb-4">Log in</h2>
   <div class="mb-4">
     <label for="email" class="form-label">Email address<span>*</span></label>
     <div class="form-text">example@gmail.com</div>
@@ -31,11 +31,11 @@ section: testing
   <div class="mb-4">
     <button type="button" class="btn btn-primary">Login</button>
   </div>
-  <p>No account? <button onclick="showCreateAccount()">Create an account</button></p>
+  <p>No account? <button style="padding: 0;border: 0;background: transparent;text-decoration: underline;color: #15487A;" onclick="showCreateAccount()">Create an account</button></p>
 </div>
 
 <div id="create-account-wrap" class="hidden">
-  <h2>Create an account</h2>
+  <h2 class="mt-5 mb-4">Create an account</h2>
   <div class="mb-4">
     <label for="name" class="form-label">Full name</label>
     <input type="text" class="form-control" id="name">
@@ -73,7 +73,7 @@ section: testing
     <button type="button" class="btn btn-primary">Create account</button>
   </div>
 
-  <p>Have an account? <button onclick="showLogin()">Log in</button></p>
+  <p>Have an account? <button style="padding: 0;border: 0;background: transparent;text-decoration: underline;color: #15487A;" onclick="showLogin()">Log in</button></p>
 </div>
 
 
