@@ -78,13 +78,13 @@ section: testing
 
 
 <script>
-    function showCreateAccount() {
-      document.getElementById('login-wrap').classList.add('hidden');
-      document.getElementById('create-account-wrap').classList.remove('hidden');
-    }
+  function showCreateAccount() {
+    document.getElementById('login-wrap').classList.add('hidden');
+    document.getElementById('create-account-wrap').classList.remove('hidden');
+  }
 
-    function showLogin() {
-      document.getElementById('create-account-wrap').classList.add('hidden');
-      document.getElementById('login-wrap').classList.remove('hidden');
-    }
-  </script>
+  function showLogin() {
+    document.getElementById('create-account-wrap').classList.add('hidden');
+    document.getElementById('login-wrap').classList.remove('hidden');
+  }
+</script>
