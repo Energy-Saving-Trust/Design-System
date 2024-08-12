@@ -135,3 +135,74 @@ This is another winter-only payment of £140 towards energy bills for those who 
 
 <h4>Financial support for renewable technology</h4>
 <p>If you want to go even further and install renewable energy technology in your home, read our guide to <a href="">financial support for renewable technology</a>.</p>
+
+<div class="d-flex flex-wrap justify-content-between" style="gap: 40px;">
+  <div class="card card-button card-borderless" style="flex: 1 1 calc(50% - 1.5rem);">
+  <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>
+      <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+      <a href="#" class="btn btn-secondary">Button</a>
+    </div>
+  </div>
+  <div class="card card-button card-borderless" style="flex: 1 1 calc(50% - 40px);">
+  <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
+    <div class="card-body">
+      <h5 class="card-title">How you can heat your home</h5>
+      <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+      <a href="#" class="btn btn-secondary">Button</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-wrap justify-content-between" style="gap: 20px;">
+  <div class="card card-simple-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <a class="card-title-link" href="#"><h5 class="card-title">Renewable energy</h5></a>
+      <h6 class="card-subtitle mb-3 text-muted">17 May 2024</h6>
+      <p class="card-text">Our response to the July 2024 energy price cap announcement, with commentary from Energy Saving Trust chief executive Mike Thornton.</p>
+    </div>
+  </div>
+  <div class="card card-simple-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <a class="card-title-link" href="#"><h5 class="card-title">Renewables how to install</h5></a>
+      <h6 class="card-subtitle mb-3 text-muted">17 May 2024</h6>
+      <p class="card-text">Our response to the July 2024 energy price cap announcement, with commentary from Energy Saving Trust chief executive Mike Thornton.</p>
+    </div>
+  </div>
+  <div class="card card-simple-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <a class="card-title-link" href="#"><h5 class="card-title">Renewable energy funding</h5></a>
+      <h6 class="card-subtitle mb-3 text-muted">17 May 2024</h6>
+      <p class="card-text">Our response to the July 2024 energy price cap announcement, with commentary from Energy Saving Trust chief executive Mike Thornton.</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-wrap justify-content-between" style="gap: 20px;">
+  <a href="#" class="card card-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <h5 class="card-title">Policy briefing: accelerating retrofit through advice and information</h5>
+      <h6 class="card-subtitle">17 May 2024</h6>
+      <p class="card-text">In November 2023, Energy Saving Trust convened a group of retrofit policy experts. The aim was to consider how effective provision of…</p>
+    </div>
+  </a>
+  <a href="#" class="card card-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <h5 class="card-title">Policy briefing: accelerating retrofit through advice and information</h5>
+      <h6 class="card-subtitle">17 May 2024</h6>
+      <p class="card-text">In November 2023, Energy Saving Trust convened a group of retrofit policy experts. The aim was to consider how effective provision of…</p>
+    </div>
+  </a>
+  <a href="#" class="card card-article" style="flex: 1 1 calc(33% - 40px);">
+    <div class="card-body">
+      <h5 class="card-title">Policy briefing: accelerating retrofit through advice and information</h5>
+      <h6 class="card-subtitle">17 May 2024</h6>
+      <p class="card-text">In November 2023, Energy Saving Trust convened a group of retrofit policy experts. The aim was to consider how effective provision of…</p>
+    </div>
+  </a>
+</div>
+
+<a href="#" class="back-to-top fixed">Back to top</a>

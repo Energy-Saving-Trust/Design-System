@@ -35,6 +35,13 @@
   @include border-radius(var(--#{$prefix}btt-border-radius));
   @include transition($btn-transition);
 
+  &.fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+  }
+
   &:hover {
     background-color: var(--#{$prefix}btt-hover-bg);
     border-color: var(--#{$prefix}btt-hover-bg);
