@@ -1,8 +1,12 @@
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+<div class="container border-bottom mb-4 py-3">
+  <header class="d-flex flex-wrap justify-content-center py-3">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <span class="fs-4">Design System</span>
     </a>
     {% include ds-primary-navigation.html %}
   </header>
+  <div style="display: none" id="test-nav" class="justify-content-between">
+    <a id="test-back" type="button" class="btn btn-secondary">Back</a>
+    <a id="test-next" type="button" class="btn btn-primary">Next</a>
+  </div>
 </div>

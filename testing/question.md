@@ -130,8 +130,8 @@ section: testing
 </fieldset>
 
 <div id="address-buttons" class="d-flex justify-content-between mt-5">
-  <button type="button" class="btn btn-secondary">Back</button>
-  <button type="button" class="btn btn-primary">Next</button>
+  <button id="address-back" type="button" class="btn btn-secondary">Back</button>
+  <button id="address-next" type="button" class="btn btn-primary">Next</button>
 </div>
 
 <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;" class="hidden mt-5" id="completed">
@@ -140,6 +140,12 @@ section: testing
 </div>
 
 <script>
+document.querySelector('.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0').style.display = 'none';
+document.getElementById('test-nav').style.display = 'flex';
+document.getElementById('test-back').href = '/testing/search.html';
+// document.getElementById('test-next').href = '/testing/question.html';
+document.getElementById('sidebar').style.display = 'none';
+
 document.addEventListener("DOMContentLoaded", function() {
   const steps = {
     'automatic-address': {
@@ -162,8 +168,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let currentStep = 'automatic-address';
 
-  const backButton = document.querySelector(".btn-secondary");
-  const nextButton = document.querySelector(".btn-primary");
+  const backButton = document.getElementById("address-back");
+  const nextButton = document.getElementById("address-next");
   const progressBar = document.querySelector("#progress-bar");
   const addressButtons = document.querySelector("#address-buttons");
 
