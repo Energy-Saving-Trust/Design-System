@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Hide progress bar and address buttons when #completed is shown
     if (currentStep === 'completed') {
       if (progressBar) progressBar.style.display = 'none';
       if (addressButtons) addressButtons.classList.add('hidden');
@@ -203,29 +202,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Show manual entry form
   document.querySelector("a[href='#manual-entry']").addEventListener('click', function(event) {
     event.preventDefault();
     showManualEntry();
   });
 
-  // Show automatic address entry form
   document.querySelector("a[href='#automatic-entry']").addEventListener('click', function(event) {
     event.preventDefault();
     showAutomaticEntry();
   });
 
   function showManualEntry() {
-    currentStep = 'manual-address'; // Set currentStep to manual-address
+    currentStep = 'manual-address'; 
     showStep(currentStep);
   }
 
   function showAutomaticEntry() {
-    currentStep = 'automatic-address'; // Set currentStep to automatic-address
+    currentStep = 'automatic-address'; 
     showStep(currentStep);
   }
 
-  // Initialize the first step
   showStep(currentStep);
 });
 
