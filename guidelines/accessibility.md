@@ -47,11 +47,10 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 
 **Keyboard Accessibility**
 
-- Ensure that all functionality is accessible via keyboard. 
+- Ensure that all functionality is accessible via keyboard.
 - Use logical tab order and ensure interactive elements are focusable. 
 
 **Clickable components**
-
 - Ensure buttons and interactive elements are large enough to be easily clickable
 - Minimum size is 44 x 44 pixels.
   
