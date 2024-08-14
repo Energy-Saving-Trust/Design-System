@@ -10,7 +10,7 @@ At Energy Saving Trust, we make products that are usable by as many people as po
 
 While accessibility has been considered and ‘baked in’ to the Design System wherever possible, the following accessibility guidelines ensure that our products are usable and inclusive for all users, regardless of their abilities. These guidelines lay out how we approach design with accessibility as a priority at Energy Saving Trust. 
 
-**This means we create a simpler and perhaps less flashier design to priortise the varying needs of users.**
+**This means we create a simpler and perhaps less flashier design to priortise the needs of all users.**
 
 ### 1. Colour  
 - Use tools like the WCAG Contrast Checker to verify contrast ratios. 
@@ -72,11 +72,12 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 - Avoid using ARIA if native HTML elements can provide the same functionality. Poorly implemented ARIA will make your site less accessible, so it is better to leave it off when in doubt.   
 
 ## Accessibility testing  
-### 1. Automated Testing 
+
+### Automated Testing 
 - Use automated tools to regularly check for accessibility issues (e.g., axe, WAVE).
 
   
-### 2. Manual Testing 
+### Manual Testing 
 - Check new patterns and designs using the Accessibility Personas set up by Gov.UK
 - https://alphagov.github.io/accessibility-personas/
 - Conduct manual testing with screen readers and keyboard navigation. 
