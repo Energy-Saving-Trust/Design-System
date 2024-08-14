@@ -73,16 +73,6 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 
 ## Accessibility testing  
 
-### 7. Navigation and Structure 
-**Consistent Navigation** 
-- Ensure consistent navigation across the entire site or application. 
-- Provide multiple ways to navigate, such as search functionality and site maps.
-- Use headings (H1, H2, etc.) to organize content hierarchically. 
-- Use ARIA landmarks to define regions of a page (e.g., navigation, main content).
-
-**Skip Links** 
-- Provide skip links to allow users to bypass repetitive content.
-
 **Automated Testing**
 - Use automated tools to regularly check for accessibility issues (e.g., axe, WAVE).
 
