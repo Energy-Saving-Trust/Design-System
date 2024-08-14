@@ -46,29 +46,36 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 ### 6. Interactive Elements 
 
 **Keyboard Accessibility**
--    Ensure that all functionality is accessible via keyboard. 
+
+- Ensure that all functionality is accessible via keyboard. 
 - Use logical tab order and ensure interactive elements are focusable. 
 
 **Clickable components**
+
 - Ensure buttons and interactive elements are large enough to be easily clickable
 - Minimum size is 44 x 44 pixels.
   
 **Form Elements**
+
 - Provide clear and descriptive labels for all form fields. 
 - Use appropriate input types for form fields (e.g., email, phone number). 
 - Provide instructions and error messages to help users complete forms.
 
 ### 7. Navigation and Structure 
+
 **Consistent Navigation** 
+
 - Ensure consistent navigation across the entire site or application. 
 - Provide multiple ways to navigate, such as search functionality and site maps.
 - Use headings (H1, H2, etc.) to organize content hierarchically. 
 - Use ARIA landmarks to define regions of a page (e.g., navigation, main content).
 
 **Skip Links** 
+
 - Provide skip links to allow users to bypass repetitive content.
   
 **ARIA (Accessible Rich Internet Applications)** 
+
 - Avoid using ARIA if native HTML elements can provide the same functionality. Poorly implemented ARIA will make your site less accessible, so it is better to leave it off when in doubt.   
 
 ## Accessibility testing  
