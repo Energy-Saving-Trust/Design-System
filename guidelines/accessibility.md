@@ -13,7 +13,7 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 **This means we create a simpler and perhaps less flashier design to priortise the needs of all users.**
 
 ### 1. Colour  
-- Use tools like the WCAG Contrast Checker to verify contrast ratios. 
+- Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) to verify contrast ratios. 
 - Ensure a minimum contrast ratio of 4.5:1 for text against background. 
 - Use tools to check color contrast and make adjustments as necessary. 
 - Text and interactive elements (buttons, links, clickable icons) should have a contrast ratio of at least 4.5:1 against their background. 
@@ -74,7 +74,9 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 ## Accessibility testing  
 
 **Automated Testing**
-- Use automated tools to regularly check for accessibility issues (e.g., axe, WAVE).
+- Use automated tools to regularly check for accessibility issues
+- We recommend the use of [Axe](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) and [WAVE](https://wave.webaim.org/extension/)
+- List of [automated tools recommmended by DWP](https://accessibility-manual.dwp.gov.uk/tools-and-resources/automated-accessibility-testing)
 
 **Manual Testing** 
 - Check new patterns and designs using the Accessibility Personas set up by Gov.UK
