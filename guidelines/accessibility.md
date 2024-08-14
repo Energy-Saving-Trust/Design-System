@@ -72,13 +72,14 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 - Avoid using ARIA if native HTML elements can provide the same functionality. Poorly implemented ARIA will make your site less accessible, so it is better to leave it off when in doubt.   
 
 ## Accessibility testing  
-
 **Automated Testing**
+
 - Use automated tools to regularly check for accessibility issues
 - We recommend the use of [Axe](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) and [WAVE](https://wave.webaim.org/extension/)
 - List of [automated tools recommmended by DWP](https://accessibility-manual.dwp.gov.uk/tools-and-resources/automated-accessibility-testing)
 
 **Manual Testing** 
+
 - Check new patterns and designs using the Accessibility Personas set up by Gov.UK
 - https://alphagov.github.io/accessibility-personas/
 - Conduct manual testing with screen readers and keyboard navigation. 
@@ -86,6 +87,7 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 - For [agencies that conduct accessibility testing go here.](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/search?q=accessibility%20testing)
 
 ## Additional resources
+
 - [Top tips for product managers and designers](https://www.w3.org/WAI/tips/designing/)
 - [Top tips for developers](https://www.w3.org/WAI/tips/developing/)
 
