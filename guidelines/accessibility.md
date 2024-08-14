@@ -1,3 +1,9 @@
+---
+title: Accessibility
+layout: content
+section: guidelines
+---
+
 ## Introduction 
 
 At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is apriority for every product we create, and improves the experience for _all_ our users. 
