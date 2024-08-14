@@ -1,3 +1,9 @@
+---
+title: Colour
+layout: content
+section: guidelines
+---
+
 # Colour Guidelines
 The guidelines are based on the Brand Guidelines and meant to extend and reflect the guidance there for digital. 
 https://est.interactgo.com/page/6750?SearchId=462482
