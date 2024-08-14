@@ -73,11 +73,10 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 
 ## Accessibility testing  
 
-### Automated Testing 
+**Automated Testing**
 - Use automated tools to regularly check for accessibility issues (e.g., axe, WAVE).
 
-  
-### Manual Testing 
+**Manual Testing** 
 - Check new patterns and designs using the Accessibility Personas set up by Gov.UK
 - https://alphagov.github.io/accessibility-personas/
 - Conduct manual testing with screen readers and keyboard navigation. 
