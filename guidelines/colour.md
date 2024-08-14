@@ -17,7 +17,11 @@ As part of our commitment to accessibility, we never create a design that relies
 This means for graphs, diagrams, and notices, we always include text and iconography to accompany to indicate states like danger, success, or warning.
 
 ### Colours for messages
+![Status colours](https://user-images.githubusercontent.com/e9929b5a-3cf9-4411-8561-8eb71e08351f)
+
 ![Status colours](https://github.com/user-attachments/assets/e9929b5a-3cf9-4411-8561-8eb71e08351f)
+
+ 
 
 ## Default text colours
 ![Text colours](https://github.com/user-attachments/assets/c5490ad2-e30e-4f5b-a7cf-4657c86af3c6)
