@@ -6,11 +6,11 @@ section: guidelines
 
 ## Introduction to accessibility
 
-At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is apriority for every product we create, and improves the experience for _all_ our users. 
+At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is avpriority for every product we create, and improves the experience for _all_ our users. 
 
 While accessibility has been considered and ‘baked in’ to the Design System wherever possible, the following accessibility guidelines ensure that our products are usable and inclusive for all users, regardless of their abilities. These guidelines lay out how we approach design with accessibility as a priority at Energy Saving Trust. 
 
-**This means we create a simpler and perhaps less flashier design to priortise the needs of all users.**
+**This means we prioritise simpler and less flashy designs to priortise the needs of all users.**
 
 ### 1. Colour  
 - Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) to verify contrast ratios. 
