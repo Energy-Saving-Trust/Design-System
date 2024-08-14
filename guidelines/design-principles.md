@@ -1,3 +1,8 @@
+---
+title: Design Principles
+layout: content
+section: guidelines
+---
 # Design Principles
 
 ## Principles 
