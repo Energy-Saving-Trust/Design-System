@@ -10,12 +10,12 @@ Colour is an important tool to communicate and reinforce through aesthetics that
 
 ## How we use colour to enhance usability
 
-1. **We use colour intentionally.** Our default is to use neutral colours for web components and patterns. Occassionally we use our core colours (and their varying shades). This is because UI components and patterns need to work with a wide array of supporting colours, photography, and illustrations we use to communicate. Keeping to a limited palette ensures these designs will be effective in all these varying contexts.
+1. **We use colour intentionally.** We use neutral colours for web components and patterns. Occassionally we use our core colours (and their varying shades). This is because UI components and patterns need to work with a wide array of supporting colours, photography, and illustrations. Keeping to a limited palette ensures these designs will be effective in varying contexts.
 
 2. **We never use colours in isolation to convey meaning.** As part of our commitment to accessibility, we never create a design that relies solely on colour to communicate essential information. 
-This means for graphs, diagrams, and notices, we always include text and iconography to accompany to indicate states like danger, success, or warning.
+This means for graphs, diagrams, and notices, we always include text or iconography to indicate states (e.g. success, danger, caution).
 
-4. **We use colour consistently** We ensure that we use colour consistently across our products (a user can expect a back button to look and feel a certain way). This does not mean that all products look exactly the same. It does mean that if we have a 'cancel' button, users can expect it to look the same regardless of which product they use.
+4. **We use colour consistently** We ensure that we use colour consistently across our products. If we use the colour 'red' to indicate a warning in one product we do not use 'yellow' in another product. 
 
 
 ## Colour palette for digital products
@@ -27,7 +27,7 @@ For each colour you can see acceptable shade variations as well as the accessibi
 ### Neutral colours
 ![Neutrals](https://github.com/user-attachments/assets/85391e7b-2924-446b-b899-c98bc03c9692)
 
-### Communicating status (danger, warning, success)
+### Colours used for status (danger, warning, success)
 
 ![Status colours](https://github.com/user-attachments/assets/e9929b5a-3cf9-4411-8561-8eb71e08351f)
 
