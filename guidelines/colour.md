@@ -5,7 +5,7 @@ section: guidelines
 ---
 
 # Colour Guidelines
-Colour is an important tool to communicate and reinforce through aesthetics that we are an organisation that is friendly and trustworthy. The following guidelines are based on the [Brand Hub](https://est.interactgo.com/page/10061) and are meant to extend that guidance to digital products.
+Colour is an important tool to communicate what actions are possible to a user and the relative priority of each element on the page. The following guidelines are based on the [Brand Hub](https://est.interactgo.com/page/10061) and are meant to extend that guidance to digital products.
 
 
 ## How we use colour to enhance usability
