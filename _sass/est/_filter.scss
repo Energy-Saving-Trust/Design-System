@@ -1,0 +1,66 @@
+.filter {
+  .fieldset-legend {
+    padding: 1.5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $deepblue-50;
+    }
+    &::after {
+      flex-shrink: 0;
+      width: 20px;
+      height: 10px;
+      margin-left: auto;
+      content: "";
+      background: transparent escape-svg($accordion-button-icon) center / 20px auto no-repeat;
+      @include transition($accordion-icon-transition);
+    }
+    &[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+    }
+  }
+  .checkboxes {
+    margin-top: 1rem;
+  }
+}
+
+.filter-header-title {
+  margin-bottom: 2rem;
+}
+
+.filter-header {
+  margin-bottom: 2.8rem;
+}
+
+.filter-tags {
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+  li {
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
+
+.filter-tag {
+  padding: 10px 12px;
+  border-radius: $border-radius;
+  border: 1px solid $gray-100;
+  font-size: $font-size-sm;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  &::after {
+    content: "";
+    background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  &:hover {
+    background-color: $gray-100;
+  }
+}

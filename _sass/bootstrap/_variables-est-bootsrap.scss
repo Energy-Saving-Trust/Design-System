@@ -776,7 +776,7 @@ $input-btn-focus-blur:          0 !default;
 $input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .35rem !default;
-$input-btn-padding-x-sm:      .9rem !default;
+$input-btn-padding-x-sm:      $input-btn-padding-x !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 
 $input-btn-padding-y-lg:      .5rem !default;
