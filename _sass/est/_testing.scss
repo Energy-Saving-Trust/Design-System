@@ -1,0 +1,16 @@
+//Filters
+
+.filter-wrapper {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-gap: 66px;
+  .result {
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: $border-radius;
+    background-color: $gray-100;
+  }
+  nav {
+    margin-top: 40px;
+  }
+}

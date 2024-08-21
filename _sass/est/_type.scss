@@ -57,6 +57,11 @@
 // Lists
 //
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 ul:not([class]), ul.list-square {
   list-style: none;
   padding-left: 0;
@@ -146,6 +151,19 @@ ul.list-square li:before {
 //
 // Links
 //
+button.link {
+  background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a:not([class]), .link {
+  color: $deepblue;
+  text-decoration: underline;
+}
 
 @mixin active-state() {
   border: 2px solid transparent;

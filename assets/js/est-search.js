@@ -24,10 +24,10 @@
     searchInput.focus();
   }
 
-  searchInput.addEventListener('focus', showSuggestions);
+  // searchInput.addEventListener('focus', showSuggestions);
 
-  searchInput.addEventListener('blur', function() {
-    setTimeout(() => {
-      suggestionsContainer.style.display = 'none';
-    }, 200); 
-  });
+  // searchInput.addEventListener('blur', function() {
+  //   setTimeout(() => {
+  //     suggestionsContainer.style.display = 'none';
+  //   }, 200); 
+  // });

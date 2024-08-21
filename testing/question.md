@@ -143,7 +143,7 @@ section: testing
 document.querySelector('.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0').style.display = 'none';
 document.getElementById('test-nav').style.display = 'flex';
 document.getElementById('test-back').href = '/testing/search.html';
-// document.getElementById('test-next').href = '/testing/question.html';
+document.getElementById('test-next').href = '/testing/filter.html';
 document.getElementById('sidebar').style.display = 'none';
 
 document.addEventListener("DOMContentLoaded", function() {
