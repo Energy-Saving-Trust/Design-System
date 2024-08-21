@@ -43,6 +43,10 @@
     }
   }
 
+  &.w-50 {
+    min-width: 250px;
+  }
+
   // Add some height to date inputs on iOS
   // https://github.com/twbs/bootstrap/issues/23307
   // TODO: we can remove this workaround once https://bugs.webkit.org/show_bug.cgi?id=198959 is resolved

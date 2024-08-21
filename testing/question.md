@@ -64,7 +64,7 @@ section: testing
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input required type="text" class="form-control" id="postcode">
+    <input required type="text" class="form-control w-50" id="postcode">
   </div>
   <a style="color:#15487A" href="#manual-entry">Enter my address manually</a>
 </fieldset>
@@ -124,7 +124,7 @@ section: testing
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input type="text" class="form-control" id="postcode">
+    <input type="text" class="form-control w-50" id="postcode">
   </div>
   <p>Skip manual entry. <a style="color:#15487A" href="#automatic-entry">Find my address</a></p>
 </fieldset>
