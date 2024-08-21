@@ -660,6 +660,7 @@ $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             .82em !default;
+$mobile-font-size:            .94em !default;
 
 $sub-sup-font-size:           .75em !default;
 
@@ -1371,6 +1372,7 @@ $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
 
 $accordion-header-font-size:              $h4-font-size !default;
+$accordion-header-font-size-mobile:       $h5-font-size !default;
 $accordion-header-font-weight:            $font-weight-medium !default;
 
 $accordion-button-padding-y:              $accordion-padding-y !default;
