@@ -41,13 +41,13 @@ Date picker documentation goes here.
     <div class="table-wrap"><table class="dates" role="grid" aria-labelledby="id-grid-label">
         <thead>
           <tr>
-            <th scope="col" abbr="Sunday">Su</th>
             <th scope="col" abbr="Monday">Mo</th>
             <th scope="col" abbr="Tuesday">Tu</th>
             <th scope="col" abbr="Wednesday">We</th>
             <th scope="col" abbr="Thursday">Th</th>
             <th scope="col" abbr="Friday">Fr</th>
             <th scope="col" abbr="Saturday">Sa</th>
+            <th scope="col" abbr="Sunday">Su</th>
           </tr>
         </thead>
         <tbody>
