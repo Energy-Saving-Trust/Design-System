@@ -11,3 +11,5 @@ nav:
     url: "/components/"
   - name: "Patterns"
     url: "/patterns/"
+  - name: "Testing"
+    url: "/testing/"

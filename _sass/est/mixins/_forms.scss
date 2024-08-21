@@ -67,8 +67,9 @@
       }
 
       &:focus {
-        border-color: $color;
-        box-shadow: $focus-box-shadow;
+        outline: 1px solid $focus-color-light;
+        box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
+        border-radius: 5px;
       }
     }
   }
@@ -98,8 +99,9 @@
       }
 
       &:focus {
-        border-color: $color;
-        box-shadow: $focus-box-shadow;
+        outline: 1px solid $focus-color-light;
+        box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
+        border-radius: 5px;
       }
     }
   }
@@ -116,7 +118,9 @@
     @include form-validation-state-selector($state) {
 
       &:focus {
-        box-shadow: $focus-box-shadow;
+        outline: 1px solid $focus-color-light;
+        box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
+        border-radius: 5px;
       }
 
     }

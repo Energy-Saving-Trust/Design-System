@@ -1,0 +1,102 @@
+.switch-container {
+  position: relative;
+}
+
+.switch-container::before {
+  top: 0;
+}
+
+.switch-container::after {
+  bottom: 0;
+}
+
+.switch-container::before, .switch-container::after {
+  position: absolute;
+  content: "";
+}
+
+
+.switch-container.honeyyellow {
+  .square, &::before, &::after {
+    background-color: $honeyyellow;
+  }
+  .square .corner path {
+    fill: $honeyyellow;
+  }
+}
+
+.switch-container.deepblue {
+  .square, &::before, &::after {
+    background-color: $deepblue;
+  }
+  .square .corner path {
+    fill: $deepblue;
+  }
+}
+
+.switch-container.grassygreen {
+  .square, &::before, &::after {
+    background-color: $grassygreen;
+  }
+  .square .corner path {
+    fill: $grassygreen;
+  }
+}
+
+
+.switch-container.sq-left::before, .switch-container.sq-left::after {
+  left: 0;
+}
+
+.switch-container.sq-right::before, .switch-container.sq-left::after {
+  right: 0;
+}
+
+.switch-container.sq-container--100px.sq-pos--50::before, .switch-container.sq-container--100px.sq-pos--50::after {
+  height: calc(50* 1% - 100px / 2);
+}
+
+.switch-container.sq-container--100px::before, .switch-container.sq-container--100px::after {
+  width: 100px;
+}
+
+.switch-container .square {
+  position: absolute;
+}
+
+.switch-container.sq-container--100px .square {
+  height: 100px;
+  width: 100px;
+  left: 100px;
+}
+
+.switch-container.sq-container--100px.sq-pos--50 .square {
+  top: calc(50* 1%);
+  transform: translateY(-50%);
+}
+
+.switch-container.sq-container--100px.sq-left .square {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.switch-container.sq-container--100px.sq-right .square {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.sq-container--100px.sq-container--trans.sq-left .square .corner:first-child {
+  top: 0;
+}
+
+.sq-container--100px.sq-container--trans.sq-left .square .corner:last-child {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.sq-container--100px.sq-container--trans.sq-left .square .corner {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -100px;
+}

@@ -12,7 +12,7 @@ Cards documentation goes here.
 
 {% capture code_render %}
 <a href="#" class="card" style="width: 20.59rem">
-  <img class="card-img-top" src="https://s3-alpha-sig.figma.com/img/5e02/830e/5bce303946eb605063435e29a2e40115?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nSyNDumep2slRj14QVJ~JYXfpIu6QDGc82EUWQXDQZXNMSpAny~gq8QeL1pLrRhlNRkFl8tUz4V7cmShoTpws5yGhCMnWM1ydkv-wqZa~9hz~UmNFJY-UjvvA8ebhtbOI9MdoVnlfjbxxhKzRLVDfc4z~JVtuyar7m2Bf6AVgPPMKPRoWGWm1UetvRF2JjwZ4440J8rnlJDZ3zgzOWvfNp-bolfOYWyS~STq60tcvkYGG80V4v~aFTT~QxofhxO1yC50OQYqhNT30143ZQCvHsCQRM-pcQJQV8wiT3ZDrnAI2O34DDjUCQnfmUryNVh1nRs6IzYSKJLzcNAgF00zVw__" alt="">
+  <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
   <div class="card-body">
     <h5 class="card-title">Are you an installer?</h5>
     <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
@@ -43,7 +43,7 @@ Cards documentation goes here.
   <div class="card-body">
   <h6 class="card-category">Product</h6>
     <h5 class="card-title">Go Renewable</h5>
-    <img class="card-img-bottom" src="https://s3-alpha-sig.figma.com/img/5e02/830e/5bce303946eb605063435e29a2e40115?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nSyNDumep2slRj14QVJ~JYXfpIu6QDGc82EUWQXDQZXNMSpAny~gq8QeL1pLrRhlNRkFl8tUz4V7cmShoTpws5yGhCMnWM1ydkv-wqZa~9hz~UmNFJY-UjvvA8ebhtbOI9MdoVnlfjbxxhKzRLVDfc4z~JVtuyar7m2Bf6AVgPPMKPRoWGWm1UetvRF2JjwZ4440J8rnlJDZ3zgzOWvfNp-bolfOYWyS~STq60tcvkYGG80V4v~aFTT~QxofhxO1yC50OQYqhNT30143ZQCvHsCQRM-pcQJQV8wiT3ZDrnAI2O34DDjUCQnfmUryNVh1nRs6IzYSKJLzcNAgF00zVw__" alt="">
+    <img class="card-img-bottom" src="../assets/example-images/card-img.jpeg" alt="">
   </div>
 </a>
 {% endcapture %}
@@ -68,7 +68,7 @@ Cards documentation goes here.
 
 {% capture code_render %}
 <div class="card card-button card-borderless" style="width: 20.59rem">
-<img class="card-img-top" src="https://s3-alpha-sig.figma.com/img/5e02/830e/5bce303946eb605063435e29a2e40115?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nSyNDumep2slRj14QVJ~JYXfpIu6QDGc82EUWQXDQZXNMSpAny~gq8QeL1pLrRhlNRkFl8tUz4V7cmShoTpws5yGhCMnWM1ydkv-wqZa~9hz~UmNFJY-UjvvA8ebhtbOI9MdoVnlfjbxxhKzRLVDfc4z~JVtuyar7m2Bf6AVgPPMKPRoWGWm1UetvRF2JjwZ4440J8rnlJDZ3zgzOWvfNp-bolfOYWyS~STq60tcvkYGG80V4v~aFTT~QxofhxO1yC50OQYqhNT30143ZQCvHsCQRM-pcQJQV8wiT3ZDrnAI2O34DDjUCQnfmUryNVh1nRs6IzYSKJLzcNAgF00zVw__" alt="">
+<img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
   <div class="card-body">
     <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>
     <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
@@ -84,7 +84,7 @@ Cards documentation goes here.
 
 {% capture code_render %}
 <div class="card card-arrow card-borderless" style="width: 18rem;">
-<img class="card-img-top" src="https://s3-alpha-sig.figma.com/img/5e02/830e/5bce303946eb605063435e29a2e40115?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nSyNDumep2slRj14QVJ~JYXfpIu6QDGc82EUWQXDQZXNMSpAny~gq8QeL1pLrRhlNRkFl8tUz4V7cmShoTpws5yGhCMnWM1ydkv-wqZa~9hz~UmNFJY-UjvvA8ebhtbOI9MdoVnlfjbxxhKzRLVDfc4z~JVtuyar7m2Bf6AVgPPMKPRoWGWm1UetvRF2JjwZ4440J8rnlJDZ3zgzOWvfNp-bolfOYWyS~STq60tcvkYGG80V4v~aFTT~QxofhxO1yC50OQYqhNT30143ZQCvHsCQRM-pcQJQV8wiT3ZDrnAI2O34DDjUCQnfmUryNVh1nRs6IzYSKJLzcNAgF00zVw__" alt="">
+<img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
   <div class="card-body">
     <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>
     <h6 class="card-subtitle">17 May 2024</h6>
