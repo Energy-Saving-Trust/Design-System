@@ -89,7 +89,7 @@ Cards documentation goes here.
     <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>
     <h6 class="card-subtitle">17 May 2024</h6>
     <p class="card-text">If you're an MCS certified installer, you can join Go Renewable and start quoting for the renewable technologies your business is certified to install.</p>
-    <a aria-label="Avoid these seven common mistakes that waste energy: Sign-up now" href="#" class="arrow-link">Sign-up now</a>
+    <a aria-label="Avoid these seven common mistakes that waste energy: Sign-up now" href="#" class="arrow-link cta-link">Sign-up now</a>
   </div>
 </div>
 {% endcapture %}
