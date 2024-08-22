@@ -140,8 +140,8 @@ section: testing
 </div>
 
 <script>
-document.querySelector('.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0').style.display = 'none';
-document.getElementById('test-nav').style.display = 'flex';
+document.querySelector('#primary-nav').style.display = 'none';
+document.getElementById('test-nav').style.display = 'block';
 document.getElementById('test-back').href = '/testing/search.html';
 document.getElementById('test-next').href = '/testing/filter.html';
 document.getElementById('sidebar').style.display = 'none';
