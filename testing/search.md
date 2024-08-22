@@ -4,6 +4,14 @@ layout: content
 section: testing
 ---
 
+<style>
+@media (max-width: 768px) {
+    .col-5, .col-10 {
+      width: 100%
+    }
+  }
+</style>
+
 <div id="task-wrap">
 
   <form action="/search" method="get" class="sidebar-search-container est-search-container col-5 mt-5 mb-5">

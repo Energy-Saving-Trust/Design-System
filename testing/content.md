@@ -4,6 +4,20 @@ layout: content
 section: testing
 ---
 
+<style>
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+    }
+    .card ~ .card {
+      margin-top: 38px;
+    }
+    .col-9 {
+      width: 100%
+    }
+  }
+</style>
+
   <div class="contents-table mt-5 mb-5">
     <h2 class="h5">On this page</h2>
     <ul>
