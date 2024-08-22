@@ -1,0 +1,13 @@
+<div id="mobile-nav" class="d-none" style="top: 0; left: 0; z-index: 1050;">
+  <div class="container py-5">
+    <ul class="nav flex-column">
+      {% for item in site.nav %}
+        {% if item.url == page.dir %}
+          <li class="nav-item"><a href="{{ item.url }}" class="nav-link link-secondary py-2">{{ item.name }}</a></li>
+        {% else %}
+          <li class="nav-item"><a href="{{ item.url }}" class="nav-link link-body-emphasis py-2">{{ item.name }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
