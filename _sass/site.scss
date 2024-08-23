@@ -125,11 +125,3 @@
 // Import DS site-specific elements
 @import 'ds-site/_code-examples';
 @import 'ds-site/_code-highlight';
-
-
-#sidebar {
-  @include media-breakpoint-down(sm) {
-
-    display:none;
-  }
-}
