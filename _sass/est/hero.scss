@@ -5,6 +5,10 @@
   grid-gap: 0;
   min-height: 50vh;
   margin: 0;
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .hero-left {
@@ -13,6 +17,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @include media-breakpoint-down(sm) {
+    padding: 48px 50px;
+  }
   &.honeyyellow {
     background-color: $honeyyellow;
   }
@@ -28,7 +35,7 @@
   position: relative;
   display: block;
   width: 94%;
-  margin-left: calc((100vw - 1323px) / 2);
+  max-width: 600px;
 }
 
 .hero-left .group .description {
@@ -45,4 +52,38 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @include media-breakpoint-down(sm) {
+    flex: 0 0 375px;
+  }
+  @include media-breakpoint-down(sm) {
+    &.switch-container.sq-container--100px.sq-pos--50::before, &.switch-container.sq-container--100px.sq-pos--50::after {
+      height: 60px;
+      bottom: 0;
+      top: unset;
+      width: calc(50% - (65px / 2));
+    }
+    &.switch-container.sq-container--100px.sq-pos--50::after {
+      left: unset;
+      right: 0;
+    }
+    &.switch-container.sq-container--100px.sq-left .square {
+      bottom: 27px;
+      width: 65px;
+      height: 65px;
+      left: calc(50% - (65px / 2));
+      top: unset;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+    }
+    &.sq-container--100px.sq-container--trans.sq-left .square .corner {
+      top: unset;
+      bottom: -60px;
+      left: calc(50% - 33.5px);
+      transform: rotate(-90deg);
+      &:first-child {
+        left: calc(50% + 23.5px);
+        transform: rotate(180deg);
+      }
+    }
+  }
 }

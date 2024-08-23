@@ -45,12 +45,19 @@
   gap: 15px;
   margin-bottom: 20px;
   width: 100%;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 4px;
+  }
 }
 
 .progress-step {
   .progress-bar {
     height: 0.82rem;
     border-radius: $progress-step-border-radius;
+    @include media-breakpoint-down(sm) {
+      height: 11px;
+    }
     &.empty {
       background-color: $progress-step-empty-bg;
     }
@@ -60,6 +67,9 @@
 .step-label {
   margin-top: $progress-step-label-margin-top;
   margin-left: $progress-step-label-margin-left;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
 }
 
 .main-label {

@@ -89,6 +89,10 @@
     outline: 1px solid transparent;
     box-shadow: 0 0 0 2px $focus-color-light, 0 0 0 4px $focus-color-dark;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $accordion-header-font-size-mobile;
+  }
 }
 
 .accordion-header {

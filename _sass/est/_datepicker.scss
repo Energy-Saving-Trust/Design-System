@@ -20,12 +20,18 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   grid-template-columns: 1fr 50px;
   width: 350px;
   grid-gap: 10px;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
 }
 
 .datepicker .desc {
   font-weight: 400;
   color: $grey-700;
   width: 350px;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
 }
 
 .datepicker label {
@@ -238,6 +244,9 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   background: white;
   color: black;
   border: none;
+  &.disabled, &:focus.disabled, &:hover.disabled {
+    background-color: #fff;
+  }
 }
 
 .datepicker-dialog table thead {
@@ -252,9 +261,6 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
 
 .datepicker-dialog table.dates tr {
   border: 1px solid black;
-}
-.datepicker-dialog table.dates tbody tr:last-of-type {
-  position: absolute;
 }
 
 .datepicker-dialog table.dates td {

@@ -34,6 +34,9 @@
 .blockquote-img {
   border-radius: $border-radius;
   display: flex;
+  @include media-breakpoint-down(sm) {
+    flex-flow: column-reverse;
+  }
   .blockquote-wrapper, .blockquote-bg-img {
     flex: 0 0 50%;
   }
@@ -49,6 +52,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 228px;
+    }
   }
   .blockquote, .blockquote p {
     font-size: 1rem;

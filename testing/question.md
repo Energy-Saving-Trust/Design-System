@@ -64,7 +64,7 @@ section: testing
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input required type="text" class="form-control" id="postcode">
+    <input required type="text" class="form-control w-50" id="postcode">
   </div>
   <a style="color:#15487A" href="#manual-entry">Enter my address manually</a>
 </fieldset>
@@ -98,11 +98,11 @@ section: testing
   <legend><h3 class="h4 mb-2">Enter your address</h3></legend>
   <div class="mb-4">
     <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Why do I need to do this?
+        Why do we need to know your address?
       </a>
     <div class="collapse" id="collapseExample">
       <div class="hint-body">
-        Creating an account will allow us save your results and offer more customised advice. 
+        We'll use your address to search our database. The database contains models of property characteristics based on your address. This helps us predict your energy demands.
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@ section: testing
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input type="text" class="form-control" id="postcode">
+    <input type="text" class="form-control w-50" id="postcode">
   </div>
   <p>Skip manual entry. <a style="color:#15487A" href="#automatic-entry">Find my address</a></p>
 </fieldset>
@@ -140,8 +140,8 @@ section: testing
 </div>
 
 <script>
-document.querySelector('.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0').style.display = 'none';
-document.getElementById('test-nav').style.display = 'flex';
+document.querySelector('#primary-nav').style.display = 'none';
+document.getElementById('test-nav').style.display = 'block';
 document.getElementById('test-back').href = '/testing/search.html';
 document.getElementById('test-next').href = '/testing/filter.html';
 document.getElementById('sidebar').style.display = 'none';

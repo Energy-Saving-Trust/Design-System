@@ -4,6 +4,20 @@ layout: content
 section: testing
 ---
 
+<style>
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+    }
+    .card ~ .card {
+      margin-top: 38px;
+    }
+    .col-9 {
+      width: 100%
+    }
+  }
+</style>
+
   <div class="contents-table mt-5 mb-5">
     <h2 class="h5">On this page</h2>
     <ul>
@@ -69,12 +83,12 @@ section: testing
       </div>
     </div>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
           Northern Ireland
         </button>
       </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour">
         <div class="accordion-body">
           <ul>
             <li>Households across Northern Ireland might be entitled to funding towards energy efficiency home improvements from the <a href="#">Northern Ireland Sustainable Energy Programme</a> and the Affordable Warmth Scheme. You can call the NI Energy Advice Line on <a href="#">0800 111 4455</a> to find out more.</li>
@@ -212,8 +226,8 @@ section: testing
 
 
 <script>
-  document.querySelector('.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0').style.display = 'none';
-  document.getElementById('test-nav').style.display = 'flex';
+  document.querySelector('#primary-nav').style.display = 'none';
+  document.getElementById('test-nav').style.display = 'block';
   document.getElementById('test-back').href = '/testing/login.html';
   document.getElementById('test-next').href = '/testing/search.html';
   document.getElementById('sidebar').style.display = 'none';

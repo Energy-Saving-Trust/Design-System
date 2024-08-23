@@ -1,17 +1,30 @@
 .footer-top {
   padding: 100px 80px;
   background-color: $grey-50;
+  @include media-breakpoint-down(sm) {
+    padding: 48px 12px;
+  }
 }
 
 .footer-bottom {
   padding: 12px 80px;
+  @include media-breakpoint-down(sm) {
+    padding: 35px 16px;
+  }
   .nav-link {
     text-decoration: none;
     font-size: 0.82rem;
     padding: 0;
     display: inline-block;
+    @include media-breakpoint-down(sm) {
+      display: block;
+      margin-top: 24px;
+    }
     ~ .nav-link {
       margin-left: 30px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 0px;
+      }
     }
     &:hover, &:active {
       text-decoration: underline;
@@ -30,6 +43,17 @@
 
 .footer-top {
   .col {
+    &:first-of-type {
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 100%;
+        margin-bottom: 48px;
+      }
+    }
+    &.full {
+      @include media-breakpoint-down(sm) {
+        margin-top: 48px;
+      }
+    }
     h2 {
       font-size: 1.25rem;
       font-weight: 600;

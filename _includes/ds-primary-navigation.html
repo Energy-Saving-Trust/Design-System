@@ -1,9 +1,71 @@
-<ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
-  {% for item in site.nav %}
-    {% if item.url == page.dir %}
-      <li><a href="{{ item.url }}" class="nav-link px-2 link-secondary">{{ item.name }}</a></li>
-    {% else %}
-      <li><a href="{{ item.url }}" class="nav-link px-2 link-body-emphasis">{{ item.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<style>
+  .line-wrap div {
+    width: 20px;
+    height: 1px;
+    background-color: #1B1F22;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  #burger-menu {
+    background-color: transparent;
+    border: none;
+  }
+  .burger-open .line1 {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  .burger-open .line2 {
+    opacity: 0;
+  }
+  .burger-open .line3 {
+    transform: rotate(-45deg) translate(3px, -3px);
+
+  }
+</style>
+
+<div id="primary-nav" class="py-3" style="background-color: #F0F9FA;">
+  <div class="container">
+    <ul class="nav col-12 col-lg-auto mb-2 justify-content-end mb-md-0 d-none d-lg-flex">
+      {% for item in site.nav %}
+        {% if item.url == page.dir %}
+          <li><a href="{{ item.url }}" class="nav-link px-3 link-secondary">{{ item.name }}</a></li>
+        {% else %}
+          <li><a href="{{ item.url }}" class="nav-link px-3 link-body-emphasis">{{ item.name }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <div class="d-flex d-lg-none justify-content-end">
+      <button class="d-flex align-items-center" id="burger-menu" onclick="toggleMenu()">
+        <div class="line-wrap me-2">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <span id="burger-text">Menu</span>
+      </button>
+    </div>
+  </div>
+</div>
+{% include ds-mobile-navigation.html %}
+
+<script>
+    function toggleMenu() {
+      var navList = document.getElementById('mobile-nav');
+    var burgerMenu = document.getElementById('burger-menu');
+    var designSystemHeader = document.getElementById('design-system-header');
+
+    // Check if mobile menu is hidden
+    if (navList.classList.contains('d-none')) {
+      // Show mobile nav and fix the header
+      navList.classList.remove('d-none');
+      navList.classList.add('d-flex');
+      designSystemHeader.classList.add('position-fixed', 'w-100', 'top-0', 'vh-100', 'bg-white');
+      burgerMenu.classList.add('burger-open');
+    } else {
+      // Hide mobile nav and unfix the header
+      navList.classList.remove('d-flex');
+      navList.classList.add('d-none');
+      designSystemHeader.classList.remove('position-fixed', 'w-100', 'top-0', 'vh-100', 'bg-white');
+      burgerMenu.classList.remove('burger-open');
+    }
+  }
+</script>

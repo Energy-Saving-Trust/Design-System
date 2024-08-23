@@ -24,10 +24,20 @@
     searchInput.focus();
   }
 
-  // searchInput.addEventListener('focus', showSuggestions);
-
-  // searchInput.addEventListener('blur', function() {
-  //   setTimeout(() => {
-  //     suggestionsContainer.style.display = 'none';
-  //   }, 200); 
-  // });
+  function toggleClearButton(inputId, buttonId) {
+    const input = document.getElementById(inputId);
+    const clearButton = document.getElementById(buttonId);
+    if (input.value.trim() !== '') {
+      clearButton.style.display = 'inline-block';
+    } else {
+      clearButton.style.display = 'none';
+    }
+  }
+  
+  function clearSearch(inputId, buttonId) {
+    const input = document.getElementById(inputId);
+    const clearButton = document.getElementById(buttonId);
+    input.value = '';
+    clearButton.style.display = 'none';
+    suggestionsContainer.style.display = 'none';
+  }
