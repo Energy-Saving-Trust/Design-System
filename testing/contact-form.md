@@ -375,7 +375,7 @@ section: testing
   </div>
 
 <fieldset>
-  <legend>How do you primarily heat your home?<span>*</span></legend>
+  <legend>How do you primarily heat your home? (required)</legend>
   <div class="form-check">
     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
     <label class="form-check-label" for="flexRadioDefault1">
@@ -397,7 +397,7 @@ section: testing
   </fieldset>
 
   <fieldset>
-    <legend>How do you want to be contacted?<span>*</span></legend>
+    <legend>How do you want to be contacted? (required)</legend>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="flexCheckDefault" required>
       <label class="form-check-label" for="flexCheckDefault">
@@ -413,12 +413,12 @@ section: testing
   </fieldset>
 
   <div class="mb-4">
-    <label for="email" class="form-label">Email address<span>*</span></label>
+    <label for="email" class="form-label">Email address (required)</label>
     <div class="form-text">example@gmail.com</div>
     <input type="email" class="form-control" id="email" name="email" required>
   </div>
   <div class="mb-4">
-    <label for="phone" class="form-label">Phone number<span>*</span></label>
+    <label for="phone" class="form-label">Phone number (required)</label>
     <div class="form-text">example@gmail.com</div>
     <input type="phone" class="form-control" id="phone" name="phone" required>
   </div>
@@ -429,7 +429,7 @@ section: testing
   </div>
 
   <fieldset class="mb-4">
-    <legend>Privacy statement<span>*</span></legend>
+    <legend>Privacy statement (required)</legend>
     <p>Energy Saving Trust will collect the information you provide on the solar panel calculator to estimate the electricity and savings that could be generated in your home. Your information won't be saved unless you choose to create and account and save your results. View our full privacy policy.</p>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
