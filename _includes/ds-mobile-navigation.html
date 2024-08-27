@@ -1,13 +1,91 @@
-<div id="mobile-nav" class="d-none" style="top: 0; left: 0; z-index: 1050;">
+<style>
+  .nav-link {
+    background-color: transparent;
+    border: none;
+  }
+  .nav-link:hover, .nav-link:active, .nav-link:focus {
+    text-decoration: none;
+  }
+</style>
+
+{% assign sorted_nodes = site.pages %}
+<div id="mobile-nav" class="d-none" style="top: 0; left: 0; z-index: 999999;">
   <div class="container py-5">
     <ul class="nav flex-column">
       {% for item in site.nav %}
-        {% if item.url == page.dir %}
-          <li class="nav-item"><a href="{{ item.url }}" class="nav-link link-secondary py-2">{{ item.name }}</a></li>
-        {% else %}
-          <li class="nav-item"><a href="{{ item.url }}" class="nav-link link-body-emphasis py-2">{{ item.name }}</a></li>
-        {% endif %}
+        {% assign has_children = false %}
+        
+        {% assign url_parts = item.url | split: '/' %}
+        {% assign rn = url_parts | slice: 1 %}
+        {% for node in sorted_nodes %}
+          {% if rn contains node.section %}
+            {% if node.side_bar != false %}
+              {% assign has_children = true %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        <li class="nav-item">
+          {% if has_children %}
+            <button class="nav-link link-body-emphasis py-2" data-bs-toggle="collapse" data-bs-target="#sub-nav-{{ forloop.index }}">
+              {{ item.name }}
+            </button>
+            <ul id="sub-nav-{{ forloop.index }}" class="sub-nav collapse">
+              {% assign url_parts = item.url | split: '/' %}
+              {% assign rn = url_parts | slice: 1 %}
+              
+              {% for node in sorted_nodes %}
+                {% if rn contains node.section %}
+                  {% if node.side_bar != false %}
+                    <li>
+                      <a href="{{ node.url }}" class="nav-link link-body-emphasis py-2">{{ node.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a href="{{ item.url }}" class="nav-link link-body-emphasis py-2">{{ item.name }}</a>
+          {% endif %}
+        </li> 
+
       {% endfor %}
     </ul>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select all parent <li> elements
+    var parentLis = document.querySelectorAll('.nav-item');
+
+    // Select all buttons that toggle sub-navigation
+    var subNavButtons = document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]');
+
+    subNavButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Get the parent <li> of the clicked button
+        var clickedParentLi = button.closest('li');
+
+        // Hide all parent <li> elements except the one that contains the clicked button
+        parentLis.forEach(function(parentLi) {
+          if (parentLi !== clickedParentLi) {
+            // Hide all other parent <li> elements
+            parentLi.style.display = 'none';
+          }
+        });
+
+        // Disable the clicked button and add bold class
+        button.disabled = true;
+        button.classList.add('fw-semibold');
+        var backMobileNav = document.getElementById('back-mobile-nav');
+        backMobileNav.classList.remove('d-none');
+        backMobileNav.classList.add('d-flex');
+      });
+    });
+
+
+  });
+</script>
+
+
+

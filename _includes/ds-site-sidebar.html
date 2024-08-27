@@ -7,20 +7,20 @@
 
 <div class="d-flex flex-column flex-shrink-0 py-3" style="">
   <ul class="nav flex-column mb-auto">
-{% for node in sorted_nodes %}
-  {% if rn contains node.section %}
-    {% if node.side_bar != false %}
-      {% if page.url contains node.url %}
-      <li>
-        <a href="{{ node.url }}" class="nav-link link-dark fw-bold" style="padding-left: 0px;">{{ node.title }}</a>
-      </li>
-      {% else %}
-      <li>
-        <a href="{{ node.url }}" class="nav-link link-dark" style="padding-left: 0px;">{{ node.title }}</a>
-      </li>
+    {% for node in sorted_nodes %}
+      {% if rn contains node.section %}
+        {% if node.side_bar != false %}
+          {% if page.url contains node.url %}
+          <li>
+            <a href="{{ node.url }}" class="nav-link link-dark fw-bold" style="padding-left: 0px;">{{ node.title }}</a>
+          </li>
+          {% else %}
+          <li>
+            <a href="{{ node.url }}" class="nav-link link-dark" style="padding-left: 0px;">{{ node.title }}</a>
+          </li>
+          {% endif %}
+        {% endif %}
       {% endif %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+    {% endfor %}
   </ul>
 </div>
