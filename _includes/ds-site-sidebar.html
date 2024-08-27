@@ -5,7 +5,7 @@
 {% assign rn = url_parts | slice: 1 %}
 {% assign base_url = page.url | replace: rm %}
 
-<div class="d-flex flex-column flex-shrink-0 py-3" style="">
+<div class="d-flex flex-column flex-shrink-0 py-3 d-none d-lg-flex" style="">
   <ul class="nav flex-column mb-auto">
     {% for node in sorted_nodes %}
       {% if rn contains node.section %}
