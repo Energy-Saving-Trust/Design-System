@@ -14,7 +14,7 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 
 ### 1. HTML-First approach
 At Energy Saving Trust we can make sure our digital products are accessible just by making sure the correct Hypertext Markup Language elements are used for the correct purpose at all times. 
-Read more about why HTML-first approach is essential to creating accessible products: [https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML]
+Read more about [why HTML-first approach is essential to creating accessible products](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML).
 
 ### 2. Colour  
 - Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) to verify contrast ratios. 
