@@ -12,11 +12,13 @@ While accessibility has been considered and ‘baked in’ to the Design System 
 
 **This means we prioritise simpler and less flashy designs to priortise the needs of all users.**
 
-### 1. HTML-First approach
+### 1\. HTML-First approach
+
 At Energy Saving Trust we can make sure our digital products are accessible just by making sure the correct Hypertext Markup Language elements are used for the correct purpose at all times. 
 Read more about [why HTML-first approach is essential to creating accessible products](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML).
 
-### 2. Colour  
+### 2\. Colour  
+
 - Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) to verify contrast ratios. 
 - Ensure a minimum contrast ratio of 4.5:1 for text against background. 
 - Use tools to check color contrast and make adjustments as necessary. 
@@ -24,30 +26,30 @@ Read more about [why HTML-first approach is essential to creating accessible pro
 - Large text (18pt and above, or 14pt bold) should have a contrast ratio of at least 3:1. 
 - Do not use color alone to convey information. Use text labels or patterns in addition to color coding. 
 
-### 3. Keyboard Navigation 
+### 3\. Keyboard Navigation 
 
 - Ensure that all interactive elements are reachable via keyboard.
 - Ensure that all interactive elements have visible focus indicators.
 - Use the default focus indicator in the Design System across the entire system (this works against both light and dark colours)
 
-### 4. Readability 
+### 4\. Readability 
 
 - Use clear and simple language. 
 - Avoid using all caps for large amounts of text.  
 
-### 5. Alternative text 
+### 5\. Alternative text 
 
 - Provide descriptive alt text for all images, except when images are purely decorative (use alt=""). 
 - For complex images, such as charts, provide a detailed description. 
 - Provide captions for all video content. 
 - Offer transcripts for audio content. 
 
-### 6. Animations and Effects 
+### 6\. Animations and Effects 
 
 - Avoid using animations that flash more than three times per second. 
 - Provide options to disable animations and other potentially distracting effects. 
 
-### 7. Interactive Elements 
+### 7\. Interactive Elements 
 
 **Keyboard Accessibility**
 
