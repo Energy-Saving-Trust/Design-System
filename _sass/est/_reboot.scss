@@ -50,6 +50,8 @@ body {
   margin: 0; // 1
   font-family: var(--#{$prefix}body-font-family);
   @include font-size(var(--#{$prefix}body-font-size));
+  // @include font-size($mobile-font-size);
+
   font-weight: var(--#{$prefix}body-font-weight);
   line-height: var(--#{$prefix}body-line-height);
   color: var(--#{$prefix}body-color);
@@ -57,9 +59,11 @@ body {
   background-color: var(--#{$prefix}body-bg); // 2
   -webkit-text-size-adjust: 100%; // 3
   -webkit-tap-highlight-color: rgba($black, 0); // 4
-  @include media-breakpoint-down(sm) {
-    @include font-size($mobile-font-size);
+  /*
+  @include media-breakpoint-up(md) {
+    @include font-size($font-size-base);
   }
+    */
 }
 // scss-docs-end reboot-body-rules
 
@@ -95,32 +99,38 @@ hr {
 
 h1 {
   @extend %heading;
-  @include font-size($h1-font-size);
+  // @include font-size($h1-font-size);
+  font-size: $h1-font-size;
 }
 
 h2 {
   @extend %heading;
-  @include font-size($h2-font-size);
+  // @include font-size($h2-font-size);
+  font-size: $h2-font-size;
 }
 
 h3 {
   @extend %heading;
-  @include font-size($h3-font-size);
+  // @include font-size($h3-font-size);
+  font-size: $h3-font-size;
 }
 
 h4 {
   @extend %heading;
-  @include font-size($h4-font-size);
+  // @include font-size($h4-font-size);
+  font-size: $h4-font-size;
 }
 
 h5 {
   @extend %heading;
-  @include font-size($h5-font-size);
+  // @include font-size($h5-font-size);
+  font-size: $h5-font-size;
 }
 
 h6 {
   @extend %heading;
-  @include font-size($h6-font-size);
+  // @include font-size($h6-font-size);
+  font-size: $h6-font-size;
 }
 
 
