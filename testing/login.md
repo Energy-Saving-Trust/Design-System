@@ -14,12 +14,12 @@ section: testing
   <div id="login-wrap">
     <h2 class="mt-5 mb-4">Log in</h2>
     <div class="mb-4">
-      <label for="email" class="form-label">Email address<span>*</span></label>
+      <label for="email" class="form-label">Email address (required)</label>
       <div class="form-text">example@gmail.com</div>
       <input type="email" class="form-control" id="email">
     </div>
     <div class="mb-4">
-      <label for="password" class="form-label">Password<span>*</span></label>
+      <label for="password" class="form-label">Password (required)</label>
       <div class="form-text">example: est123</div>
       <input type="password" class="form-control" id="password">
     </div>
@@ -42,12 +42,12 @@ section: testing
       <input type="text" class="form-control" id="name">
     </div>
     <div class="mb-4">
-      <label for="email" class="form-label">Email address<span>*</span></label>
+      <label for="email" class="form-label">Email address (required)</label>
       <div class="form-text">example@gmail.com</div>
       <input type="email" class="form-control" id="email">
     </div>
     <div class="mb-4">
-      <label for="password" class="form-label">Password<span>*</span></label>
+      <label for="password" class="form-label">Password (required)</label>
       <div class="form-text strong">
         <ul>
           <li>Must be at least 10 characters in length</li>
@@ -57,7 +57,7 @@ section: testing
       <input type="password" class="form-control" id="password">
     </div>
     <div class="mb-4">
-      <label for="confirm_password" class="form-label">Confirm password<span>*</span></label>
+      <label for="confirm_password" class="form-label">Confirm password (required)</label>
       <div class="form-text strong">
         Re-enter the password you entered above
       </div>

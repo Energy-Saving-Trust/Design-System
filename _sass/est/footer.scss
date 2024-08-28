@@ -1,13 +1,40 @@
 .footer-top {
-  padding: 100px 80px;
+  padding: 100px 2vw;
   background-color: $grey-50;
+  &.footer-top-slim {
+    padding: 30px 2vw;
+  }
   @include media-breakpoint-down(sm) {
     padding: 48px 12px;
   }
 }
 
+.nav-item.nav-item-sm {
+  .nav-link {
+    font-size: 0.94rem;
+  }
+  ~ .nav-item-sm {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 0.6rem;
+      width: 3px;
+      height: 3px;
+      background-color: $grey-900;
+      border-radius: 100%;
+    }
+  }
+}
+
 .footer-bottom {
   padding: 12px 80px;
+  &.footer-bottom-slim {
+    padding: 12px 2vw;
+  }
   @include media-breakpoint-down(sm) {
     padding: 35px 16px;
   }

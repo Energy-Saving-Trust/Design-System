@@ -6,7 +6,7 @@
     margin: 4px 0;
     transition: 0.4s;
   }
-  #burger-menu {
+  #burger-menu, #back-mobile-nav {
     background-color: transparent;
     border: none;
   }
@@ -18,13 +18,16 @@
   }
   .burger-open .line3 {
     transform: rotate(-45deg) translate(3px, -3px);
-
+  }
+  #design-system-header {
+    overflow-y: scroll;
+    z-index: 999999;
   }
 </style>
 
 <div id="primary-nav" class="py-3" style="background-color: #F0F9FA;">
   <div class="container">
-    <ul class="nav col-12 col-lg-auto mb-2 justify-content-end mb-md-0 d-none d-lg-flex">
+    <ul class="nav col-12 col-lg-auto mb-2 justify-content-end mb-lg-0 d-none d-lg-flex">
       {% for item in site.nav %}
         {% if item.url == page.dir %}
           <li><a href="{{ item.url }}" class="nav-link px-3 link-secondary">{{ item.name }}</a></li>
@@ -33,7 +36,13 @@
         {% endif %}
       {% endfor %}
     </ul>
-    <div class="d-flex d-lg-none justify-content-end">
+    <div class="d-flex d-lg-none justify-content-between">
+      <div>
+        <button class="align-items-center d-none" id="back-mobile-nav" onclick="closeSubMenu()">
+          <img src="/assets/images/left-chevron.svg" class="me-2">
+          <span>Back</span>
+        </button>
+      </div>
       <button class="d-flex align-items-center" id="burger-menu" onclick="toggleMenu()">
         <div class="line-wrap me-2">
           <div class="line1"></div>
@@ -49,23 +58,48 @@
 
 <script>
     function toggleMenu() {
-      var navList = document.getElementById('mobile-nav');
+    var navList = document.getElementById('mobile-nav');
     var burgerMenu = document.getElementById('burger-menu');
     var designSystemHeader = document.getElementById('design-system-header');
 
-    // Check if mobile menu is hidden
     if (navList.classList.contains('d-none')) {
-      // Show mobile nav and fix the header
       navList.classList.remove('d-none');
       navList.classList.add('d-flex');
       designSystemHeader.classList.add('position-fixed', 'w-100', 'top-0', 'vh-100', 'bg-white');
       burgerMenu.classList.add('burger-open');
     } else {
-      // Hide mobile nav and unfix the header
       navList.classList.remove('d-flex');
       navList.classList.add('d-none');
       designSystemHeader.classList.remove('position-fixed', 'w-100', 'top-0', 'vh-100', 'bg-white');
       burgerMenu.classList.remove('burger-open');
+      closeSubMenu();
     }
+  }
+  function closeSubMenu() {
+    var subNavs = document.querySelectorAll('.sub-nav');
+    var subNavButtons = document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]');
+    var parentLis = document.querySelectorAll('.nav-item');
+
+    subNavs.forEach(function(subNav) {
+      subNav.classList.remove('show');
+    });
+    
+    parentLis.forEach(function(parentLi) {
+      parentLi.style.display = 'block';
+    });
+
+    var navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function(navLink) {
+      navLink.classList.remove('fw-semibold');
+    }); 
+
+    subNavButtons.forEach(function(button) {
+      button.classList.remove('collapsed');
+    });
+
+    var backMobileNav = document.getElementById('back-mobile-nav');
+    backMobileNav.classList.add('d-none');
+    backMobileNav.classList.remove('d-flex');
+
   }
 </script>
