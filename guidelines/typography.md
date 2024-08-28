@@ -27,6 +27,8 @@ The type scale changes based on screen size.
 
 The scale for ‘large screens’ is used when the screen is wider than the tablet breakpoint (640px).
 
+### Large screens
+
 <table class="table">
   <thead>
     <tr>
@@ -42,6 +44,123 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
       <td>42.5px</td>
       <td>51px</td>
       <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>33px</td>
+      <td>40.80px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>25px</td>
+      <td>35.70px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>19px</td>
+      <td>30.60px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H6</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>p/body-01</td>
+      <td>17px</td>
+      <td>26px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-02</td>
+      <td>16px</td>
+      <td>19.20px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-03</td>
+      <td>14px</td>
+      <td>16.80px</td>
+      <td>Regular/400</td>
+    </tr>
+  </tbody>
+</table>
+
+### Small screens
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Font size</th>
+      <th>Line height</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>35px</td>
+      <td>51px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>27px</td>
+      <td>40.80px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>23px</td>
+      <td>35.70px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>19px</td>
+      <td>30.60px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H6</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>p/body-01</td>
+      <td>17px</td>
+      <td>26px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-02</td>
+      <td>16px</td>
+      <td>19.20px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-03</td>
+      <td>14px</td>
+      <td>16.80px</td>
+      <td>Regular/400</td>
     </tr>
   </tbody>
 </table>
