@@ -1,4 +1,4 @@
- ---
+---
 title: Components
 layout: content
 section: components
