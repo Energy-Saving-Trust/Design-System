@@ -7,4 +7,4 @@ side_bar: false
 
 # Patterns
 
-Introduction to Patterns goes here.
+Patterns are templates for common problems and interactions users face (entering their address, selecting a date, logging in). 
