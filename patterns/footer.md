@@ -6,7 +6,7 @@ section: patterns
 
 # Footer
 
-Footer documentation goes here.
+The Footer pattern is a consistent set of links to company information, mandatory items such as a privacy statement and cookie policy, a copyright statement and social media links.
 
 
 
