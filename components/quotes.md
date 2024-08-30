@@ -6,7 +6,7 @@ section: components
 
 # Quotes
 
-Metrics documentation goes here.
+The Quote component is used to highlight information from an individual or organisation we want to cite.
 
 
 
