@@ -6,7 +6,7 @@ section: components
 
 # Table of Contents
 
-Table of Contents documentation goes here.
+The Table of contents component lets users see and navigate to different sections within a long informational page.
 
 ## Example:
 
