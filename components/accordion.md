@@ -6,7 +6,15 @@ section: components
 
 # Accordion
 
-Accordion documentation goes here.
+The Accordion component allows users to show or hide content. It enhances the user experience by collapsing or expanding content sections, making it easier to manage large amounts of information within a limited space.ordions are
+
+**When to use**
+- Make content scannable
+- Hide content that is only applicable to some not all users
+- You have 3 or more pieces of content that need to be hidden
+
+**When not to use**
+If you only have content for one accordion consider splitting the content up into more subsections or avoid an accordion entirely.
 
 ## Accordion example:
 
