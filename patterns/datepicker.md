@@ -6,7 +6,7 @@ section: patterns
 
 # Date picker
 
-Date picker documentation goes here.
+The Date picker pattern lets a user type in a date or select it using a calendar.
 
 
 
