@@ -6,9 +6,7 @@ section: patterns
 
 # Filter
 
-Filter documentation goes here.
-
-
+The Filter pattern lets users restrict which options they are shown to fit their search criteria.
 
 ## Desktop example
 
