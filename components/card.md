@@ -6,7 +6,17 @@ section: components
 
 #  Cards
 
-Cards documentation goes here.
+The Card components divide content into blocks that make it easier for users to scan. Each card is focused on single topic.
+
+**When to use**
+
+- When you have similar content (blog posts, products, news).
+- To segment content and make it easy to scan.
+
+**When not to use**
+
+- Do not use cards when users need to compare multiple options.
+- Cards are less scannable than a list. If the user likely knows what they are searching for, make it quicker for them by displaying chunks of content in a list format.
 
 ## Card:
 
