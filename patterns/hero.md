@@ -6,7 +6,7 @@ section: patterns
 
 # Hero
 
-Hero documentation goes here.
+The Hero pattern is used to draw the user into a page. It clearly identifies which page they are on, the title and image further support the intended purpose of the page.
 
 
 
