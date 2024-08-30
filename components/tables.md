@@ -6,7 +6,12 @@ section: components
 
 # Tables
 
-Tables documentation goes here.
+The Table component is used to present data to users.
+
+**Mobile guidance**
+
+- Tables are best suited for desktop users, because of this their use should be limited for customer facing content. 
+- On mobile tables keep their format with the exception of a horizontal scroll bar that lets user view table content that spills off of the page.
 
 ## Example
 
