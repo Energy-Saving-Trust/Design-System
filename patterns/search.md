@@ -6,7 +6,12 @@ section: patterns
 
 # Search
 
-Search documentation goes here.
+The Search pattern lets users search a site for a phrase or keyword.
+
+**Usage guidance**
+
+- Use the large search by default. Only use the small search for pages that need their own search (for example search results within a page).
+- The ‘Header’ pattern shows how to integrate the search into the navigation on mobile versus desktop.
 
 ## Small search for sidebar
 
