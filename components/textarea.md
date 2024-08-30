@@ -6,7 +6,12 @@ section: components
 
 # Textarea
 
-Textarea documentation goes here.
+The Textarea component is a form field that lets a user enter multiple lines of text.
+
+**When not to use**
+
+Do not use a text area to ask users for information the user is unfamiliar with, for example: the type of heating system in their home. In these cases it is better to provide the user with a list of options from which they can select.
+
 
 ## Example
 
