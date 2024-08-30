@@ -11,17 +11,17 @@ The Alert component draws the user’s attention to information crucial to inter
 **When to use**
 
 - The user needs feedback before or after an action
-- There is important information the user must review before or after moving to another section of the site, or taking an action.
+- There is important information the user must review before or after moving to another section of the site, or taking an action
 
 **When not to use**
 
 - Do not use for in-depth instructions or guidance
-- Do not use for information that includes links.
+- Do not use for information that includes links
 
 **Usage guidance**
 
 - If it is a dismisssible alert it should display at the top of the screen overlaid over other content
-- All other alerts should display at the top of the content section as close to the section it relates to as possible. 
+- All other alerts should display at the top of the content section as close to the section it relates to as possible
 
 ## Alert content variations:
 
