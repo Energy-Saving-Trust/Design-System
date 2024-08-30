@@ -6,7 +6,11 @@ section: components
 
 # Bullet Point Lists
 
-Bullet Point Lists documentation goes here.
+The Bullet point list component is a way to break up large chunks of text into small chunks that are easy to scan.
+
+**When not to use**
+
+If you have more than ten bullet points consider another strategy to break up content further.
 
 ## Circle bullet example:
 
