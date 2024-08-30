@@ -6,7 +6,15 @@ section: components
 
 # Hint
 
-Hint documentation goes here.
+The Hint component lets users view content to assist them in filling out a form field. This is used in place of placeholder text or tooltips.
+
+**When to use**
+
+Use if certain users (but not all) will require additional context in order to fill out a section of the form. 
+
+**When not to use**
+
+If all users will always need the information present do not hide information in a hint.  An example would be password guidance, where every user will always need to know the number of characters necessary for their password to be suitably strong.
 
 ## Hint example:
 
