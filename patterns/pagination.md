@@ -6,7 +6,7 @@ section: patterns
 
 # Pagination
 
-Pagination documentation goes here.
+The Pagination pattern lets users navigate through a long list of results.
 
 
 
