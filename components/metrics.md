@@ -6,8 +6,7 @@ section: components
 
 # Metrics
 
-Metrics documentation goes here.
-
+The Metrics component makes it easy to scan and differentiate numbers and data from written text.
 
 
 ## Dashboard metrics
