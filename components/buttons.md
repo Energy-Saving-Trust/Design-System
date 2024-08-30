@@ -6,7 +6,12 @@ section: components
 
 # Buttons
 
-Buttons documentation goes here.
+The Button component guides the user to take a specific action. Unlike links, buttons are for primary call to actions or to submit forms.
+
+**Usage guidance**
+
+- Button colours should not be changed. If there is a need for a new colour of button always check the accessibility of the colours
+- The disabled state for buttons has been intentionally left off. We avoid having buttons in a disabled state. 
 
 ## Base classes
 
