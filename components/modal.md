@@ -6,9 +6,16 @@ section: components
 
 # Modal
 
-Modal documentation goes here.
+The Modal component lets the user to view content in a dialog box that overlays over existing content.
 
+**When to use**
 
+- We try to minimise use of modals. Always see if your content would fit in a Hint first.
+- That said they may be necessary when there is additional contextual information only relevant to certain users that isn’t specifically linked to a form field.
+
+**When not to use**
+
+Do not use if the content is directly associated with a specific question or form field. In those instances use a Hint instead.
 
 ## Example
 
