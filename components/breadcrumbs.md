@@ -6,7 +6,15 @@ section: components
 
 # Breadcrumbs
 
-Breadcrumbs documentation goes here.
+The Breadcrumbs component provides users with a clear sense of where they are within a site with multiple levels and helps them understand the overall site structure.
+
+**When not to use**
+
+Do not use breadcrumbs within questionnaires, calculators, or account setup flows.
+
+**Usage guidance**
+
+Always place breadcrumbs outside of the hero section, directly below.
 
 ## Breadcrumbs example:
 
