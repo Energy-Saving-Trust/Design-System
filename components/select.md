@@ -6,7 +6,19 @@ section: components
 
 # Select
 
-Select documentation goes here.
+The Select component lets users select a single item from a list.
+
+**When to use**
+
+Use the Select instead of a Radio component when the list is sufficiently long enough that it would cause excessive scrolling for the user if all the options were presented.
+
+**When not to use**
+
+Use the Radio in place of the Select if there are around eight or less items and it would not cause the user to need to do excessive scrolling.
+
+**Usage guidance**
+
+The Select component intentionally keeps to the system default styling. This ensures that it will be accessible and optimised for use on both Desktop and Mobile.
 
 ## Example
 
