@@ -1,4 +1,4 @@
----
+ ---
 title: Checkbox & Radio
 layout: content
 section: components
@@ -7,6 +7,19 @@ section: components
 # Checkbox & Radio
 
 Checkbox & Radio documentation goes here.
+
+**When to use checkboxes**
+
+- When you have multiple items in a list you need the user to select.
+- For opt-ins when you need the user to certify their agreement with a statement.
+
+**When to use radios**
+
+- When the user is restricted to choosing a single answer
+
+**When not to use radios**
+
+- If the list is longer than ten items use the Select component or a dropdown menu instead of radio buttons
 
 ## Checkbox example:
 
