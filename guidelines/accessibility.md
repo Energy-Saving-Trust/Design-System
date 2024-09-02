@@ -92,10 +92,9 @@ Read more about [why HTML-first approach is essential to creating accessible pro
 - List of [automated tools recommmended by DWP](https://accessibility-manual.dwp.gov.uk/tools-and-resources/automated-accessibility-testing)
 
 **Manual Testing** 
-
-- Check new patterns and designs using the Accessibility Personas set up by Gov.UK
-- https://alphagov.github.io/accessibility-personas/
-- Conduct manual testing with screen readers and keyboard navigation. 
+- Conduct manual testing with a screen reader simulator, we recommend: https://www.nvaccess.org/download/
+- Use your site navigating with only your keyboard (no mouse), are you still able to complete key tasks?
+- Check new patterns and designs using the [Accessibility Personas set up by Gov.UK](https://alphagov.github.io/accessibility-personas/)
 - Include users with disabilities in the testing process to gather real-world feedback.
 - For [agencies that conduct accessibility testing go here.](https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/search?q=accessibility%20testing)
 
