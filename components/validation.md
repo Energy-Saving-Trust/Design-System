@@ -17,6 +17,7 @@ Use validation for form inputs such as email, phone, and password to help guide 
 Do not use validation unless absolutely necessary (email, password, phone number). Wherever possible correct users; formatting to match the requested format type automatically.
 
 **Usage guidance**
+
 - We always use the text ‘required’ to indicate mandatory fields as asterisks are not accessible.
 - We place the burden of correcting formatting on the system not the user. For example, a user should be able to enter their postcode with or without spaces. E.g. ‘N1 9NG’ or ‘N19NG’ are both accepted by the system.
 - Validation should use a combination of colour and text or iconography to communicate the state of the form field to ensure accessibility.
