@@ -24,18 +24,20 @@ Checkbox & Radio documentation goes here.
 ## Checkbox example:
 
 {% capture code_render %}
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Default checkbox
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-  <label class="form-check-label" for="flexCheckChecked">
-    Checked checkbox
-  </label>
-</div>
+<fieldset>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+</fieldset>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
@@ -43,18 +45,20 @@ Checkbox & Radio documentation goes here.
 ## Radio example:
 
 {% capture code_render %}
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Default radio
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    Default checked radio
-  </label>
-</div>
+<fieldset>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+</fieldset>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
