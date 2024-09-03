@@ -3,7 +3,6 @@ title: Design Principles
 layout: documentation-page
 section: guidelines
 ---
-# Design Principles
 
 1. Put user needs first
 2. Prioritise accessibility
