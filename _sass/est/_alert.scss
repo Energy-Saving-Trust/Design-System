@@ -60,6 +60,7 @@
   .icon {
     max-width: $alert-icon-dimension;
     max-height: $alert-icon-dimension;
+    min-width: calc($alert-icon-dimension * 0.8);
   }
 }
 
