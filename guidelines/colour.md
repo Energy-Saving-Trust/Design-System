@@ -32,13 +32,8 @@ For each colour you can see acceptable shade variations as well as the accessibi
 
 <div class="js-natural-colors"></div>
 
-### Colours used for status (danger, warning, success)
 
-![Status colours](https://github.com/user-attachments/assets/e9929b5a-3cf9-4411-8561-8eb71e08351f)
 
-### Text colours
-
-![Text colours](https://github.com/user-attachments/assets/c5490ad2-e30e-4f5b-a7cf-4657c86af3c6)
 
 
 
