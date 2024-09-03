@@ -1,6 +1,6 @@
 ---
 title: Introduction to accessibility
-layout: content-typography
+layout: documentation-page
 ---
 
 At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is a priority for every product we create, and improves the experience for _all_ our users.
@@ -38,7 +38,7 @@ To make sure that our digital experiences are accessible more broadly consider t
 
 ### Alternative text
 
-- Provide descriptive alt text for all images, except when images are purely decorative (use alt="").
+- Provide descriptive alt text for all images, except when images are purely decorative (use `alt=""`).
 - For complex images, such as charts, provide a detailed description.
 - Provide captions for all video content.
 - Offer transcripts for audio content.

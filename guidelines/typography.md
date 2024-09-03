@@ -87,12 +87,6 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
       <td>19.20px</td>
       <td>Regular/400</td>
     </tr>
-    <tr>
-      <td>body-03</td>
-      <td>14px</td>
-      <td>16.80px</td>
-      <td>Regular/400</td>
-    </tr>
   </tbody>
 </table>
 
@@ -156,56 +150,30 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
       <td>19.20px</td>
       <td>Regular/400</td>
     </tr>
-    <tr>
-      <td>body-03</td>
-      <td>14px</td>
-      <td>16.80px</td>
-      <td>Regular/400</td>
-    </tr>
   </tbody>
 </table>
 
-## Component and layout headings
 
 
-## Font sizes
+## Heading examples
 
+{% capture code_render %}
 
-### Principles:
+<h1>H1. Example heading</h1>
+<h2>H2. Example heading</h2>
+<h3>H3. Example heading</h3>
+<h4>H4. Example heading</h4>
 
+{% endcapture %}
 
-#### Hierarchy
-When establishing hierarchy for GitHub products, designers should remember that we stress efficient, clean reading experiences for our users. Refrain from utilizing color as a primary method of emphasis.
+{% include component-example.html code_render=code_render %}
 
-#### Readability
+## Body content examples
 
-- Line height—Utilize line-height tokens for proper alignment.
+{% capture code_render %}
 
-- Line length—It's considered a good practice to keep lines around 80 characters or less—W3 Page Structure Guidelines. Cases vary depending on the situation, but this serves as a general rule of thumb for designing layouts.
+<p>Text is the primary way our users access information and complete tasks. Effective, accessible content relies on a clear font, consistent headings, succinct body text paragraphs, descriptive links, and scannable lists.</p>
 
-- Type alignment—Our content is typically left-aligned and ragged right. Be sensible in deviating from this standard, as justifying, centering, and right-aligning text is atypical of GitHub products.
+{% endcapture %}
 
-- Font weight—Adjust font weight to add emphasis and differentiate content hierarchy.
-
-- Letter spacing—Please refrain from altering letter-spacing on our products. There may be rare scenarios in which this is acceptable, but generally speaking, this should be avoided altogether.
-
-
-
-
-
-
-
-## Apple: https://developer.apple.com/design/human-interface-guidelines/typography/
-
-- Ensuring legibility
-- Conveying hierarchy
-
-## Atlassian: https://atlassian.design/foundations/typography-beta/
-
-- Principles
-  - Optimize for readability
-    Help readers understand communications easily and enhance their experience, regardless of their abilities.
-  - Create visual harmony
-    Typography should be consistent and cohesive. Use visual hierarchy and space to simplify complex information.
-  - Contextualize for different users
-    Tailor for different preferences, operating systems and applications, while keeping in mind how people consume and process information.
+{% include component-example.html code_render=code_render %}
