@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-layout: content
+layout: documentation-page
 section: guidelines
 ---
 
