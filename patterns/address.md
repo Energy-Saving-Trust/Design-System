@@ -25,11 +25,11 @@ Place the burden of correcting formatting on the system not the user. For exampl
   <legend><h3 class="h4 mb-2">What is your address?</h3></legend>
   <div class="mb-4">
     <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Why do I need to do this?
+        Why do we need to know your address?
       </a>
     <div class="collapse" id="collapseExample">
       <div class="hint-body">
-        Creating an account will allow us save your results and offer more customised advice. 
+        We'll use your address to search our database. The database contains models of property characteristics based on your address. This helps us predict your energy demands.
       </div>
     </div>
   </div>
@@ -65,11 +65,11 @@ Place the burden of correcting formatting on the system not the user. For exampl
 <h3 class="h4 mb-2">What is your address?</h3>
 <div class="mb-4">
   <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-      Why do I need to do this?
+      Why do we need to know your address?
     </a>
   <div class="collapse" id="collapseExample2">
     <div class="hint-body">
-      Creating an account will allow us save your results and offer more customised advice. 
+      We'll use your address to search our database. The database contains models of property characteristics based on your address. This helps us predict your energy demands.
     </div>
   </div>
 </div>
