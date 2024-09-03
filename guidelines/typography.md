@@ -1,81 +1,179 @@
 ---
 title: Typography
-layout: content
+layout: documentation-page
 section: guidelines
 ---
 
+Text is the primary way our users access information and complete tasks. Effective, accessible content relies on a clear font, consistent headings, succinct body text paragraphs, descriptive links, and scannable lists.
+
+Typography brings consistency across experiences and platforms. Good typographic principles establish a clear visual hierarchy and to maximise readability.
+
+#### Typography and accessibility
+
+Energy Saving Trust Design System components meet level AA of the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/#text-spacing) for text spacing and AAA for visual presentation.
 
 
-# h1. Bootstrap heading
+## Typeface
 
-## h2. Bootstrap heading
+Our core typeface is Poppins - a geometric sans serif designed by Jonny Pinhorn and Ninad Kale for Indian Type Foundry.
 
-### h3. Bootstrap heading
-
-#### h4. Bootstrap heading
-
-##### h5. Bootstrap heading
-
-###### h6. Bootstrap heading
-
-# Choosing energy efficient appliances
+Poppins is an open source typeface available either as an embed or a download via Google Fonts and Adobe Fonts.
 
 
-## What should I look for when choosing energy efficient appliances?
 
-When you’re buying a new appliance for your home, look for its energy label. The energy label tells you how much energy that appliance uses, comparing it to similar appliances. This can help you find appliances that use the least amount of energy.
+## Type scale
 
-You should also consider the size of the appliance you need. Only buy the size you need, as larger items will use more energy and end up costing you more. For example, you buy a family-sized dishwasher but never manage to fill it with dirty dishes each time you use it. You may be wasting energy and therefore money on your electricity bills.
+The type scale changes based on screen size.
 
-## How do energy labels work?
+The scale for ‘large screens’ is used when the screen is wider than the tablet breakpoint (640px).
 
-Appliances are tested for how much energy they use during typical use. This gives them a rating on a scale of A to G, with A being the most efficient product of its class, and G being the least efficient. Some appliances (e.g. ovens) use an older scale, from A+++ to G, with A+++ being the most efficient.
+### Large screens
 
-In general, energy ratings are categorised by the product’s size. This means that two appliances with the same energy rating might use different amounts of electricity if they’re different sizes.
+<table class="table">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Font size</th>
+      <th>Line height</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>42.5px</td>
+      <td>51px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>33px</td>
+      <td>40.80px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>25px</td>
+      <td>35.70px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>19px</td>
+      <td>30.60px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H6</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>p/body-01</td>
+      <td>17px</td>
+      <td>26px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-02</td>
+      <td>16px</td>
+      <td>19.20px</td>
+      <td>Regular/400</td>
+    </tr>
+  </tbody>
+</table>
 
-For instance, a G-rated 265-litre fridge freezer could cost around £70 in Great Britain (GB) and £105 in Northern Ireland (NI) to run each year.
+### Small screens
 
-But a larger 424-litre fridge freezer with a better F rating could cost around £75 in GB and £115 in NI to run each year.
+<table class="table">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Font size</th>
+      <th>Line height</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>35px</td>
+      <td>51px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>27px</td>
+      <td>40.80px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>23px</td>
+      <td>35.70px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>19px</td>
+      <td>30.60px</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>H6</td>
+      <td>tbc</td>
+      <td>tbc</td>
+      <td>SemiBold/600</td>
+    </tr>
+    <tr>
+      <td>p/body-01</td>
+      <td>17px</td>
+      <td>26px</td>
+      <td>Regular/400</td>
+    </tr>
+    <tr>
+      <td>body-02</td>
+      <td>16px</td>
+      <td>19.20px</td>
+      <td>Regular/400</td>
+    </tr>
+  </tbody>
+</table>
 
-It’s best to check the appliance’s energy label, and look for the product with the best energy rating for the size you require.
 
 
-## Reduce your energy consumption
+## Heading examples
 
-How and when you use your home appliances can affect how much energy they use. For example, wet appliances such as dishwashers and washing machines typically account for 10% of a household’s energy bills.
+{% capture code_render %}
 
-If you want to reduce your energy use here, you can:
+<h1>H1. Example heading</h1>
+<h2>H2. Example heading</h2>
+<h3>H3. Example heading</h3>
+<h4>H4. Example heading</h4>
 
-- use these appliance less frequently.
-- wash at lower temperatures.
-- Avoiding half loads.
+{% endcapture %}
 
-For more information, we have more tips on [how to save energy when using your washing machine](/components/).
+{% include component-example.html code_render=code_render %}
 
+## Body content examples
 
-## Avoid leaving appliances on standby
+{% capture code_render %}
 
-The average household spends £45 in GB and £70 in NI each year powering appliances left on standby.
+<p>Text is the primary way our users access information and complete tasks. Effective, accessible content relies on a clear font, consistent headings, succinct body text paragraphs, descriptive links, and scannable lists.</p>
 
-Standby is the energy used by certain appliances when not in use and not switched off at the plug. As well as standby power, other new additions to the average household’s collection of electrical goods use low levels of electricity when not in use. These include:
+{% endcapture %}
 
-- broadband modems
-- broadband routers
-- smart speakers
-- digiboxes
-- telephones
-
-We tend not to think to switch these off, but as they’re often on for 24 hours a day, these appliances gradually consume a great deal of electricity.
-
-Fortunately there are several products available to help cut down your standby electricity consumption. These include standby savers that let you turn all your appliances off standby in one go. Some come with timers and others come with a single off-switch.
-
-EU regulations specify that non-networked electrical devices sold after 2013 can’t have a standby power greater than 0.5W. But with many households using more electronic gadgets, it’s worth looking at your standby usage.
-
-
-_________
-
-Creating typography guidelines is crucial for maintaining consistency, readability, and visual appeal in any design project. Here is a comprehensive guide to help you establish effective typography guidelines:
-
-### 1. **Typeface Selection**
-- **Primary Typeface:** Choose a versatile and legible typeface that will be used for headings, body text, and other significant text elements.
-- **Secondary Typeface:** Select a complementary typeface for accents
+{% include component-example.html code_render=code_render %}

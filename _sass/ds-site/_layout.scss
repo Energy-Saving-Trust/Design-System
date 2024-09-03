@@ -1,0 +1,44 @@
+.content-page {
+  h1 {
+    margin-left: -2px;
+  }
+}
+
+.content-body {
+  > p {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 720px;
+    }
+  }
+  > ul {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 720px;
+    }
+    li {
+      padding-bottom: $spacer / 2;
+      margin-bottom: 0px;
+    }
+  }
+  h2 {
+    margin-top: $spacer * 3.294117;
+    margin-bottom: $spacer * 2;
+    margin-block-end: $spacer * 2;
+  }
+  h3 {
+    margin-top: $spacer * 2;
+    margin-bottom: $spacer;
+    margin-block-end: $spacer;
+  }
+  h4 {
+    margin-top: $spacer * 2;
+    margin-bottom: $spacer;
+    margin-block-end: $spacer;
+  }
+
+  code {
+    @extend code;
+    background-color: #ccc;
+   }
+}
