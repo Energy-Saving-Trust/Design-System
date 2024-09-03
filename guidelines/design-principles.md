@@ -8,8 +8,8 @@ section: guidelines
 2. Prioritise accessibility
 3. Embrace iteration
 4. Make things simple
-5. Always design with content
-6. Mobile-first design
+5. Design with real content
+6. Design for mobile-first
 
 ### Put user needs first  
 
@@ -39,7 +39,7 @@ We are always striving to make things simpler. This means removing pages, conten
 
 It is hard to make something simple, and easy to make something complicated.   
 
-### Always design with real content  
+### Design with real content  
 
 Design starts with content. What do we want to say? What information do we want to convey? What action do we want someone to take based on that? The design then grows from there. The content needs to be designed alongside the functionality, user interface, and other interactive elements of the service.   
 
