@@ -1,6 +1,6 @@
 ---
 title: Design Principles
-layout: content
+layout: documentation-page
 section: guidelines
 ---
 # Design Principles
