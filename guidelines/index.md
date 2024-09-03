@@ -1,6 +1,6 @@
 ---
 title: Guidelines
-layout: content
+layout: documentation-page
 section: guidelines
 side_bar: false
 ---
