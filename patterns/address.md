@@ -51,7 +51,7 @@ Place the burden of correcting formatting on the system not the user. For exampl
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input type="text" class="form-control w-50" id="postcode">
+    <input type="text" class="form-control form-postcode" id="postcode">
   </div>
   <p>Skip manual entry. <a href="#">Find my address</a></p>
 </fieldset>
@@ -82,7 +82,7 @@ Place the burden of correcting formatting on the system not the user. For exampl
   <label for="postcode" class="form-label">Postcode</label>
   <div class="form-text">Example: LL13 7AS<br>
 Please leave a space between the two parts of the postcode.</div>
-  <input type="text" class="form-control w-50" id="postcode">
+  <input type="text" class="form-control form-postcode" id="postcode">
 </div>
 <p><a href="#">Enter my address manually</a></p>
 {% endcapture %}
