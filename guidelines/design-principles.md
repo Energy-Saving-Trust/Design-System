@@ -4,13 +4,12 @@ layout: documentation-page
 section: guidelines
 ---
 
-
 1. Put user needs first
 2. Prioritise accessibility
 3. Embrace iteration
 4. Make things simple
-5. Always design with content
-6. Mobile-first design
+5. Design with real content
+6. Design for mobile first
 
 ### Put user needs first 
 

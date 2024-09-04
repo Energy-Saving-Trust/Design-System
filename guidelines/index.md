@@ -1,11 +1,9 @@
 ---
 title: Guidelines
-layout: content
+layout: documentation-page
 section: guidelines
 side_bar: false
 ---
-
-# Guidelines
 
 Understand our vision and approach to digital design at Energy Saving Trust by reading our guidelines.
  
