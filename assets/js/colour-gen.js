@@ -25,6 +25,15 @@ $(document).ready(function() {
 
 
   var naturalColorsHtml = "";
+  var naturalColorsHtml = "<div class=\"color-strip-name\"><h4>Neutral</h4></div>";
+  naturalColorsHtml += "<div class=\"color-strip\">";
+
+  naturalColorsHtml += renderCard("#f2f2f0", "");
+  naturalColorsHtml += renderCard("#909ba6", "");
+  naturalColorsHtml += renderCard("#000000", "");
+  naturalColorsHtml += "</div>";
+
+
   naturalColorsHtml += renderStrip("Grey light shades", grayLights)
   naturalColorsHtml += renderStrip("Grey darker shades", grayDarks)
   $(".js-natural-colors").html(naturalColorsHtml);
@@ -32,33 +41,41 @@ $(document).ready(function() {
 
   function renderStrip(colourSetName, colourSet) {
 
-    var html = "<div class=\"color-strip-name\"><strong>" + colourSetName + "</strong></div>";
+    var html = "<div class=\"color-strip-name\"><h4>" + colourSetName + "</h4></div>";
     html += "<div class=\"color-strip\">";
 
     colourSet.forEach(function (subColor) {
 
       var colourMix = tinycolor.mix(subColor.baseHex, "#fff", subColor.tint).toHexString();
 
-      console.log(subColor.subColorName + " - " + colourMix);
 
-      html += "<div class=\"color-card-wrapper\">";
-      html += "<div class=\"color-sample\" style=\"background-color:" + colourMix + "\">";
-
-      html += "<div class=\"color-sample-number\">";
-      html += subColor.subColorNumber;
-      html += "</div>";
-
-      html += "</div>";
-      html += "<div class=\"color-info\">";
-      html += "<span>" + colourMix.toUpperCase() + "</span>" + renderClipboardCopy();
-
-      html += renderAccessibilityCheck(colourMix);
-
-      html += "</div>";
-      html += "</div>";
+      html += renderCard(colourMix, subColor.subColorNumber);
 
 
     });
+    html += "</div>";
+
+    return html;
+
+  }
+
+  function renderCard(colourMix, subColorNumber) {
+    var html = "";
+
+    html += "<div class=\"color-card-wrapper\">";
+    html += "<div class=\"color-sample\" style=\"background-color:" + colourMix + "\">";
+
+    html += "<div class=\"color-sample-number\">";
+    html += subColorNumber;
+    html += "</div>";
+
+    html += "</div>";
+    html += "<div class=\"color-info\">";
+    html += "<span>" + colourMix.toUpperCase() + "</span>" + renderClipboardCopy();
+
+    html += renderAccessibilityCheck(colourMix);
+
+    html += "</div>";
     html += "</div>";
 
     return html;
