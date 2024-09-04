@@ -111,7 +111,9 @@
   &:first-child .page-link:active::before,
   &:first-child .page-link.active::before,
   &:last-child .page-link:active::after,
-  &:last-child .page-link.active::after {
+  &:last-child .page-link.active::after,
+  &:last-child .page-link:focus::after,
+  &:first-child .page-link:focus::before {
     background-image: var(--#{$prefix}pagination-previous-icon-active);
   }
 }
