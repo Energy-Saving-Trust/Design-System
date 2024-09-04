@@ -1,3 +1,5 @@
+//// Validation lists
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
@@ -46,6 +48,24 @@
       }, false)
     })
 })()
+
+
+//// Filter dropdown accessibility
+
+// Ensures that the filter dropdowns can be open and closed via keyboard controls (enter and spacebar)
+document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(element) {
+    element.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+        event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+        element.click(); // Simulate a click to toggle the collapse
+      }
+    });
+  });
+
+
+//// TESTING CODE ////
+
+//// Filter testing code
 
 // Predefined terms from taxonomies
 const taxonomy1 = ['Government/local authority', 'Option 2', 'Option 3'];

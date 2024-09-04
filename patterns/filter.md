@@ -31,7 +31,7 @@ The Filter pattern lets users restrict which options they are shown to fit their
     <div class="filter-options">
       <div class="form-group">
         <fieldset class="fieldset">
-          <legend class="fieldset-legend h6" data-bs-toggle="collapse" data-bs-target="#checkboxes1" aria-expanded="true" aria-controls="collapseExample">Category title</legend>
+          <legend role="button" class="fieldset-legend h6" tabindex="0" data-bs-toggle="collapse" data-bs-target="#checkboxes1" aria-expanded="true" aria-controls="collapseExample">Category title</legend>
           <div id="checkboxes1" class="checkboxes show">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="1-1" id="cat1-1" checked>
@@ -56,7 +56,7 @@ The Filter pattern lets users restrict which options they are shown to fit their
       </div>
       <div class="form-group">
         <fieldset class="fieldset">
-          <legend class="fieldset-legend h6" data-bs-toggle="collapse" data-bs-target="#checkboxes2" aria-expanded="false" aria-controls="collapseExample">Category title 2</legend>
+          <legend role="button" class="fieldset-legend h6" tabindex="0" data-bs-toggle="collapse" data-bs-target="#checkboxes2" aria-expanded="false" aria-controls="collapseExample">Category title 2</legend>
           <div id="checkboxes2" class="checkboxes collapse">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="2-1" id="cat2-1" checked>
