@@ -79,7 +79,7 @@ The Log in / Sign up pattern provides users with a predictable way of logging in
 <div class="mb-4">
   <button type="button" class="btn btn-primary">Create account</button>
 </div>
-<p>Have an account? <a href="#">Log in</a></p>
+<p>Have an account? <a href="#">Log in now</a></p>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
