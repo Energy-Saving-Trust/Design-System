@@ -18,6 +18,20 @@
   border: 1px solid #dee2e6;
   position: relative;
   padding: 50px 25px;
+  &.ds-include-preview {
+    padding-top: calc(80px + 2rem);
+  }
+  .ds-example-preview-image {
+    width: 100%;
+  }
+  .ds-example-preview-link {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dee2e6;
+  }
   hr {
     border-top: 1px solid #dee2e6;
     opacity: 1;

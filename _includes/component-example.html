@@ -1,6 +1,15 @@
 <div class="ds-example-wrapper">
-  <div class="ds-example-preview">
-    {{ include.code_render }}
+  <div class="ds-example-preview {% if include.show_standalone_page and include.show_standalone_page != blank %}ds-include-preview{% endif %}">
+    {% if include.show_standalone_page and include.show_standalone_page != blank %}
+    <div class="ds-example-preview-link">
+      <a href="/previews/{{ include.show_standalone_page }}.html" target="_blank">Open this example in new tab</a>
+    </div>
+    {% endif %}
+    {% if include.image_url %}
+      <img class="ds-example-preview-image" src="{{ include.image_url }}" alt="">
+    {% else %}
+      {{ include.code_render }}
+    {% endif %}
   </div>
   <div class="ds-example-tabs">
   HTML

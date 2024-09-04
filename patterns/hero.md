@@ -29,7 +29,7 @@ The Hero pattern is used to draw the user into a page. It clearly identifies whi
   </div>
 </div>
 {% endcapture %}
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="hero" image_url="../assets/previews/hero.png" %}
 
 ## Hero example 2
 
@@ -51,4 +51,4 @@ The Hero pattern is used to draw the user into a page. It clearly identifies whi
 </div>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="hero-2" image_url="../assets/previews/hero-2.png" %}
