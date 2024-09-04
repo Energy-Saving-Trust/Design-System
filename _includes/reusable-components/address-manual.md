@@ -2,11 +2,11 @@
   <legend><h3 class="h4 mb-2">What is your address?</h3></legend>
   <div class="mb-4">
     <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Why do I need to do this?
+        Why do we need to know your address?
       </a>
     <div class="collapse" id="collapseExample">
       <div class="hint-body">
-        Creating an account will allow us save your results and offer more customised advice. 
+        We'll use your address to search our database. The database contains models of property characteristics based on your address. This helps us predict your energy demands.
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
     <label for="postcode" class="form-label">Postcode</label>
     <div class="form-text">Example: LL13 7AS<br>
   Please leave a space between the two parts of the postcode.</div>
-    <input type="text" class="form-control w-50" id="postcode">
+    <input type="text" class="form-control form-postcode" id="postcode">
   </div>
   <p>Skip manual entry. <a href="#">Find my address</a></p>
 </fieldset>

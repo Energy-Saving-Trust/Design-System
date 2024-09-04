@@ -25,6 +25,7 @@ The Log in / Sign up pattern provides users with a predictable way of logging in
 ## Sign up example
 
 {% capture code_render %}
+  {% include reusable-components/login-signup.md %}
 {% endcapture %}
 
 {% include component-example.html code_render=code_render show_standalone_page="login-signup" %}

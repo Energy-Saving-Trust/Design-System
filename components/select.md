@@ -26,7 +26,7 @@ The Select component intentionally keeps to the system default styling. This ens
 <div class="form-group mb-4">
   <label for="exampleFormControlSelect1" class="form-label">Select from below</label>
   <select id="exampleFormControlSelect1" class="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
+    <option selected>Please select</option>
     <option value="1">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
