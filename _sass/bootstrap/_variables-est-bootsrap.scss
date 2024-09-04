@@ -594,7 +594,7 @@ $font-family-code:            var(--#{$prefix}font-monospace) !default;
 // $font-size-base affects the font size of the body text
 $font-size-root:              17px !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm:                $font-size-base * .82 !default;
+$font-size-sm:                $font-size-base * 0.941 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
 $font-weight-lighter:         lighter !default;
@@ -667,8 +667,8 @@ $display-line-height: $headings-line-height !default;
 $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             .82em !default;
-$mobile-font-size:            .94em !default;
+$small-font-size:             16px !default;
+$mobile-font-size:            16px !default;
 
 $sub-sup-font-size:           .75em !default;
 
@@ -1643,7 +1643,7 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size:              0.82rem !default;
+$breadcrumb-font-size:              $small-font-size !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         1rem !default;
