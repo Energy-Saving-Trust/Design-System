@@ -39,7 +39,7 @@ The Log in / Sign up pattern provides users with a predictable way of logging in
 <p>No account? <a href="#">Create an account</a></p>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="login" %}
 
 ## Sign up example
 
@@ -82,4 +82,4 @@ The Log in / Sign up pattern provides users with a predictable way of logging in
 <p>Have an account? <a href="#">Log in</a></p>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="login-signup" %}

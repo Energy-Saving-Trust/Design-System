@@ -26,7 +26,7 @@ The Search pattern lets users search a site for a phrase or keyword.
 </form>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="search-small" %}
 
 ## Large search
 
@@ -44,4 +44,4 @@ The Search pattern lets users search a site for a phrase or keyword.
 </div>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="search-large" %}

@@ -1,18 +1,7 @@
 ---
-title: Date picker
-layout: content
-section: patterns
+layout: bare-with-margins
 ---
 
-# Date picker
-
-The Date picker pattern lets a user type in a date or select it using a calendar.
-
-
-
-## Date picker
-
-{% capture code_render %}
 <div id="myDatepicker" class="datepicker">
   <div class="date">
     <label for="id-textbox-1">Move in date</label>
@@ -115,6 +104,3 @@ The Date picker pattern lets a user type in a date or select it using a calendar
     </div>
   </div>
 </div>
-{% endcapture %}
-
-{% include component-example.html code_render=code_render show_standalone_page="datepicker" %}

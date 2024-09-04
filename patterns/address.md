@@ -57,7 +57,7 @@ Place the burden of correcting formatting on the system not the user. For exampl
 </fieldset>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="address-manual" %}
 
 ## Postcode example
 
@@ -87,4 +87,4 @@ Please leave a space between the two parts of the postcode.</div>
 <p><a href="#">Enter my address manually</a></p>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="address-postcode" %}

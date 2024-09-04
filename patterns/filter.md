@@ -85,4 +85,4 @@ The Filter pattern lets users restrict which options they are shown to fit their
 
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="filter" %}

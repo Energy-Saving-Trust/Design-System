@@ -38,6 +38,15 @@ The Footer pattern is a consistent set of links to company information, mandator
         <li class="nav-item"><a href="#" class="nav-link p-0">Instagram</a></li>
       </ul>
     </div>
+    <div class="col">
+      <h2>Follow us</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link p-0">LinkedIn</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">X (Twitter)</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">Facebook</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">Instagram</a></li>
+      </ul>
+    </div>
     <div class="col full">
       <h2>Energywire newsletter</h2>
       <a class="btn btn-primary" href="#">Subscribe to newsletter</a>
@@ -51,7 +60,7 @@ The Footer pattern is a consistent set of links to company information, mandator
   </section>
 </footer>
 {% endcapture %}
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="footer" image_path="../assets/previews/footer.png" %}
 
 ## Product footer
 
@@ -65,12 +74,12 @@ The Footer pattern is a consistent set of links to company information, mandator
       </ul>
     </div>
     <div class="col">
-      <ul class="nav flex-row">
+      <ul class="nav flex-row justify-content-end">
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">Help</a></li>
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">Contact us</a></li>
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">About Go Renewable</a></li>
       </ul>
-      <ul class="nav flex-row mt-2">
+      <ul class="nav flex-row mt-2 justify-content-end">
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">Privacy Policy</a></li>
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">Cookies</a></li>
         <li class="nav-item nav-item-sm"><a href="#" class="nav-link p-0 m-0">Website terms of use</a></li>
@@ -87,7 +96,7 @@ The Footer pattern is a consistent set of links to company information, mandator
   </section>
 </footer>
 {% endcapture %}
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="footer-product" image_path="../assets/previews/footer-product.png" %}
 
 ## Footer (partner website)
 
@@ -117,6 +126,15 @@ The Footer pattern is a consistent set of links to company information, mandator
         <li class="nav-item"><a href="#" class="nav-link p-0">Instagram</a></li>
       </ul>
     </div>
+    <div class="col">
+      <h2>Follow us</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link p-0">LinkedIn</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">X (Twitter)</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">Facebook</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0">Instagram</a></li>
+      </ul>
+    </div>
   </section>
   <section class="footer-bottom">
     <span class="site-name">Partner website 2023</span>
@@ -127,4 +145,4 @@ The Footer pattern is a consistent set of links to company information, mandator
 </footer>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render %}
+{% include component-example.html code_render=code_render show_standalone_page="footer-partner" image_path="../assets/previews/footer-partner.png" %}
