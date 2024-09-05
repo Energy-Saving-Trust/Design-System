@@ -5,9 +5,22 @@
         <ul class="nav justify-content-end">
           <li class="nav-item"><a href="#" class="nav-link nav-link-sm">Contact</a></li>
           <li class="nav-item"><a href="#" class="nav-link nav-link-sm">Location: Scotland</a></li>
-          <li class="nav-item"><a href="#" class="nav-link nav-link-sm">Search</a></li>
+          <li class="nav-item"><a href="#" class="nav-link nav-link-sm" id="search-trigger">Search</a></li>
           <li class="nav-item"><a href="#" class="nav-link nav-link-sm">Subscribe to newsletter</a></li>
         </ul>
+      </div>
+    </div>
+    <div class="search-overlay" style="display: none;">
+      <button class="close-search-overlay" aria-label="Close search overlay">
+        <img src="/assets/images/close-icon.svg" alt="Close">
+        <span aria-hidden="true">Close</span>
+      </button>
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            {% include reusable-components/search-large.md %}
+          </div>
+        </div>
       </div>
     </div>
     <div class="row align-items-center py-3">

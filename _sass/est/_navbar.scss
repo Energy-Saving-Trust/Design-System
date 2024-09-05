@@ -326,3 +326,31 @@
     padding-right: 0;
   }
 }
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 1000;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.search-overlay .large-search-wrap {
+  width: 100%;
+}
+
+.close-search-overlay {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: $white;
+  border: none;
+  cursor: pointer;
+  img {
+    width: 14px;
+    margin-right: 5px;
+  }
+}
