@@ -10,9 +10,19 @@
 
 .dropdown-toggle {
   white-space: nowrap;
-
-  // Generate the caret automatically
-  @include caret();
+  &:after {
+    content: '';
+    background-image: url('/assets/images/down-chevron.svg');
+    background-size: cover;
+    width: 20px;
+    height: 12px;
+    margin-left: 10px;
+    top: 26px;
+    position: absolute;
+  }
+  &.show:after {
+      transform: rotate(180deg);
+  }
   &.show {
     background-color: $white;
   }
@@ -138,9 +148,15 @@
   }
 
   .dropdown-toggle {
-    @include caret(end);
-    &::after {
-      vertical-align: 0;
+    &:after {
+      background-image: url('/assets/images/down-chevron.svg');
+      background-size: cover;
+      width: 20px;
+      height: 12px;
+      margin-left: 10px;
+    }
+    &.show:after {
+        transform: rotate(180deg);
     }
   }
 }
@@ -155,9 +171,15 @@
   }
 
   .dropdown-toggle {
-    @include caret(start);
-    &::before {
-      vertical-align: 0;
+    &:after {
+      background-image: url('/assets/images/down-chevron.svg');
+      background-size: cover;
+      width: 20px;
+      height: 12px;
+      margin-left: 10px;
+    }
+    &.show:after {
+        transform: rotate(180deg);
     }
   }
 }

@@ -1,0 +1,65 @@
+// scss-docs-start caret-mixins
+@mixin caret-down {
+  background-image: url('/assets/images/down-chevron.svg');
+  background-size: cover;
+  width: 20px;
+  height: 12px;
+  margin-left: 10px;
+}
+
+@mixin caret-up {
+  background-image: url('/assets/images/down-chevron.svg');
+  background-size: cover;
+  width: 20px;
+  height: 12px;
+  margin-left: 10px;
+  transform: rotate(180deg);
+}
+
+@mixin caret-end {
+  border-top: $caret-width solid transparent;
+  border-right: 0;
+  border-bottom: $caret-width solid transparent;
+  border-left: $caret-width solid;
+}
+
+@mixin caret-start {
+  border-top: $caret-width solid transparent;
+  border-right: $caret-width solid;
+  border-bottom: $caret-width solid transparent;
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      content: "";
+      @if $direction == down {
+        @include caret-down();
+      } @else if $direction == up {
+        @include caret-up();
+      } @else if $direction == end {
+        @include caret-end();
+      }
+    }
+
+    @if $direction == start {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        vertical-align: $caret-vertical-align;
+        content: "";
+        @include caret-start();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
+// scss-docs-end caret-mixins

@@ -30,7 +30,7 @@
 @import "bootstrap/mixins/alert";
 @import "bootstrap/mixins/backdrop";
 @import "est/mixins/buttons";
-@import "bootstrap/mixins/caret";
+@import "est/mixins/caret";
 @import "bootstrap/mixins/pagination";
 @import "bootstrap/mixins/lists";
 @import "bootstrap/mixins/list-group";
@@ -58,7 +58,7 @@
 @import "bootstrap/images";
 @import "bootstrap/containers";
 @import "bootstrap/grid";
-@import "bootstrap/tables";
+@import "est/tables";
 
 @import "bootstrap/forms/floating-labels";
 @import "est/forms/form-check";
@@ -74,17 +74,17 @@
 
 @import "est/buttons";
 @import "bootstrap/transitions";
-@import "bootstrap/dropdown";
+@import "est/dropdown";
 @import "bootstrap/button-group";
-@import "bootstrap/nav";
-@import "bootstrap/navbar";
-@import "bootstrap/card";
+@import "est/nav";
+@import "est/navbar";
+@import "est/card";
 @import "est/accordion";
 @import "est/breadcrumb";
 @import "est/pagination";
 @import "bootstrap/badge";
 @import "est/alert";
-@import "bootstrap/progress";
+@import "est/progress";
 @import "bootstrap/list-group";
 @import "est/close";
 @import "bootstrap/toasts";
@@ -100,18 +100,12 @@
 @import "est/hint";
 @import "est/metrics";
 @import "est/datepicker";
-@import "est/card";
 @import "est/focus-states";
 @import "est/search";
-@import "est/progress";
-@import "est/tables";
 @import "est/footer";
 @import "est/switch";
 @import "est/hero";
 @import "est/filter";
-@import "est/nav";
-@import "est/navbar";
-@import "est/dropdown";
 
 //Testing
 @import "est/testing";
