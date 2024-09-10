@@ -74,7 +74,7 @@ section: testing
       <button onclick="complete_task()" type="button" class="btn btn-primary">Create account</button>
     </div>
 
-    <p>Have an account? <button style="padding: 0;border: 0;background: transparent;text-decoration: underline;color: #15487A;" onclick="showLogin()">Log in</button></p>
+    <p>Have an account? <button style="padding: 0;border: 0;background: transparent;text-decoration: underline;color: #15487A;" onclick="showLogin()">Log in now</button></p>
   </div>
 </div>
 
