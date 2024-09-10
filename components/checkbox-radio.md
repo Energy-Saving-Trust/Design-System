@@ -1,4 +1,4 @@
- ---
+---
 title: Checkbox & Radio
 layout: content
 section: components
