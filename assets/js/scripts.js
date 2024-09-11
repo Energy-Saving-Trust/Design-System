@@ -54,13 +54,39 @@
 
 // Ensures that the filter dropdowns can be open and closed via keyboard controls (enter and spacebar)
 document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(element) {
-    element.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
-        event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
-        element.click(); // Simulate a click to toggle the collapse
-      }
-    });
+  element.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+      event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+      element.click(); // Simulate a click to toggle the collapse
+    }
   });
+});
+
+
+//// Show password toggle
+
+// Shows/hides the password on click and via keyboard controls
+
+function toggleVisibility(el) {
+  const control = el.getAttribute('aria-controls');
+  const expanded = el.getAttribute('aria-expanded') === 'false';
+  console.log(el);
+  document.querySelector(`#${control}`).type = expanded ? 'text' : 'password';
+  el.setAttribute('aria-expanded', String(expanded));
+  el.setAttribute('aria-label', expanded ? 'Hide password' : 'Show password');
+  el.textContent = expanded ? 'Hide' : 'Show';
+}
+
+document.querySelector('.password-input-toggle').addEventListener('click', ({
+  target
+}) => toggleVisibility(target));
+
+document.querySelector('.password-input-toggle').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+    event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+    toggleVisibility(event.target); // Simulate a click to toggle the collapse
+  }
+});
 
 
 //// TESTING CODE ////
