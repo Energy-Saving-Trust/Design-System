@@ -50,6 +50,24 @@
 })()
 
 
+//// Modal focus
+
+// Ensures that focus stays in the modal on open
+
+// Select all elements with the class 'modal'
+document.querySelectorAll('.modal').forEach(function(modal) {
+  // Add an event listener for each modal
+  modal.addEventListener('shown.bs.modal', function () {
+    // Find the input inside the modal and focus on it
+    const input = modal.querySelector('.btn-close');
+    if (input) {
+      input.focus();
+    }
+  });
+});
+
+
+
 //// Filter dropdown accessibility
 
 // Ensures that the filter dropdowns can be open and closed via keyboard controls (enter and spacebar)
@@ -70,7 +88,6 @@ document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(elemen
 function toggleVisibility(el) {
   const control = el.getAttribute('aria-controls');
   const expanded = el.getAttribute('aria-expanded') === 'false';
-  console.log(el);
   document.querySelector(`#${control}`).type = expanded ? 'text' : 'password';
   el.setAttribute('aria-expanded', String(expanded));
   el.setAttribute('aria-label', expanded ? 'Hide password' : 'Show password');
