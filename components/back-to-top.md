@@ -1,29 +1,27 @@
 ---
-title: Back to Top
-layout: content
+title: Back to top
+layout: documentation-page
 section: components
 ---
 
-# Back to Top
-
 The Back to top component assist users in quickly returning to the top of the page.
 
-**When to use**
+## Usage guidance
 
-- Use on all websites with content that extends beyond the fold
-- Mobile users will have a greater need for this component as even content that appears short on Desktop can require a lot of scrolling on mobile
+- Always place it in the bottom right of the screen.
+- It should appear after the user has scrolled past the fold.
+- Ensure it stops before the footer to avoid covering important links.
 
-**When not to use**
+### When to use
 
-Do not include on the page if the user never needs to scroll past the fold.
+- Use this component on websites with content that extends beyond the fold.
+- It is particularly useful for mobile users, as content that appears short on desktop can require extensive scrolling on mobile.
 
-**Usage guidance**
+### When not to use
 
-- Always place in the bottom right of the screen
-- Should appear after the user has scrolled past the fold
-- Should stop before the footer to avoid covering important links
+Do not include this component if users never need to scroll past the fold.
 
-## Back to Top example:
+## Example
 
 {% capture code_render %}
 <a href="#" class="back-to-top">Back to top</a>
