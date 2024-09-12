@@ -105,7 +105,7 @@ Colour vision deficiency affects a significant percentage of our audience. In th
 
 To ensure that our designs are accessible to people who cannot see well or distinguish colours, we never use colour as the only means of providing information or requesting an action.
 
-We use additional visual cues like text and iconography, as well as colour, to convey meaning—for example in our graphs or diagrams or to indicate states in notices and alerts (e.g., success, danger, caution).
+We use additional visual cues, such as text and iconography, alongside colour to convey meaning. This applies to graphs, diagrams, or indicators of status in notices and alerts (e.g., success, warning, error).
 
 ### 3. We use colour consistently
 
