@@ -41,9 +41,9 @@ If you expect users to provide multiple lines of text, do not use the text input
 </div>
 
 <div>
-  <label for="exampleFormControlInput2" class="form-label">Email address (required)</label>
-  <div id="passwordHelpBlock" class="form-text">
-    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+  <label for="exampleFormControlInput2" class="form-label">EPC Report Reference Number (required)</label>
+  <div id="exampleHelpBlock" class="form-text">
+    You can find the Report Reference Number (RRN) in the top right-hand corner of your Energy Performance Certificate (EPC). It will be a 20-digit number in this format: 1111-2222-3333-4444-5555.
   </div>
   <input type="text" class="form-control" id="exampleFormControlInput2">
 </div>
