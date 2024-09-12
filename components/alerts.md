@@ -1,29 +1,29 @@
 ---
 title: Alerts
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Alerts
+Alert is a component for displaying messages related to events concerning the user's work in the interface.
 
-The Alert component draws the user’s attention to information crucial to interacting with the product. This is one of the few components where it is acceptable to interrupt the ordinary flow of the user’s journey.
+## Usage guidance
 
-**When to use**
+If it is a dismissible alert it should display at the top of the screen overlaid over other content.
 
-- The user needs feedback before or after an action
-- There is important information the user must review before or after moving to another section of the site, or taking an action
+All other alerts should display at the top of the content section as close to the section it relates to as possible.
 
-**When not to use**
+### When to use
 
-- Do not use for in-depth instructions or guidance
-- Do not use for information that includes links
+- The user needs feedback before or after an action.
+- There is important information the user must review before or after moving to another section of the site, or taking an action.
 
-**Usage guidance**
+### When not to use
 
-- If it is a dismisssible alert it should display at the top of the screen overlaid over other content
-- All other alerts should display at the top of the content section as close to the section it relates to as possible
+- Do not use page alerts to simply highlight important content. They are for information that is new, critical, and temporary.
+- Do not put more than one page alert on a page.
 
-## Alert content variations:
+
+## Alert content examples
 
 {% capture code_render %}
 <div class="alert alert-info alert-dismissible" role="alert">
@@ -54,7 +54,9 @@ The Alert component draws the user’s attention to information crucial to inter
 
 {% include component-example.html code_render=code_render %}
 
-## Alert colour variations:
+## Colour variants
+
+Accessibility Tip: Provide additional visual cues, such as content and iconography, alongside colour to convey the intention of the alert. The meaning of colour may not be conveyed to users of assistive technologies, such as screen readers.
 
 {% capture code_render %}
 <div class="alert alert-warning alert-dismissible" role="alert">
