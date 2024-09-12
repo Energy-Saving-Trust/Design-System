@@ -10,9 +10,9 @@ Accordions help organise information, shorten the page length and reduce the scr
 
 ## Usage guidance
 
-Accordions hide information unless someone opens them. This requires an extra action, which means readers have to do extra work to get this information. If most people need to see the content, put it in body content so people can scan for it.
+Accordions hide information until someone opens them, requiring an additional action. This means users have to do extra work to access the information. If most users need to see the content, include it in the body so it’s easier to scan.
 
-If you only have content for one accordion consider splitting the content up into more subsections or avoid an accordion entirely.
+If you only have enough content for one accordion, consider dividing it into sections and avoiding the accordion altogether.
 
 ### When to use
 
