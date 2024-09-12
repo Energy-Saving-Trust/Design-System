@@ -35,4 +35,7 @@
   border-top-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
+  p:last-child {
+    margin-block-end: 0;
+  }
 }

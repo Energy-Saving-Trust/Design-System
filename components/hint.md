@@ -1,30 +1,38 @@
 ---
 title: Hint
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Hint
+The Hint component provides users with additional content to assist them in filling out a form field. It is used instead of placeholder text or tooltips.
 
-The Hint component lets users view content to assist them in filling out a form field. This is used in place of placeholder text or tooltips.
+## Usage guidance
 
-**When to use**
+The recommended practice is to provide supporting text directly without using a component. The Hint component should be considered only for less critical or more complex information.
 
-Use if certain users (but not all) will require additional context in order to fill out a section of the form. 
+- If the information is **very important** and most or all users will need it, include it in the form field label.
+- If the information is **fairly important** and many users will need it, provide it as help text that is visible by default.
+- If the information is **less important** and only a minority of users will need it, use a Hint to display the text.
 
-**When not to use**
+### When to use
 
-If all users will always need the information present do not hide information in a hint.  An example would be password guidance, where every user will always need to know the number of characters necessary for their password to be suitably strong.
+- Use the Hint component if a smaller percentage of users require additional context to fill out a section of the form.
 
-## Hint example:
+### When not to use
+
+- Do not use a Hint if the majority of users rely on the information; it should be visible without hiding.
+- Hints are specific to forms. For standard content pages, use the [Accordion component](/components/accordion.html) instead.
+
+## Example
 
 {% capture code_render %}
 <a class="hint-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
+  Why do we need this information?
+</a>
 <div class="collapse" id="collapseExample">
   <div class="hint-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    <p>To provide you with more accurate and tailored advice, we would like to ask a few simple questions about how energy is used in the property. You can skip the entire section or individual questions as they are presented.</p>
+    <p>This will only take a minute and will help us offer personalised recommendations for saving energy and reducing bills.</p>
   </div>
 </div>
 {% endcapture %}
