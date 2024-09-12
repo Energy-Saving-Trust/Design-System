@@ -1,26 +1,30 @@
 ---
 title: Accordion
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Accordion
+Accordions are expandable sections of content. Each section contains a summary element, and more body text when opened.
 
-The Accordion component allows users to show or hide content. It enhances the user experience by collapsing or expanding content sections, making it easier to manage large amounts of information within a limited space.ordions are
+Accordions help organise information, shorten the page length and reduce the scroll time by hiding information that most people do not need to see.
 
-**When to use**
+## Usage guidance
 
-- Make content scannable
-
-- Hide content that is only applicable to some not all users
-
-- You have 3 or more pieces of content that need to be hidden
-
-**When not to use**
+Accordions hide information unless someone opens them. This requires an extra action, which means readers have to do extra work to get this information. If most people need to see the content, put it in body content so people can scan for it.
 
 If you only have content for one accordion consider splitting the content up into more subsections or avoid an accordion entirely.
 
-## Accordion example:
+### When to use
+
+- Use accordions to hide content most readers do not need.
+- When users only need certain information.
+
+### When not to use
+
+- If more than a third of your readers need the information captured in the accordion.
+- To make a page look shorter.
+
+## Example
 
 {% capture code_render %}
 <div class="accordion accordion-flush" id="accordionFlushExample">
