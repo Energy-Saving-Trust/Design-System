@@ -20,6 +20,7 @@
   --#{$prefix}pagination-disabled-bg: #{$pagination-disabled-bg};
   --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
   --#{$prefix}pagination-previous-icon: #{escape-svg($pagination-previous-icon)};
+  --#{$prefix}pagination-previous-icon-active: #{escape-svg($pagination-previous-icon-active)};
   // scss-docs-end pagination-css-vars
 
   display: flex;
@@ -52,6 +53,7 @@
   }
 
   &.active,
+  &:active,
   .active > & {
     z-index: 3;
     color: var(--#{$prefix}pagination-active-color);
@@ -105,6 +107,14 @@
   }
   &:not(:first-child) .page-link {
     margin-left: $pagination-margin-start;
+  }
+  &:first-child .page-link:active::before,
+  &:first-child .page-link.active::before,
+  &:last-child .page-link:active::after,
+  &:last-child .page-link.active::after,
+  &:last-child .page-link:focus::after,
+  &:first-child .page-link:focus::before {
+    background-image: var(--#{$prefix}pagination-previous-icon-active);
   }
 }
 

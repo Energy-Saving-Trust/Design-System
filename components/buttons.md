@@ -35,27 +35,15 @@ The Button component guides the user to take a specific action. Unlike links, bu
 
 {% capture code_render %}
 <!-- Grassy green -->
-<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Button</button>
 <!-- Deep rose -->
-<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-danger">Button</button>
 <!-- Honey yellow -->
-<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-success">Button</button>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
 
-## Outline buttons
-
-{% capture code_render %}
-<!-- Grassy green -->
-<button type="button" class="btn btn-outline-success">Success</button>
-<!-- Deep rose -->
-<button type="button" class="btn btn-outline-danger">Danger</button>
-<!-- Honey yellow -->
-<button type="button" class="btn btn-outline-warning">Warning</button>
-{% endcapture %}
-
-{% include component-example.html code_render=code_render %}
 
 ## Close button
 

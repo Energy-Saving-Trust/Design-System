@@ -1,10 +1,11 @@
 .filter {
   .fieldset-legend {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-top: 1px solid $gray-300;
     &:hover {
       background-color: $deepblue-50;
     }

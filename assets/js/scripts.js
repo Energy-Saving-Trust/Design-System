@@ -1,3 +1,5 @@
+//// Validation lists
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
@@ -47,6 +49,24 @@
     })
 })()
 
+
+//// Filter dropdown accessibility
+
+// Ensures that the filter dropdowns can be open and closed via keyboard controls (enter and spacebar)
+document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(element) {
+    element.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+        event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+        element.click(); // Simulate a click to toggle the collapse
+      }
+    });
+  });
+
+
+//// TESTING CODE ////
+
+//// Filter testing code
+
 // Predefined terms from taxonomies
 const taxonomy1 = ['Government/local authority', 'Option 2', 'Option 3'];
 const taxonomy2 = ['Heat pumps', 'Option B', 'Option C'];
@@ -60,6 +80,9 @@ let totalPages = 1;
 // Function to generate 20 div elements with class 'result'
 function generateResults() {
     const resultsContainer = document.querySelector('.results');
+    if (!resultsContainer) {
+      return;
+    }
     resultsContainer.innerHTML = ''; // Clear previous results
 
     for (let i = 0; i < 20; i++) {
@@ -110,6 +133,7 @@ function displayPage(page) {
 // Function to dynamically generate the pagination controls based on total pages
 function generatePaginationControls() {
     const paginationContainer = document.querySelector('.pagination');
+    if (!paginationContainer) return;
     paginationContainer.innerHTML = ''; // Clear previous pagination
 
     // Create Previous button
@@ -136,21 +160,22 @@ function generatePaginationControls() {
     paginationContainer.appendChild(nextPageItem);
 }
 
-// Pagination click handlers (updated)
-document.querySelector('.pagination').addEventListener('click', (e) => {
-    e.preventDefault();
+if (document.querySelector('.pagination')) {
+  document.querySelector('.pagination').addEventListener('click', (e) => {
+      e.preventDefault();
 
-    if (e.target.classList.contains('page-link') && e.target.hasAttribute('data-page')) {
-        const page = parseInt(e.target.getAttribute('data-page'));
-        if (!isNaN(page)) {
-            displayPage(page);
-        }
-    } else if (e.target.id === 'prev-page') {
-        displayPage(currentPage - 1);
-    } else if (e.target.id === 'next-page') {
-        displayPage(currentPage + 1);
-    }
-});
+      if (e.target.classList.contains('page-link') && e.target.hasAttribute('data-page')) {
+          const page = parseInt(e.target.getAttribute('data-page'));
+          if (!isNaN(page)) {
+              displayPage(page);
+          }
+      } else if (e.target.id === 'prev-page') {
+          displayPage(currentPage - 1);
+      } else if (e.target.id === 'next-page') {
+          displayPage(currentPage + 1);
+      }
+  });
+}
 
 function updateFilterTags() {
   const filterTagsContainer = document.querySelector('.filter-tags');
@@ -241,5 +266,9 @@ filteredResults = Array.from(document.querySelectorAll('.result')); // Initializ
 displayPage(1); // Initial display for the first page
 
 // Attach event listeners
-document.getElementById('apply').addEventListener('click', applyFilter);
-document.querySelector('.clear-filters').addEventListener('click', clearFilters);
+if (document.getElementById('apply')) {
+  document.getElementById('apply').addEventListener('click', applyFilter);
+}
+if (document.querySelector('.clear-filters')) {
+  document.querySelector('.clear-filters').addEventListener('click', clearFilters);
+}
