@@ -17,7 +17,7 @@ $(document).ready(function() {
                 <div class="color-card">
 
                   <div class="color-preview-tile<%= paletteColors[i].isCoreColor ? ' color-preview-tile-primary' : '' %>" style="color:<%= paletteColors[i].accessibilityCheck.mostReadable %>;background-color:<%= paletteColors[i].colorHex %>;">
-                    <div class="color-sample-number"><%= paletteColors[i].colorName %></div>
+                    <div class="color-sample-name"><%= paletteColors[i].colorName %></div>
                   </div>
 
                   <div class="color-info">

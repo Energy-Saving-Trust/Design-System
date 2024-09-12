@@ -79,9 +79,9 @@ var deepBluePalette = new Palette("Deep blue", [
 ]);
 
 var neutralPalette = new Palette("Neutral", [
+  new Color("Pure black", "#000000", 0),
   new Color("Off-white", "#F2F2F0", 0),
   new Color("Pure white", "#FFFFFF", 0),
-  new Color("Pure black", "#000000", 0),
 ]);
 
 var grayLightHex = "#909BA6";
