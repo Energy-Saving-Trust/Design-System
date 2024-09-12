@@ -1,24 +1,25 @@
-
-.color-strip-name {
-  margin-bottom: 10px;
-}
-
-.color-strip {
+.color-palette {
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
-.color-card-wrapper {
-  width: 130px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+.color-card {
+  width: 145px;
 }
 
-.color-sample {
+.color-preview-tile {
+  border: 1px solid rgba(0, 0, 0, .1);
+
   width: 100%;
   height: 70px;
   border-radius: 0.375rem;
   position: relative;
+  margin-top: 15px;
+  &.color-preview-tile-primary {
+    height: 85px;
+    margin-top: 0px;
+  }
 }
 
 .color-sample-number {
@@ -28,15 +29,30 @@
   font-weight: 600;
 }
 
-.accessibility-test-sample-wrapper {
-  @include clearfix();
+.color-info {
+  padding: 6px;
+  font-size: 16px;
 }
+
+.accessibility-test-header {
+  font-weight: 600;
+  padding-top: 15px;
+  height: 45px;
+}
+
+.accessibility-test-wrapper {
+  @include clearfix();
+  margin-top: 5px;
+}
+
 .accessibility-test-sample {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   line-height: 20px;
   text-align: center;
   float: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
 }
 
 .accessibility-test-contrast {
@@ -55,16 +71,6 @@
   padding-left: 5px;
   text-align: left;
   line-height: 18px;
-}
-
-.color-card {
-  display: block;
-  clear: both;
-}
-
-.color-info {
-  padding: 6px;
-  font-size: 16px;
 }
 
 .color-info-tint {
@@ -93,6 +99,30 @@
   line-height: 35px;
 }
 
+.design-token-table {
+  width: 100%;
+  td, th {
+    padding: 6px 6px 6px 0;
+    &.first-column {
+      width: 80px;
+    }
+    &.second-column {
+      width: 300px;
+    }
+    &.third-column {
+      width: 120px;
+    }
+  }
+}
+
+.color-token-preview {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+
+
 
 
 //
@@ -118,4 +148,28 @@
 
 .btn-clipboard.copied {
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7365 3.96967C13.0255 3.67678 13.4942 3.67678 13.7832 3.96967C14.0687 4.25897 14.0722 4.72582 13.7937 5.01947L7.88025 12.0097C7.87456 12.0169 7.86848 12.0238 7.86205 12.0303C7.573 12.3232 7.10437 12.3232 6.81532 12.0303L3.21678 8.38388C2.92774 8.09099 2.92774 7.61612 3.21678 7.32322C3.50583 7.03033 3.97446 7.03033 4.26351 7.32322L7.31638 10.4167L12.7169 3.9921C12.723 3.98424 12.7295 3.97674 12.7365 3.96967Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.test-500 {
+  background-color: $grassygreen-500;
+}
+
+.test-400 {
+  background-color: $grassygreen-400;
+}
+
+.test-300 {
+  background-color: $grassygreen-300;
+}
+
+.test-200 {
+  background-color: $grassygreen-200;
+}
+
+.test-100 {
+  background-color: $grassygreen-100;
+}
+
+.test-50 {
+  background-color: $grassygreen-50;
 }
