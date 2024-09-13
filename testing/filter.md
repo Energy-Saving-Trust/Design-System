@@ -72,7 +72,7 @@ section: testing
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="filter-results">
       <div class="results"></div>
       <nav aria-label="Page navigation example">
@@ -92,7 +92,7 @@ section: testing
   document.querySelector('#primary-nav').style.display = 'none';
   document.getElementById('test-nav').style.display = 'block';
   document.getElementById('test-back').href = '/testing/question.html';
- // document.getElementById('test-next').href = '/testing/question.html';
+  document.getElementById('test-next').href = '/testing/login.html';
   document.getElementById('sidebar').style.display = 'none';
 </script>
 </div>
