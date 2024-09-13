@@ -1,23 +1,19 @@
 ---
 title: Hero
-layout: content
+layout: documentation-page
 section: patterns
 ---
 
-# Hero
-
 The Hero pattern is used to draw the user into a page. It clearly identifies which page they are on, the title and image further support the intended purpose of the page.
 
-
-
-## Hero example 1
+## Example 1
 
 {% capture code_render %}
   {% include reusable-components/hero.md %}
 {% endcapture %}
 {% include component-example.html code_render=code_render show_standalone_page="hero" image_path="../assets/previews/hero.png" %}
 
-## Hero example 2
+## Example 2
 
 {% capture code_render %}
   {% include reusable-components/hero.md %}
