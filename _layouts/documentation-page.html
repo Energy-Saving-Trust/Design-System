@@ -10,19 +10,16 @@
   <main>
     <div class="container">
 
-      <div class="row">
+      <div class="row d-lg-flex d-block">
         <div class="col-3">
           {% include ds-site-sidebar.html %}
         </div>
-        <div class="col-9 content-page">
-          <div class="pt-3">
-            <h1 class="mb-5">{{ page.title }}</h1>
-            <div class="content-body">
-              {{ content }}
-            </div>
+        <div id="main-content-wrap" class="col-12 col-lg-9 mx-auto content-page pt-3">
+          <div class="content-body">
+          <h1 class="mb-5">{{ page.title }}</h1>
+            {{ content }}
           </div>
         </div>
-
       </div>
     </div>
 
