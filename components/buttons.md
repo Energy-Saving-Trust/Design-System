@@ -1,17 +1,21 @@
 ---
 title: Buttons
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Buttons
+Use a button to help users perform actions, such as submitting a form or dynamically adding, removing, showing, or hiding elements on a page.
 
-The Button component guides the user to take a specific action. Unlike links, buttons are for primary call to actions or to submit forms.
+## Usage guidance
 
-**Usage guidance**
+Buttons should not be used for navigation purposes; use [links](/components/links.html) instead.
 
-- Button colours should not be changed. If there is a need for a new colour of button always check the accessibility of the colours
-- The disabled state for buttons has been intentionally left off. We avoid having buttons in a disabled state. 
+Write button text in sentence case, clearly describing the action it performs.
+The button label should be short, clear, and direct. For example: "Save and continue" or "Sign in."
+
+Button colours should not be altered. If a new button colour is needed, always ensure the colours meet accessibility standards.
+
+The disabled state for buttons has been intentionally omitted, as we aim to avoid using buttons in a disabled state.
 
 ## Base classes
 

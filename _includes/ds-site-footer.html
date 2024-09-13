@@ -1,12 +1,35 @@
-<div class="container">
-  <footer class="py-3 my-4">
-    <p class="text-center text-body-secondary">© 2024 Energy Saving Trust</p>
-  </footer>
-</div>
+<footer class="est-footer mt-5">
+  <div class="est-footer-island">
+    <div class="container">
+      <div class="est-footer-links-container">
+        <div class="left">
+          <ul>
+            <li class="est-footer-link"><a href="https://github.com/Energy-Saving-Trust/Design-System">About Design System</a></li>
+            <li class="est-footer-link"><a href="https://forms.office.com/pages/responsepage.aspx?id=YUE4PGI7BU2UhlKVt2bjbBMaGypqjBFOn-n41igyzXxURVJWVlpZSFRaNEhKOEg0VzdVUjZFUlZJRC4u&route=shorturl">Give feedback</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li class="est-footer-link"><a href="https://teams.microsoft.com/l/team/19%3AaBC6EP3WU7wfzx6Y2HMmzqDbaXGZ-9cva_Dxax670dU1%40thread.tacv2/conversations?groupId=5df89e7b-dac3-4e6b-887f-9989f5719e3d&tenantId=3c384161-3b62-4d05-9486-5295b766e36c">How to contribute</a></li>
+            <li class="est-footer-link"><a href="https://teams.microsoft.com/l/team/19%3AaBC6EP3WU7wfzx6Y2HMmzqDbaXGZ-9cva_Dxax670dU1%40thread.tacv2/conversations?groupId=5df89e7b-dac3-4e6b-887f-9989f5719e3d&tenantId=3c384161-3b62-4d05-9486-5295b766e36c">Join the discussion on Teams</a></li>
+          </ul>
+          <ul>
+            <li class="est-footer-link"><a href="https://github.com/Energy-Saving-Trust/Design-System">GitHub repository</a></li>
+            <li class="est-footer-link"><a href="https://app.clickup.com/20604774/v/l/kmtv6-97632">Product roadmap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="est-footer-brand">
+        <a href="/" class="est-logo">
+          <img src="/assets/images/logo-est.svg" alt="Energy Saving Trust logo">
+        </a>
+        <div class="est-programme">
+          <p class="est-programme-name">Design System</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">Energy Saving Trust {{ site.time | date: '%Y' }}</p>
+</footer>
 
-<script src="/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/est-datepicker.js"></script>
-<script src="/assets/js/est-search.js"></script>
-<script src="/assets/js/scripts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+{% include footer-scripts.html %}

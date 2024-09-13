@@ -1,14 +1,12 @@
 ---
-title: Table of Contents
-layout: content
+title: Table of contents
+layout: documentation-page
 section: components
 ---
 
-# Table of Contents
-
 The Table of contents component lets users see and navigate to different sections within a long informational page.
 
-## Example:
+## Example
 
 {% capture code_render %}
 <div class="contents-table">

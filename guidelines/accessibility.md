@@ -1,13 +1,12 @@
 ---
 title: Accessibility
 layout: documentation-page
-layout: documentation-page
 section: guidelines
 ---
 
 ## Introduction to accessibility
 
-At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is avpriority for every product we create, and improves the experience for _all_ our users.
+At Energy Saving Trust, we make products that are usable by as many people as possible. To do this, we prioritise accessibility in all stages of the design and development process. Accessibility is a priority for every product we create, and improves the experience for _all_ our users.
 
 While accessibility has been considered and ‘baked in’ to the Design System wherever possible, the following accessibility guidelines ensure that our products are usable and inclusive for all users, regardless of their abilities. These guidelines lay out how we approach design with accessibility as a priority at Energy Saving Trust.
 
@@ -94,6 +93,7 @@ Read more about [why HTML-first approach is essential to creating accessible pro
 - List of [automated tools recommmended by DWP](https://accessibility-manual.dwp.gov.uk/tools-and-resources/automated-accessibility-testing)
 
 **Manual Testing**
+
 - Conduct manual testing with a screen reader simulator, we recommend: https://www.nvaccess.org/download/
 - Use your site navigating with only your keyboard (no mouse), are you still able to complete key tasks?
 - Check new patterns and designs using the [Accessibility Personas set up by Gov.UK](https://alphagov.github.io/accessibility-personas/)

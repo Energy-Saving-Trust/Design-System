@@ -72,7 +72,7 @@ section: testing
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="filter-results">
       <div class="results"></div>
       <nav aria-label="Page navigation example">

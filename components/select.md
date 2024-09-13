@@ -1,35 +1,35 @@
 ---
 title: Select
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Select
-
 The Select component lets users select a single item from a list.
 
-**When to use**
+## Usage guidance
 
-Use the Select instead of a Radio component when the list is sufficiently long enough that it would cause excessive scrolling for the user if all the options were presented.
+The Select component intentionally keeps to the system default styling. This ensures that it will be accessible and optimised for use on both desktop and mobile browsers.
 
-**When not to use**
+### When to use
 
-Use the Radio in place of the Select if there are around eight or less items and it would not cause the user to need to do excessive scrolling.
+Use the Select instead of a [Radio component](/components/checkbox-radio.html) when the list is sufficiently long enough that it would cause excessive scrolling for the user if all the options were presented.
 
-**Usage guidance**
+### When not to use
 
-The Select component intentionally keeps to the system default styling. This ensures that it will be accessible and optimised for use on both Desktop and Mobile.
+Use the [Radio component](/components/checkbox-radio.html) in place of the Select if there are around eight or less items and it would not cause the user to need to do excessive scrolling.
 
 ## Example
 
 {% capture code_render %}
 <div class="form-group mb-4">
-  <label for="exampleFormControlSelect1" class="form-label">Select from below</label>
+  <label for="exampleFormControlSelect1" class="form-label">Is this your main residence?</label>
+  <div id="exampleHelpBlock" class="form-text">
+    Please confirm that this is not a holiday home or second home.
+  </div>
   <select id="exampleFormControlSelect1" class="form-select" aria-label="Default select example">
     <option selected>Please select</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
+    <option value="1">Yes</option>
+    <option value="2">No</option>
   </select>
 </div>
 {% endcapture %}

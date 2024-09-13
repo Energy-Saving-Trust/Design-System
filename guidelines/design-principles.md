@@ -29,7 +29,7 @@ Even when it increases the time or complexity of a project. 
 
 We explore where we can push past limitations believed to be unchangeable. We do this by testing out multiple solutions before committing to a specific path. We do not commit to a specific set of features, but always weigh our work against the desired outcome, not the specific requirements.   
 
-Iteration reduces risk. It makes big failures unlikely and turns small failures into lessons.4 
+Iteration reduces risk. It makes big failures unlikely and turns small failures into lessons.
 
 We embrace a spirit of experimentation and exploration to provide the best experience possible.  
 

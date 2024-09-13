@@ -20,7 +20,7 @@ section: testing
 </div>
 
 <div class="mb-4">
-  <label for="exampleFormControlInput2" class="form-label">Select country</label>
+  <label for="exampleFormControlInput2" class="form-label">Where do you live?</label>
   <select class="form-select" name="exampleFormControlInput2" id="exampleFormControlInput2">
     <option value="AF">Afghanistan</option>
     <option value="AL">Albania</option>

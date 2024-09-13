@@ -21,17 +21,17 @@
       margin-bottom: 0px;
     }
   }
-  h2 {
+  > h2 {
     margin-top: $spacer * 3.294117;
     margin-bottom: $spacer * 2;
     margin-block-end: $spacer * 2;
   }
-  h3 {
+  > h3 {
     margin-top: $spacer * 2;
     margin-bottom: $spacer;
     margin-block-end: $spacer;
   }
-  h4 {
+  > h4 {
     margin-top: $spacer * 2;
     margin-bottom: $spacer;
     margin-block-end: $spacer;
@@ -39,6 +39,6 @@
 
   code {
     @extend code;
-    background-color: #ccc;
+    font-size: 17px;
    }
 }
