@@ -94,19 +94,29 @@ function toggleVisibility(el) {
   el.textContent = expanded ? 'Hide' : 'Show';
 }
 
-document.querySelector('.password-input-toggle').addEventListener('click', ({
-  target
-}) => toggleVisibility(target));
+const passwordToggle = document.querySelector('.password-input-toggle');
 
-document.querySelector('.password-input-toggle').addEventListener('keydown', function(event) {
-  if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
-    event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
-    toggleVisibility(event.target); // Simulate a click to toggle the collapse
-  }
-});
+if (passwordToggle) {
+  passwordToggle.addEventListener('click', ({ target }) => toggleVisibility(target));
+  passwordToggle.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+      event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+      toggleVisibility(event.target); // Simulate a click to toggle the collapse
+    }
+  });
+}
 
 
 //// TESTING CODE ////
+
+//// Stop anchor links going to top
+document.querySelectorAll('.ds-example-preview a[href="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(event) {
+    event.preventDefault();
+  });
+});
+
+
 
 //// Filter testing code
 

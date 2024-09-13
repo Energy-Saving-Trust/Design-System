@@ -132,7 +132,7 @@
       @include button-variant(
         $value,
         $value,
-        $hover-background: $gray-800,
+        $hover-background: $gray-700,
         $hover-border: tint-color($value, $btn-hover-border-tint-amount),
         $active-background: tint-color($value, $btn-active-bg-tint-amount),
         $active-border: tint-color($value, $btn-active-border-tint-amount)
