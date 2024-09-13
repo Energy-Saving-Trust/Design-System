@@ -27,7 +27,7 @@ The project also receives guidance from our engineering team, with [Wayne Howart
 
 ## How to use Design System in your project
 
-Coming soon: Guidance on how to start using Design System in your code editor.
+Coming soon: Guidance on how to start using the Design System in your code editor.
 
 ## Prototyping resources and tools 
 
