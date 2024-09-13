@@ -16,7 +16,7 @@ Energy Saving Trust Design System components meet level AA of the [Web Content A
 
 Our core typeface is Poppins - a geometric sans serif designed by Jonny Pinhorn and Ninad Kale for Indian Type Foundry.
 
-Poppins is an open source typeface available either as an embed or a download via Google Fonts and Adobe Fonts.
+Poppins is an open source typeface available either as an embed or a download via [Google Fonts](https://fonts.google.com/specimen/Poppins) and [Adobe Fonts](https://fonts.adobe.com/fonts/poppins).
 
 ## Type scale
 
