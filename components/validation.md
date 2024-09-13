@@ -1,30 +1,25 @@
 ---
 title: Validation
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Validation
-
 Validation is how the form responds when a user enters a form field correctly or incorrectly. The following gives guidance on how to display error and success states in a way that best reduces the burden on the user.
 
-**When to use**
-
-Use validation for form inputs such as email, phone, and password to help guide the user in providing the correct response.
-
-**When not to use**
-
-Do not use validation unless absolutely necessary (email, password, phone number). Wherever possible correct users; formatting to match the requested format type automatically.
-
-**Usage guidance**
+## Usage guidance
 
 - We always use the text ‘required’ to indicate mandatory fields as asterisks are not accessible.
 - We place the burden of correcting formatting on the system not the user. For example, a user should be able to enter their postcode with or without spaces. E.g. ‘N1 9NG’ or ‘N19NG’ are both accepted by the system.
 - Validation should use a combination of colour and text or iconography to communicate the state of the form field to ensure accessibility.
 - We have intentionally avoided the use of tooltips or modals. Any changes to the design could impact the accessibility of these designs.
 
+### When to use
 
+Use validation for form inputs such as email, phone, and password to help guide the user in providing the correct response.
 
+### When not to use
+
+Do not use validation unless absolutely necessary (email, password, phone number). Wherever possible correct users; formatting to match the requested format type automatically.
 
 ## Example
 
@@ -38,11 +33,11 @@ Do not use validation unless absolutely necessary (email, password, phone number
   </div>
   <div class="col-md-12">
     <label for="validationCustom01" class="form-label">First name (required)</label>
-    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <input type="text" class="form-control" id="validationCustom01" value="Greta" required>
   </div>
   <div class="col-md-12">
     <label for="validationCustom02" class="form-label">Last name (required)</label>
-    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <input type="text" class="form-control" id="validationCustom02" value="Thunberg" required>
   </div>
   <div class="col-12">
     <label for="validationCustom03" class="form-label">City (required)</label>

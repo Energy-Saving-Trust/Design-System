@@ -1,18 +1,16 @@
 ---
-title: Bullet Point Lists
-layout: content
+title: Bullet point lists
+layout: documentation-page
 section: components
 ---
 
-# Bullet Point Lists
-
 The Bullet point list component is a way to break up large chunks of text into small chunks that are easy to scan.
 
-**When not to use**
+### When not to use
 
 If you have more than ten bullet points consider another strategy to break up content further.
 
-## Circle bullet example:
+## Default unordered list
 
 {% capture code_render %}
 <ul>
@@ -31,7 +29,7 @@ If you have more than ten bullet points consider another strategy to break up co
 
 {% include component-example.html code_render=code_render %}
 
-## Square bullet example:
+## Unordered list with square bullets
 
 {% capture code_render %}
 <ul class="list-square">

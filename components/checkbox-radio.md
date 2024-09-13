@@ -1,27 +1,25 @@
 ---
-title: Checkbox & Radio
-layout: content
+title: Checkboxes & radios
+layout: documentation-page
 section: components
 ---
 
-# Checkbox & Radio
+The Checkbox component allows users to select one or more options from a list. A Radio button is used when the user can select only one option from several choices.
 
-Checkbox & Radio documentation goes here.
+### When to use checkboxes
 
-**When to use checkboxes**
+- When you need the user to select multiple items from a list.
+- For opt-ins, when the user needs to certify their agreement with a statement.
 
-- When you have multiple items in a list you need the user to select.
-- For opt-ins when you need the user to certify their agreement with a statement.
+### When to use radio buttons
 
-**When to use radios**
+- When the user is restricted to selecting a single option.
 
-- When the user is restricted to choosing a single answer
+### When not to use radio buttons
 
-**When not to use radios**
+- If the list contains more than ten items, use a Select component or dropdown menu instead of radio buttons.
 
-- If the list is longer than ten items use the Select component or a dropdown menu instead of radio buttons
-
-## Checkbox example:
+## Checkboxes
 
 {% capture code_render %}
 <fieldset>
@@ -42,7 +40,7 @@ Checkbox & Radio documentation goes here.
 
 {% include component-example.html code_render=code_render %}
 
-## Radio example:
+## Radio buttons
 
 {% capture code_render %}
 <fieldset>

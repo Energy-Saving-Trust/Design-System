@@ -1,24 +1,22 @@
 ---
 title: Cards
-layout: content
+layout: documentation-page
 section: components
 ---
 
-#  Cards
+The Card component divides content into blocks, making it easier for users to scan. Each card focuses on a single topic.
 
-The Card components divide content into blocks that make it easier for users to scan. Each card is focused on single topic.
+### When to use
 
-**When to use**
+- When you have similar content (e.g., blog posts, products, news).
+- To segment content and make it easier to scan.
 
-- When you have similar content (blog posts, products, news).
-- To segment content and make it easy to scan.
-
-**When not to use**
+### When not to use
 
 - Do not use cards when users need to compare multiple options.
-- Cards are less scannable than a list. If the user likely knows what they are searching for, make it quicker for them by displaying chunks of content in a list format.
+- Cards are less scannable than a list. If users are likely to know what they are searching for, use a list format to display content more efficiently.
 
-## Card:
+## Default card
 
 {% capture code_render %}
 <a href="#" class="card" style="width: 20.59rem">
@@ -32,7 +30,7 @@ The Card components divide content into blocks that make it easier for users to 
 
 {% include component-example.html code_render=code_render %}
 
-## Article card:
+## Article card
 
 {% capture code_render %}
 <a href="#" class="card card-article" style="width: 20.59rem">
@@ -48,7 +46,7 @@ The Card components divide content into blocks that make it easier for users to 
 
 {% include component-example.html code_render=code_render %}
 
-## Category card:
+## Category card
 
 {% capture code_render %}
 <a href="#" class="card card-category" style="width: 20.59rem">
@@ -64,7 +62,7 @@ The Card components divide content into blocks that make it easier for users to 
 
 {% include component-example.html code_render=code_render %}
 
-## Simple article card:
+## Simple article card
 
 {% capture code_render %}
 <div class="card card-simple-article" style="width: 20.59rem">
@@ -80,7 +78,7 @@ The Card components divide content into blocks that make it easier for users to 
 
 {% include component-example.html code_render=code_render %}
 
-## Button card:
+## Button card
 
 {% capture code_render %}
 <div class="card card-button card-borderless" style="width: 20.59rem">
@@ -96,7 +94,7 @@ The Card components divide content into blocks that make it easier for users to 
 
 {% include component-example.html code_render=code_render %}
 
-## Arrow card:
+## Arrow card
 
 {% capture code_render %}
 <div class="card card-arrow card-borderless" style="width: 18rem;">

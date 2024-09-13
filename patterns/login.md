@@ -1,14 +1,12 @@
 ---
 title: Log in / Sign up
-layout: content
+layout: documentation-page
 section: patterns
 ---
 
-# Log in / Sign up
+The Log in / Sign up pattern provides users with a predictable way of logging in or signing up when using a product from Energy Saving Trust.
 
-The Log in / Sign up pattern provides users with a predictable way of logging in or signing up when using a product from Energy Saving Trust. 
-
-**Usage guidance**
+## Usage guidance
 
 - Using predictable and consistent language is important to avoid confusion.
 - We always say ‘Log in’ as a noun or ‘Login’ as a verb when referring to existing users accessing their account.

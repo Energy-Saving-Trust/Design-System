@@ -1,22 +1,20 @@
 ---
-title: Links
-layout: content
+title: Link
+layout: documentation-page
 section: components
 ---
 
-# Links
+The Link component serves as an alternative to using a button for primary calls to action.
 
-The Link component is an alternative to using a button. It is meant for primary call to actions.
-
-**When to use**
+### When to use
 
 - Use for titles of cards or any component where the user needs to click on a piece of text.
-- Use with an accompanying arrow at a call to action in place of a button.
-- Links are appropriate with the text that needs to be linked would look awkward in a button.
+- Use with an accompanying arrow for a call to action in place of a button.
+- Links are appropriate when the linked text would look awkward as a button.
 
-**When not to use**
+### When not to use
 
-Do not use for in-line text links. These should follow the normal typography guidelines for linked text (appear blue and underlined).
+- Do not use for inline text links. These should follow normal typography guidelines for linked text (blue and underlined).
 
 ## Example
 

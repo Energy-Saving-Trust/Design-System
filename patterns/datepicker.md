@@ -1,16 +1,12 @@
 ---
 title: Date picker
-layout: content
+layout: documentation-page
 section: patterns
 ---
 
-# Date picker
-
 The Date picker pattern lets a user type in a date or select it using a calendar.
 
-
-
-## Date picker
+## Example
 
 {% capture code_render %}
   {% include reusable-components/datepicker.md %}
