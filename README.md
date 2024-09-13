@@ -25,3 +25,10 @@ The Design System working group is a multidisciplinary team of representatives f
 
 The project also receives guidance from our engineering team, with [Wayne Howarth](https://github.com/est-wayne) and [Mark Coulson](https://github.com/Mark-Coulson) kindly contributing their time and expertise. Finally, the majority of the codebase was written by good friends of Energy Saving Trust, [Pip](https://github.com/pip-chd) and [Bobby](https://github.com/bobbyCHD) of Clear Honest Design.
 
+## How to use Design System in your project
+
+Coming soon: Guidance on how to start using Design System in your code editor.
+
+## Prototyping resources and tools 
+
+Coming soon: Design System Figma library of components and  styles.
