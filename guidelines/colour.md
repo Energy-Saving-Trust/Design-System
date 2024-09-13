@@ -174,5 +174,5 @@ Always use the Design System colour styles, as they meet or exceed all accessibi
 <script src="https://cdn.jsdelivr.net/npm/values.js"></script>
 <script src="/assets/js/libs/clipboard.min.js"></script>
 <script src="/assets/js/libs/tinycolor-min.js"></script>
-<script src="/assets/js/colour-palette.js?v=3ervcgfghetg"></script>
-<script src="/assets/js/colour-gen.js?v=sdqq3ervcgfghetg"></script>
+<script src="/assets/js/colour-palette.js"></script>
+<script src="/assets/js/colour-gen.js"></script>
