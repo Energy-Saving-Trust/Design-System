@@ -195,3 +195,20 @@ textarea {
   &.form-control-sm { height: $input-height-sm; }
   &.form-control-lg { height: $input-height-lg; }
 }
+
+.password-input-wrapper {
+  position: relative;
+  .password-input-toggle {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    text-decoration: underline;
+    color: $deepblue;
+    padding: 0 1rem;
+  }
+}

@@ -32,6 +32,9 @@
     user-select: none;
     opacity: $btn-close-disabled-opacity;
   }
+  span {
+    @include visually-hidden;
+  }
 }
 
 .btn-close-white {

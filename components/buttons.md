@@ -52,7 +52,7 @@ The disabled state for buttons has been intentionally omitted, as we aim to avoi
 ## Close button
 
 {% capture code_render %}
-<button type="button" class="btn-close" aria-label="Close"></button>
+<button type="button" class="btn-close" aria-label="Close"><span>Close</span></button>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}

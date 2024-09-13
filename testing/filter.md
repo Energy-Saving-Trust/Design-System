@@ -92,7 +92,8 @@ section: testing
   document.querySelector('#primary-nav').style.display = 'none';
   document.getElementById('test-nav').style.display = 'block';
   document.getElementById('test-back').href = '/testing/question.html';
-  document.getElementById('test-next').href = '/testing/login.html';
+  document.getElementById('test-next').href = '/testing/index.html';
+  document.getElementById('test-next').textContent = 'Finish';
   document.getElementById('sidebar').style.display = 'none';
 </script>
 </div>

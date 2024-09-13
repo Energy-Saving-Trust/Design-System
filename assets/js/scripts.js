@@ -50,17 +50,60 @@
 })()
 
 
+//// Modal focus
+
+// Ensures that focus stays in the modal on open
+
+// Select all elements with the class 'modal'
+document.querySelectorAll('.modal').forEach(function(modal) {
+  // Add an event listener for each modal
+  modal.addEventListener('shown.bs.modal', function () {
+    // Find the input inside the modal and focus on it
+    // const input = modal.querySelector('.btn-close');
+    // if (input) {
+      modal.focus();
+    // }
+  });
+});
+
+
+
 //// Filter dropdown accessibility
 
 // Ensures that the filter dropdowns can be open and closed via keyboard controls (enter and spacebar)
 document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(element) {
-    element.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
-        event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
-        element.click(); // Simulate a click to toggle the collapse
-      }
-    });
+  element.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+      event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+      element.click(); // Simulate a click to toggle the collapse
+    }
   });
+});
+
+
+//// Show password toggle
+
+// Shows/hides the password on click and via keyboard controls
+
+function toggleVisibility(el) {
+  const control = el.getAttribute('aria-controls');
+  const expanded = el.getAttribute('aria-expanded') === 'false';
+  document.querySelector(`#${control}`).type = expanded ? 'text' : 'password';
+  el.setAttribute('aria-expanded', String(expanded));
+  el.setAttribute('aria-label', expanded ? 'Hide password' : 'Show password');
+  el.textContent = expanded ? 'Hide' : 'Show';
+}
+
+document.querySelector('.password-input-toggle').addEventListener('click', ({
+  target
+}) => toggleVisibility(target));
+
+document.querySelector('.password-input-toggle').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
+    event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
+    toggleVisibility(event.target); // Simulate a click to toggle the collapse
+  }
+});
 
 
 //// TESTING CODE ////

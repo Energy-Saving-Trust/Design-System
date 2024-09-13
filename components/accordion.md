@@ -62,3 +62,42 @@ If you only have enough content for one accordion, consider dividing it into sec
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
+
+## Definition List accordion example:
+
+{% capture code_render %}
+<dl class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <dt class="accordion-header" id="dl-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl-collapseOne" aria-expanded="false" aria-controls="dl-collapseOne">
+        Accordion Item #1
+      </button>
+    </dt>
+    <dd id="dl-collapseOne" class="accordion-collapse collapse" aria-labelledby="dl-headingOne">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-dl</code> class. This is the first item's accordion body.</div>
+    </dd>
+  </div>
+  <div class="accordion-item">
+    <dt class="accordion-header" id="dl-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl-collapseTwo" aria-expanded="false" aria-controls="dl-collapseTwo">
+        Accordion Item #2
+      </button>
+    </dt>
+    <dd id="dl-collapseTwo" class="accordion-collapse collapse" aria-labelledby="dl-headingTwo">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </dd>
+  </div>
+  <div class="accordion-item">
+    <dt class="accordion-header" id="dl-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl-collapseThree" aria-expanded="false" aria-controls="dl-collapseThree">
+        Accordion Item #3
+      </button>
+    </dt>
+    <dd id="dl-collapseThree" class="accordion-collapse collapse" aria-labelledby="dl-headingThree">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </dd>
+  </div>
+</dl>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render %}

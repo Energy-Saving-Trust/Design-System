@@ -101,6 +101,9 @@
     }
     .btn ~ .btn {
       margin-left: var(--#{$prefix}card-title-sm-spacer-y);
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
     }
     .card-text {
       margin-bottom: $card-title-spacer-y;
@@ -110,6 +113,9 @@
   &.card-button {
     .btn ~ .btn {
       margin-left: var(--#{$prefix}card-title-sm-spacer-y);
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
     }
   }
 
