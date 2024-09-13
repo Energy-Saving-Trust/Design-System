@@ -44,6 +44,14 @@ The Table component is used to present data to users.
         <td>Content cell</td>
       </tr>
     </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer</td>
+        <td>Footer</td>
+        <td>Footer</td>
+        <td>Footer</td>
+      </tr>
+    </tfoot>
   </table>
 </div>
 {% endcapture %}
@@ -68,6 +76,14 @@ The Table component is used to present data to users.
       </tr>
         ...
     </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer</td>
+        <td>Footer</td>
+        <td>Footer</td>
+        <td>Footer</td>
+      </tr>
+    </tfoot>
   </table>
 </div>
 {% endcapture %}
