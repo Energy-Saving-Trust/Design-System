@@ -75,3 +75,31 @@
     if (largeClearButton) largeClearButton.style.display = 'none';
     if (suggestionsContainer) suggestionsContainer.style.display = 'none';
   }
+
+  // Mobile search functionality
+  const mobileSearchTrigger = document.getElementById('mobile-search-trigger');
+  const mobileSearchBar = document.getElementById('mobile-search-bar');
+  const mobileSearchInput = mobileSearchBar ? mobileSearchBar.querySelector('input[type="search"]') : null;
+
+  if (mobileSearchTrigger && mobileSearchBar && mobileSearchInput) {
+    mobileSearchTrigger.addEventListener('click', function() {
+      mobileSearchBar.classList.toggle('d-none');
+      if (!mobileSearchBar.classList.contains('d-none')) {
+        mobileSearchInput.focus();
+      }
+    });
+
+    // Close search bar when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!mobileSearchBar.contains(event.target) && event.target !== mobileSearchTrigger) {
+        mobileSearchBar.classList.add('d-none');
+      }
+    });
+  }
+
+  // Function to close the mobile search bar
+  function closeMobileSearchBar() {
+    if (mobileSearchBar) mobileSearchBar.classList.add('d-none');
+    if (mobileSearchInput) mobileSearchInput.value = '';
+    if (suggestionsContainer) suggestionsContainer.style.display = 'none';
+  }
