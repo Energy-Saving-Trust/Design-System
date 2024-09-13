@@ -1,24 +1,21 @@
 ---
 title: Address finder
-layout: content
+layout: documentation-page
 section: patterns
 ---
 
-# Address finder
+The Address pattern helps users provide their address using their postcode or by entering it manually.
 
-The Address pattern helps users provide their address using their postcode or by entering it manually. 
+## Usage guidance
 
-**When to use**
+Place the burden of correcting formatting on the system not the user. For example, a user should be able to enter their postcode with or without spaces. E.g. ‘N1 9NG’ or ‘N19NG’ are both accepted by the system.
+
+### When to use
 
 - Wherever possible use the postcode finder with the option to enter addresses manually
 - Always offer the option to enter their address manually
 
-**Usage guidance**
-
-Place the burden of correcting formatting on the system not the user. For example, a user should be able to enter their postcode with or without spaces. E.g. ‘N1 9NG’ or ‘N19NG’ are both accepted by the system.
-
-
-## Manual address example
+## Manual address entry
 
 {% capture code_render %}
   {% include reusable-components/address-manual.md %}
@@ -26,7 +23,7 @@ Place the burden of correcting formatting on the system not the user. For exampl
 
 {% include component-example.html code_render=code_render show_standalone_page="address-manual" %}
 
-## Postcode example
+## Address search
 
 {% capture code_render %}
   {% include reusable-components/address-postcode.md %}

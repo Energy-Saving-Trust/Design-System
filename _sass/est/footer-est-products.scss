@@ -1,0 +1,143 @@
+//
+// EST Footer for Digital Tools.
+//
+
+
+.est-footer {
+  // margin-top: ($spacer * 4);
+
+  .copyright {
+      text-align: center;
+      margin: 1.5em 0;
+      font-weight: 400;
+  }
+
+  .est-footer-island {
+      padding: 3em 0 4em 0;
+      background-color: $gray-50;
+
+      .est-footer-links-container {
+          display: flex;
+          justify-content: flex-start;
+          column-gap: 60px;
+
+          @include media-breakpoint-up(lg) {
+              justify-content: space-between;
+          }
+
+          .left, .right {
+              @include media-breakpoint-up(lg) {
+                  ul {
+                      text-align: left;
+                  }
+              }
+          }
+
+          .right {
+              @include media-breakpoint-up(lg) {
+                  text-align: right;
+
+                  ul {
+                      text-align: right;
+                  }
+              }
+          }
+
+          ul {
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+
+              @include media-breakpoint-up(lg) {
+                  margin: 0 0 0.8em 0;
+              }
+
+              li.est-footer-link {
+                  display: block;
+                  margin-bottom: 0.35em;
+                  padding: 0;
+
+                  &::before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                  }
+
+                  &:last-child {
+                    padding-right: 0;
+                  }
+
+                  @include media-breakpoint-up(lg) {
+                      display: inline-block;
+                      padding-right: 2em;
+                      margin-bottom: 0;
+                  }
+
+                  @include media-breakpoint-up(lg) {
+                      &:not(:last-child)::after {
+                          content: "";
+                          height: 4px;
+                          width: 4px;
+                          border-radius: 50%;
+                          position: absolute;
+                          background-color: $black;
+                          margin-left: calc(1em - 1px);
+                          margin-top: calc(0.5em);
+                      }
+                  }
+
+                  a {
+                    font-size: $small-font-size;
+                      &:link, &:visited {
+                          color: $black;
+                          text-decoration: none;
+                      }
+
+                      &:hover, &:active {
+                          color: $black;
+                          text-decoration: underline;
+                      }
+                  }
+              }
+          }
+      }
+
+      .est-footer-brand {
+          margin-top: 2em;
+          display: flex;
+          column-gap: 40px;
+
+          .est-logo, .est-partner-logo {
+              text-decoration: none;
+          }
+
+          .est-logo {
+
+              svg {
+                  color: $black;
+                  width: auto;
+                  height: 65px;
+              }
+          }
+
+          .est-partner-logo {
+
+              img {
+                  width: auto;
+                  height: 65px;
+              }
+          }
+
+          .est-programme {
+              align-self: center;
+
+              .est-programme-name {
+                  font-size: 28px;
+                  letter-spacing: -0.05rem;
+                  font-weight: 700;
+                  margin-bottom: 0;
+              }
+          }
+      }
+  }
+}

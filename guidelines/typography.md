@@ -12,14 +12,11 @@ Typography brings consistency across experiences and platforms. Good typographic
 
 Energy Saving Trust Design System components meet level AA of the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/#text-spacing) for text spacing and AAA for visual presentation.
 
-
 ## Typeface
 
 Our core typeface is Poppins - a geometric sans serif designed by Jonny Pinhorn and Ninad Kale for Indian Type Foundry.
 
-Poppins is an open source typeface available either as an embed or a download via Google Fonts and Adobe Fonts.
-
-
+Poppins is an open source typeface available either as an embed or a download via [Google Fonts](https://fonts.google.com/specimen/Poppins) and [Adobe Fonts](https://fonts.adobe.com/fonts/poppins).
 
 ## Type scale
 
@@ -153,9 +150,7 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
   </tbody>
 </table>
 
-
-
-## Heading examples
+## Headings
 
 {% capture code_render %}
 
@@ -168,7 +163,7 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
 
 {% include component-example.html code_render=code_render %}
 
-## Body content examples
+## Body content
 
 {% capture code_render %}
 

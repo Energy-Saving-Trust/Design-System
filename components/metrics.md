@@ -1,15 +1,13 @@
 ---
 title: Metrics
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Metrics
-
-The Metrics component makes it easy to scan and differentiate numbers and data from written text.
+The Metrics component displays the title and value of a metric. A single stat can be used by itself or side-by-side with other single stats to display a topical set of metrics.
 
 
-## Dashboard metrics
+## Dashboard example
 
 {% capture code_render %}
 <div class="metric-group metric-dashboard">
@@ -53,4 +51,3 @@ The Metrics component makes it easy to scan and differentiate numbers and data f
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
-

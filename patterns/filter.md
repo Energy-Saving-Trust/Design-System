@@ -1,10 +1,8 @@
 ---
 title: Filter
-layout: content
+layout: documentation-page
 section: patterns
 ---
-
-# Filter
 
 The Filter pattern lets users restrict which options they are shown to fit their search criteria.
 

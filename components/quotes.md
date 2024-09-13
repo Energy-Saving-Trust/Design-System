@@ -1,14 +1,10 @@
 ---
 title: Quotes
-layout: content
+layout: documentation-page
 section: components
 ---
 
-# Quotes
-
 The Quote component is used to highlight information from an individual or organisation we want to cite.
-
-
 
 ## Plain quote
 
@@ -26,7 +22,7 @@ The Quote component is used to highlight information from an individual or organ
 
 {% include component-example.html code_render=code_render %}
 
-## Quote variation 1
+## Quote variant 1
 
 {% capture code_render %}
 <figure class="blockquote-wrapper green">
@@ -42,7 +38,7 @@ The Quote component is used to highlight information from an individual or organ
 
 {% include component-example.html code_render=code_render %}
 
-## Quote variation 2
+## Quote variant 2
 
 {% capture code_render %}
 <div class="blockquote-img yellow">

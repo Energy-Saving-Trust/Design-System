@@ -1,14 +1,10 @@
 ---
 title: Pagination
-layout: content
+layout: documentation-page
 section: patterns
 ---
 
-# Pagination
-
 The Pagination pattern lets users navigate through a long list of results.
-
-
 
 ## Desktop example
 
