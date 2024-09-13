@@ -20,16 +20,6 @@
     <button type="button" class="password-input-toggle" aria-controls="password" aria-label="Show password" aria-expanded="false">Show</button>
   </div>
 </div>
-<div class="mb-4">
-  <label for="confirm_password" class="form-label">Confirm password (required)</label>
-  <div class="form-text strong">
-    Re-enter the password you entered above
-  </div>
-  <div class="password-input-wrapper">
-    <input class="form-control" id="confirm_password" name="password" type="password" spellcheck="false" autocomplete="current-password" autocapitalize="none">
-    <button type="button" class="password-input-toggle" aria-controls="confirm_password" aria-label="Show password" aria-expanded="false">Show</button>
-  </div>
-</div>
 <div class="form-check mb-4">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">

@@ -59,10 +59,10 @@ document.querySelectorAll('.modal').forEach(function(modal) {
   // Add an event listener for each modal
   modal.addEventListener('shown.bs.modal', function () {
     // Find the input inside the modal and focus on it
-    const input = modal.querySelector('.btn-close');
-    if (input) {
-      input.focus();
-    }
+    // const input = modal.querySelector('.btn-close');
+    // if (input) {
+      modal.focus();
+    // }
   });
 });
 

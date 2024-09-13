@@ -33,7 +33,7 @@
     opacity: $btn-close-disabled-opacity;
   }
   span {
-    @include sr-only;
+    @include visually-hidden;
   }
 }
 
