@@ -96,7 +96,7 @@
     <div class="dialog-message" aria-live="polite"></div>
     <div class="dialog-ok-cancel-group">
       <button class="dialog-button" value="cancel">Cancel</button>
-      <button class="dialog-button" value="ok">OK</button>
+      <button class="dialog-button" value="ok">Select</button>
     </div>
   </div>
 </div>
