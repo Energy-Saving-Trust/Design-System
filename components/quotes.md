@@ -13,10 +13,10 @@ The Quote component is used to highlight information from an individual or organ
   <blockquote class="blockquote">
     <p>The savings are incredible. It’s a no-brainer - just do it!</p>
   </blockquote>
-  <figcaption class="blockquote-footer">
+  <cite class="blockquote-footer">
     Graham<br>
     <span>Optional organisation</span>
-  </figcaption>
+  </cite>
 </figure>
 {% endcapture %}
 
@@ -29,10 +29,10 @@ The Quote component is used to highlight information from an individual or organ
   <blockquote class="blockquote">
     <p>The savings are incredible. It’s a no-brainer - just do it!</p>
   </blockquote>
-  <figcaption class="blockquote-footer">
+  <cite class="blockquote-footer">
     Graham<br>
     <span>Optional organisation</span>
-  </figcaption>
+  </cite>
 </figure>
 {% endcapture %}
 
@@ -46,9 +46,9 @@ The Quote component is used to highlight information from an individual or organ
     <blockquote class="blockquote">
       <p>Quote from our leaders here to set the scene and inspire whoever is reading this. </p>
     </blockquote>
-    <figcaption class="blockquote-footer">
+    <cite class="blockquote-footer">
       Mike Thornton, Chief Executive
-    </figcaption>
+    </cite>
   </figure>
   <div class="blockquote-bg-img" style="background-image: url('../assets/example-images/quote-img.jpeg');"></div>
 </div>
