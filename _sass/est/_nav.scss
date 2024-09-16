@@ -211,6 +211,8 @@
 
 #mobile-search-trigger {
     text-decoration: none;
+    display: inline-block;
+    width: fit-content;
 }
 
 #mobile-search-bar {
@@ -251,4 +253,15 @@
     padding: 0 10px;
     margin: 0;
   }
+}
+
+.header-padding-wrap {
+  padding: 0 20px;
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+  }
+}
+
+.alignment-fix {
+  padding-left: 90px;
 }

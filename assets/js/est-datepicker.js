@@ -38,7 +38,7 @@ class DatePickerDialog {
     this.messageCursorKeys = 'You can use the cursor keys to select a date';
     this.lastMessage = '';
 
-    this.textboxNode = cdp.querySelector('input[type="text"]');
+    this.textboxNode = cdp.querySelector('input[type="date"]');
     this.buttonNode = cdp.querySelector('.group button');
     this.dialogNode = cdp.querySelector('[role="dialog"]');
     this.messageNode = this.dialogNode.querySelector('.dialog-message');
@@ -406,22 +406,12 @@ class DatePickerDialog {
 
   // Textbox methods
 
-  setTextboxDate(domNode) {
-    let d = this.focusDay;
-
-    if (domNode) {
-      d = this.getDayFromDataDateAttribute(domNode);
-      // updated aria-selected
-      this.days.forEach((day) =>
-        day === domNode
-          ? day.setAttribute('aria-selected', 'true')
-          : day.removeAttribute('aria-selected')
-      );
-    }
-
-    this.textboxNode.value =
-      d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
-    this.setDateForButtonLabel();
+  setTextboxDate(dayNode) {
+    const date = this.getDayFromDataDateAttribute(dayNode);
+    const formattedDate = date.toISOString().split('T')[0]; // Format to YYYY-MM-DD
+    this.textboxNode.value = formattedDate; // Set the value of the input
+    this.selectedDay = date; // Update the selected day
+    this.setDateForButtonLabel(); // Update button label
   }
 
   getDateFromTextbox() {
@@ -807,7 +797,7 @@ class DatePickerDialog {
 
   handleDayClick(event) {
     if (!this.isDayDisabled(event.currentTarget) && event.which !== 3) {
-      this.setTextboxDate(event.currentTarget);
+      this.setTextboxDate(event.currentTarget); // Ensure this is called
       this.close();
     }
 
