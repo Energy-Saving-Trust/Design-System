@@ -23,7 +23,7 @@ The Progress bar with step text should expand to fill the page. If there are onl
 
 {% capture code_render %}
 <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="25%">25%</div>
 </div>
 {% endcapture %}
 
@@ -36,27 +36,27 @@ The Progress bar with step text should expand to fill the page. If there are onl
   <div class="progress-steps-grid">
     <div class="progress-step">
       <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="100% complete" class="step-label">House details</div>
     </div>
     <div class="progress-step">
       <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="100% complete" class="step-label">House details</div>
     </div>
     <div class="progress-step">
       <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="100% complete" class="step-label">House details</div>
     </div>
     <div class="progress-step">
       <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="0% complete" class="step-label">House details</div>
     </div>
     <div class="progress-step">
       <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="0% complete" class="step-label">House details</div>
     </div>
     <div class="progress-step">
       <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div class="step-label">House details</div>
+      <div aria-label="0% complete" class="step-label">House details</div>
     </div>
   </div>
   <div class="main-label">
