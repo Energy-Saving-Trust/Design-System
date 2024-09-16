@@ -1,4 +1,4 @@
-<div class="large-search-wrap col-10">
+<div class="large-search-wrap col-10 col-lg-10 col-12">
   <form action="/search" method="get" class="large-search-container est-search-container">
     <label for="search-input" class="visually-hidden">Search:</label>
     <input type="search" id="large-search-input" name="query" class="search-input" placeholder="Search" aria-label="Search" oninput="showSuggestions(); toggleClearButton('large-search-input', 'clear-button-large')">
