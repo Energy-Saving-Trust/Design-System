@@ -4,5 +4,7 @@
   <button type="button" id="clear-button-small" class="clear-search" aria-label="Clear search" onclick="clearSearch('search-input', 'clear-button-small')" style="display:none;">
     &#x2715;
   </button>
-  <button type="submit" class="search-button" aria-label="Submit search"></button>
+  <button type="submit" class="search-button" aria-label="Submit search">
+    <span class="visually-hidden">Submit search</span>
+  </button>
 </form>

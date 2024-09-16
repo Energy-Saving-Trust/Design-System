@@ -5,7 +5,9 @@
     <button type="button" id="clear-button-large" class="clear-search" aria-label="Clear search" onclick="clearSearch('large-search-input', 'clear-button-large')" style="display:none;">
       &#x2715;
     </button>
-    <button type="submit" class="search-button" aria-label="Submit search"></button>
+    <button type="submit" class="search-button">
+      <span class="visually-hidden">Submit search</span>
+    </button>
   </form>
   <div id="suggestions-container" class="suggestions-container" style="display:none;"></div>
 </div>
