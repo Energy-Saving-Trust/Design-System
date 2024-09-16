@@ -62,7 +62,7 @@ The Footer pattern is a consistent set of links to company information, mandator
 </footer>
 {% endcapture %}
 
-{% include component-example.html code_render=code_render code_example=code_example %}
+{% include component-example.html code_render=code_render code_example=code_example show_standalone_page="footer-product" image_path="../assets/previews/footer-product.png" %}
 
 ## Footer for partner website
 
