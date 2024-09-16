@@ -1,5 +1,5 @@
 <header class="site-header">
-  <div class="container-xxl rm-padding-on-mobile">
+  <div class="header-padding-wrap rm-padding-on-mobile">
     <!-- Mobile header -->
     <div class="row align-items-center py-3 d-lg-none px-mobile">
       <div class="col-auto">
@@ -7,12 +7,12 @@
           <img src="/assets/images/logo-est.svg" alt="Energy Saving Trust" height="auto">
         </a>
       </div>
-      <div class="col text-end">
+      <div class="col  d-flex justify-content-end">
         <button class="btn btn-link" id="mobile-search-trigger">
           <img src="/assets/images/search-icon.svg" alt="Search" class="me-1">
           <span>Search</span>
         </button>
-        <button id="burger-menu" class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMainNavigation" aria-controls="mobileMainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="burger-menu" class="navbar-toggler ms-2 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMainNavigation" aria-controls="mobileMainNavigation" aria-expanded="false" aria-label="Toggle navigation">
           <img class="me-1" src="/assets/images/menu.svg" alt="Menu">
           <span>Menu</span>
         </button>
@@ -20,7 +20,7 @@
     </div>
     <!-- Mobile search bar (hidden by default) -->
     <div id="mobile-search-bar" class="d-none d-lg-none">
-      <div class="container-xxl">
+      <div class="header-padding-wrap">
         <div class="row justify-content-center">
           <div class="col-12">
             {% include reusable-components/search-large.md %}
@@ -46,7 +46,7 @@
           <img src="/assets/images/close-icon.svg" alt="Close">
           <span aria-hidden="true">Close</span>
         </button>
-        <div class="container-xxl">
+        <div class="header-padding-wrap">
           <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8">
               {% include reusable-components/search-large.md %}
@@ -183,7 +183,7 @@
 </header>
 
 <nav class="navbar navbar-expand-lg navbar-bg navbar-green" aria-label="Secondary navigation">
-  <div class="container-xxl">
+  <div class="header-padding-wrap alignment-fix">
     <div class="collapse navbar-collapse" id="secondaryNavigation">
       <ul class="navbar-nav logo-padding">
         <li class="nav-item dropdown">
@@ -191,8 +191,8 @@
             Secondary nav item
           </a>
           <div class="dropdown-menu meganav full-width-meganav">
-            <div class="container-xxl">
-              <div class="row gx-5">
+            <div class="header-padding-wrap">
+              <div class="row gx-5 alignment-fix">
                 <div class="col-md-4">
                   <h2 class="dropdown-header h6">Secondary nav header 1</h2>
                   <ul class="list-unstyled">
@@ -226,7 +226,7 @@
             Secondary nav item
           </a>
           <div class="dropdown-menu meganav full-width-meganav">
-            <div class="container-xxl">
+            <div class="header-padding-wrap">
               <div class="row gx-5">
                 <div class="col-md-4">
                   <h2 class="dropdown-header h6">Secondary nav header 1</h2>
