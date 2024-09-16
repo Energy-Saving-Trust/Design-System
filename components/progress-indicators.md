@@ -33,32 +33,32 @@ The Progress bar with step text should expand to fill the page. If there are onl
 
 {% capture code_render %}
 <div class="progress progress-steps">
-  <div class="progress-steps-grid">
-    <div class="progress-step">
-      <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="100% complete" class="step-label">House details</div>
-    </div>
-    <div class="progress-step">
-      <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="100% complete" class="step-label">House details</div>
-    </div>
-    <div class="progress-step">
-      <div class="progress-bar full" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="100% complete" class="step-label">House details</div>
-    </div>
-    <div class="progress-step">
-      <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="0% complete" class="step-label">House details</div>
-    </div>
-    <div class="progress-step">
-      <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="0% complete" class="step-label">House details</div>
-    </div>
-    <div class="progress-step">
-      <div class="progress-bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      <div aria-label="0% complete" class="step-label">House details</div>
-    </div>
-  </div>
+  <ol class="progress-steps-grid">
+    <li class="progress-step">
+      <div class="progress-bar full" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+    <li class="progress-step">
+      <div class="progress-bar full" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+    <li class="progress-step">
+      <div class="progress-bar full" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+    <li class="progress-step">
+      <div class="progress-bar empty" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+    <li class="progress-step">
+      <div class="progress-bar empty" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+    <li class="progress-step">
+      <div class="progress-bar empty" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div aria-hidden="true" class="step-label">House details</div>
+    </li>
+  </ol>
   <div class="main-label">
     <div class="position-number">
       <span class="circle">3</span><span class="of"> of 6</span>
