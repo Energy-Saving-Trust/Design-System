@@ -32,7 +32,7 @@
         <li class="nav-item"><a href="#" class="nav-link p-0">Instagram</a></li>
       </ul>
     </div>
-    <div class="col full">
+    <div class="col">
       <h2>Energywire newsletter</h2>
       <a class="btn btn-primary" href="#">Subscribe to newsletter</a>
     </div>
