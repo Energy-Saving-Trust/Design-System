@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileControls.classList.add('fade-in');
       mobileControls.classList.remove('fade-out');
       burgerMenu.classList.add('burger-open');
+      burgerMenu.classList.remove('d-flex'); // Remove d-flex to hide burger menu
+      burgerMenu.style.display = 'none'; // Ensure the burger menu is hidden
     }
   }
 
@@ -26,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileControls.classList.add('d-none');
     mobileControls.classList.remove('fade-out');
     showTopLevelItems();
+    burgerMenu.classList.add('d-flex'); // Add d-flex to show burger menu again
+    burgerMenu.style.display = 'block'; // Ensure the burger menu is visible
   }
 
   function setActiveNavLink(navItem) {
