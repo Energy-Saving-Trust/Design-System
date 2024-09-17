@@ -1,0 +1,143 @@
+<style>
+  .icon-demo {
+    background-color: #f8f9fa;
+    background-image: radial-gradient(circle, #ccc 1px, rgba(0,0,0,0) 1px);
+    background-size: 15px 15px;
+    border: 1px solid #dee2e6;
+    padding: 34px;
+  }
+
+  .icon-demo svg {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: 0 !important;
+  }
+
+  .esti {
+    display: inline-block;
+    vertical-align: -.125em;
+    fill: currentcolor;
+
+    width: 1em;
+    height: 1em;
+  }
+
+  code {
+    background-color: #f8f9fa;
+  }
+
+</style>
+
+<div class="row">
+  <div class="col-7">
+    <h4>Preview</h4>
+    <div class="icon-demo bg-body-secondary text-center rounded js-svg-download-content">
+      {{ page.svg | strip }}
+    </div>
+
+    <h4>Examples</h4>
+    <div class="border rounded px-4 py-4">
+      <div class="mb-4">
+        <h1>{{ page.svg | strip }} Heading</h1>
+      </div>
+
+      <div class="mb-4">
+        <p>This is inline text {{ page.svg | strip }}</p>
+      </div>
+
+      <div class="mb-4">
+        <a href="#" class="text-decoration-none">
+          Example link text {{ page.svg | strip }}
+        </a>
+      </div>
+
+      <div class="mb-4">
+        <a href="" class="btn btn-primary" download="">{{ page.svg | strip }} Button</a>
+        <a href="" class="btn btn-secondary" download="">{{ page.svg | strip }} Button</a>
+        <a href="" class="btn btn-success" download="">{{ page.svg | strip }} Button</a>
+      </div>
+
+      <div class="input-group" style="width: 350px;">
+        <span class="input-group-text" id="basic-addon1">
+          {{ page.svg | strip }}
+        </span>
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
+      </div>
+
+    </div>
+
+    <h4>About this icon</h4>
+
+    <div>
+      <table class="table">
+        <tr>
+          <td>Source</td>
+          <td>{{ page.source }}</td>
+        </tr>
+        <tr>
+          <td>Usage limitations</td>
+          <td>{{ page.licence }}</td>
+        </tr>
+        <tr>
+          <td>Filed under</td>
+          <td>{{ page.tags }}</td>
+        </tr>
+        <tr>
+          <td>Added on</td>
+          <td>{{ page.added }}</td>
+        </tr>
+        <tr>
+          <td>Last modified</td>
+          <td>{{ page.modified }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <h4>Related files</h4>
+
+    <div>
+      <table class="table">
+        <tr>
+          <td>AI</td>
+          <td>link</td>
+        </tr>
+        <tr>
+          <td>PNG</td>
+          <td>link</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-5">
+    <h4>Download</h4>
+    <p>Download the SVG to use or edit.</p>
+    <a href="" class="btn btn-primary mb-4 js-download-svg" download="{{ page.file_name }}">Download SVG</a>
+    <h4>Icon font</h4>
+    <pre><code class="language-html">&lt;i class=&quot;esti esti-{{ page.class }}&quot;&gt;&lt;/i&gt;</code></pre>
+    <h4>Copy HTML</h4>
+    <p>Paste the SVG into your project's code.</p>
+    <pre><code class="language-html">{{ page.svg | strip | escape }}</code></pre>
+    <hr>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  var svgNode = $('.js-svg-download-content svg').get(0);
+  svg = svgDataURL(svgNode);
+
+  var $download = $('.js-download-svg');
+  $download.attr('href', svg);
+
+  function svgDataURL(svg) {
+    var svgAsXML = (new XMLSerializer).serializeToString(svg);
+    return "data:image/svg+xml," + encodeURIComponent(svgAsXML);
+  }
+
+});
+
+</script>

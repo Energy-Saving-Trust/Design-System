@@ -13,3 +13,8 @@ nav:
     url: "/patterns/"
   - name: "Testing"
     url: "/testing/"
+
+collections:
+  icons:
+    output: true
+    permalink: /guidelines/icons/:name
