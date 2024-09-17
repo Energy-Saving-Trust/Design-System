@@ -66,6 +66,11 @@
     pointer-events: none;
     background-color: var(--#{$prefix}pagination-disabled-bg);
   }
+  span {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
 }
 
 .page-item {
@@ -125,6 +130,10 @@
   &.ellipsis {
     display: inline-block;
     pointer-events: none; /* Make ellipsis unclickable */
+  }
+  &:first-child, &:last-child {
+    display: flex;
+    align-items: center;
   }
 }
 

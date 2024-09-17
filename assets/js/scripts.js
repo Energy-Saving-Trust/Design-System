@@ -86,25 +86,39 @@ document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function(elemen
 // Shows/hides the password on click and via keyboard controls
 
 function toggleVisibility(el) {
-  const control = el.getAttribute('aria-controls');
+  // Get all password inputs within the same container as the toggle button
+  const container = el.closest('.password-input-wrapper');
+  const passwordFields = container.querySelectorAll('input[type="password"], input[type="text"]');
+
+  // Determine if we are expanding (showing passwords) or collapsing (hiding passwords)
   const expanded = el.getAttribute('aria-expanded') === 'false';
-  document.querySelector(`#${control}`).type = expanded ? 'text' : 'password';
+
+  // Toggle the visibility of all password fields within the container
+  passwordFields.forEach(field => {
+    field.type = expanded ? 'text' : 'password';
+  });
+
+  // Update the aria-expanded, aria-label, and text content for the button
   el.setAttribute('aria-expanded', String(expanded));
   el.setAttribute('aria-label', expanded ? 'Hide password' : 'Show password');
   el.textContent = expanded ? 'Hide' : 'Show';
 }
 
-const passwordToggle = document.querySelector('.password-input-toggle');
+// Attach event listeners to all password toggle buttons
+document.querySelectorAll('.password-input-toggle').forEach(function(toggle) {
+  // Click event listener for toggling visibility
+  toggle.addEventListener('click', function(event) {
+    toggleVisibility(event.target);
+  });
 
-if (passwordToggle) {
-  passwordToggle.addEventListener('click', ({ target }) => toggleVisibility(target));
-  passwordToggle.addEventListener('keydown', function(event) {
+  // Keydown event listener to handle Enter and Spacebar keys
+  toggle.addEventListener('keydown', function(event) {
     if (event.key === 'Enter' || event.key === ' ') {  // Handles both Enter and Spacebar
       event.preventDefault(); // Prevent default behavior (e.g., scrolling with Spacebar)
-      toggleVisibility(event.target); // Simulate a click to toggle the collapse
+      toggleVisibility(event.target); // Directly call toggleVisibility with the target element
     }
   });
-}
+});
 
 
 //// Responsive pagination
@@ -116,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const paginationItems = document.querySelectorAll('.pagination .page-item:not(:first-child):not(:last-child)'); // Exclude prev and next
   const prevButton = document.querySelector('.pagination .page-item:first-child');
   const nextButton = document.querySelector('.pagination .page-item:last-child');
+  const minWidthForFullPagination = 320; // Minimum width before pagination stops collapsing
 
   function createEllipsis() {
       const ellipsis = document.createElement('li');
@@ -127,8 +142,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function updatePagination() {
       const containerWidth = paginationContainer.offsetWidth;
       const totalPages = paginationItems.length;
-      const pageItemWidth = 34; // Approximate width per page link
-      const visiblePages = Math.floor((containerWidth - 240) / pageItemWidth); // Reserve space for prev/next buttons
+      const pageItemWidth = 35; // Approximate width per page link
+      const visiblePages = Math.floor((containerWidth - 200) / pageItemWidth); // Reserve space for prev/next buttons
 
       // Remove existing ellipses if any
       const existingEllipses = document.querySelectorAll('.pagination .ellipsis');
@@ -142,31 +157,38 @@ document.addEventListener('DOMContentLoaded', function () {
       prevButton.classList.add('show');
       nextButton.classList.add('show');
 
-      if (totalPages <= visiblePages) {
-          // Show all items if the container can fit them all
+      // Check if the container is large enough to show all pages
+      if (containerWidth > minWidthForFullPagination) {
           paginationItems.forEach(item => {
               item.classList.add('show');
           });
       } else {
-          // Always show the first and last pages
-          paginationItems[0].classList.add('show');
-          paginationItems[totalPages - 1].classList.add('show');
+          if (totalPages <= visiblePages) {
+              // If the container is large enough, show all items
+              paginationItems.forEach(item => {
+                  item.classList.add('show');
+              });
+          } else {
+              // Always show the first and last pages
+              paginationItems[0].classList.add('show');
+              paginationItems[totalPages - 1].classList.add('show');
 
-          // Show the first few pages (e.g., 1, 2, 3)
-          const startPagesToShow = Math.min(visiblePages - 2, 3); // Show up to 3 pages at the start
-          for (let i = 1; i < startPagesToShow; i++) {
-              paginationItems[i].classList.add('show');
-          }
+              // Show the first few pages (e.g., 1, 2, 3)
+              const startPagesToShow = Math.min(visiblePages - 2, 3); // Show up to 3 pages at the start
+              for (let i = 1; i < startPagesToShow; i++) {
+                  paginationItems[i].classList.add('show');
+              }
 
-          // Show the last few pages (e.g., 9, 10, 11)
-          const endPagesToShow = totalPages - Math.min(visiblePages - 2, 2); // Show up to 2 pages at the end
-          for (let i = endPagesToShow; i < totalPages - 1; i++) {
-              paginationItems[i].classList.add('show');
-          }
+              // Show the last few pages (e.g., 9, 10, 11)
+              const endPagesToShow = totalPages - Math.min(visiblePages - 2, 2); // Show up to 2 pages at the end
+              for (let i = endPagesToShow; i < totalPages - 1; i++) {
+                  paginationItems[i].classList.add('show');
+              }
 
-          // Add a single ellipsis in between if needed
-          if (startPagesToShow < endPagesToShow - 1) {
-              paginationContainer.insertBefore(createEllipsis(), paginationItems[endPagesToShow - 1]);
+              // Add a single ellipsis in between if needed
+              if (startPagesToShow < endPagesToShow - 1) {
+                  paginationContainer.insertBefore(createEllipsis(), paginationItems[endPagesToShow - 1]);
+              }
           }
       }
   }
@@ -177,6 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Update pagination on window resize
   window.addEventListener('resize', updatePagination);
 });
+
 
 
 
