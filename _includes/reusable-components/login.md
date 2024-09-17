@@ -10,6 +10,7 @@
     <input class="form-control" id="password-input" name="password" type="password" spellcheck="false" autocomplete="current-password" autocapitalize="none">
     <button type="button" class="password-input-toggle" aria-controls="password-input" aria-label="Show password" aria-expanded="false">Show</button>
   </div>
+  <p><a href="#">Forgotten password?</a></p>
 </div>
 <div class="form-check mb-4">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
