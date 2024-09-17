@@ -1,6 +1,6 @@
 .metric-group.metric-dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 190px));
   gap: 50px;
   .metric {
     display: flex;
@@ -22,6 +22,7 @@
         font-size: $font-size-sm;
         color: $grey-700;
         font-weight: 400;
+        display: inline-block;
       }
     }
   }
