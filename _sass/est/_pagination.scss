@@ -116,8 +116,17 @@
   &:first-child .page-link:focus::before {
     background-image: var(--#{$prefix}pagination-previous-icon-active);
   }
+  min-width: 35px;
+  text-align: center;
+  display: none; 
+  &.show {
+    display: inline-block;
+  }
+  &.ellipsis {
+    display: inline-block;
+    pointer-events: none; /* Make ellipsis unclickable */
+  }
 }
-
 
 //
 // Sizing

@@ -37,7 +37,7 @@
   border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
   @include border-radius(var(--#{$prefix}btn-border-radius));
   @include gradient-bg(var(--#{$prefix}btn-bg));
-  @include box-shadow(var(--#{$prefix}btn-box-shadow));
+  //@include box-shadow(var(--#{$prefix}btn-box-shadow));
   @include transition($btn-transition);
 
   @include media-breakpoint-down(sm) {
