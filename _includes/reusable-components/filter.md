@@ -9,8 +9,8 @@
     <div class="filter-selected">
       <button class="clear-filters link" href="">Clear all filters</button>
       <ul class="filter-tags">
-        <li><a class="filter-tag" href="/path/to/remove/this">Government/local authority</a></li>
-        <li><a class="filter-tag" href="/path/to/remove/this">Heat pumps</a></li>
+        <li><span class="filter-tag">Government/local authority</span></li>
+        <li><span class="filter-tag">Heat pumps</span></li>
       </ul>
     </div>
     <div class="filter-options">

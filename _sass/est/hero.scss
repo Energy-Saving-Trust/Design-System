@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
   @include media-breakpoint-down(sm) {
-    padding: 48px 50px;
+    padding: 48px 40px;
   }
   &.honeyyellow {
     background-color: $honeyyellow;
@@ -29,23 +29,23 @@
   &.grassygreen {
     background-color: $grassygreen;
   }
-}
-
-.hero-left .group {
-  position: relative;
-  display: block;
-  width: 94%;
-  max-width: 600px;
-}
-
-.hero-left .group .description {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-.hero-left .group h1 {
-  font-size: 2.5rem;
-  margin: 20px 0;
+  .group {
+    position: relative;
+    display: block;
+    width: 94%;
+    max-width: 600px;
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+    .description {
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
 }
 
 .hero-right {
