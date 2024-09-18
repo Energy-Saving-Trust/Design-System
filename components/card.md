@@ -19,7 +19,7 @@ The Card component divides content into blocks, making it easier for users to sc
 ## Default card
 
 {% capture code_render %}
-<a href="#" class="card" style="width: 20.59rem">
+<a href="#" class="card">
   <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
   <div class="card-body">
     <h5 class="card-title">Are you an installer?</h5>
@@ -33,7 +33,7 @@ The Card component divides content into blocks, making it easier for users to sc
 ## Article card
 
 {% capture code_render %}
-<a href="#" class="card card-article" style="width: 20.59rem">
+<a href="#" class="card card-article">
   <div class="card-body">
     <hgroup>
       <h5 class="card-title">Policy briefing: accelerating retrofit through advice and information</h5>
@@ -49,7 +49,7 @@ The Card component divides content into blocks, making it easier for users to sc
 ## Category card
 
 {% capture code_render %}
-<a href="#" class="card card-category" style="width: 20.59rem">
+<a href="#" class="card card-category">
   <div class="card-body">
   <hgroup>
     <h6 class="card-category">Product</h6>
@@ -65,15 +65,15 @@ The Card component divides content into blocks, making it easier for users to sc
 ## Simple article card
 
 {% capture code_render %}
-<div class="card card-simple-article" style="width: 20.59rem">
+<a href="#" class="card card-simple-article">
   <div class="card-body">
     <hgroup>
-      <a class="card-title-link" href="#"><h5 class="card-title">Article title link</h5></a>
+      <h5 class="card-title">Article title link</h5>
       <h6 class="card-subtitle mb-3 text-muted">17 May 2024</h6>
     </hgroup>
     <p class="card-text">Our response to the July 2024 energy price cap announcement, with commentary from Energy Saving Trust chief executive Mike Thornton.</p>
   </div>
-</div>
+</a>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
@@ -81,7 +81,7 @@ The Card component divides content into blocks, making it easier for users to sc
 ## Button card
 
 {% capture code_render %}
-<div class="card card-button card-borderless" style="width: 20.59rem">
+<div class="card card-button card-borderless">
 <img class="card-img-top" src="../assets/example-images/card-img.jpeg" alt="">
   <div class="card-body">
     <h5 class="card-title">Avoid these seven common mistakes that waste energy</h5>

@@ -73,15 +73,6 @@
     border-radius: 0;
     border: none;
     border-top: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
-    .card-title-link {
-      text-decoration: none;
-      &:hover, &:focus {
-        text-decoration: underline;
-        outline: none;
-        border: none;
-        box-shadow: none;
-      }
-    }
     .card-title {
       margin: var(--#{$prefix}card-title-sm-spacer-y) 0 $card-padding 0;
     }
@@ -89,6 +80,14 @@
       border: none;
       border-top: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
       box-shadow: none;
+    }
+    &:hover, &:focus {
+      .card-title {
+        text-decoration: underline;
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
     }
   }
 
