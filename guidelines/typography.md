@@ -163,11 +163,11 @@ The scale for ‘large screens’ is used when the screen is wider than the tabl
 
 {% include component-example.html code_render=code_render %}
 
-## Body content
+## Body content with links
 
 {% capture code_render %}
 
-<p>Text is the primary way our users access information and complete tasks. Effective, accessible content relies on a clear font, consistent headings, succinct body text paragraphs, descriptive links, and scannable lists.</p>
+<p>At Energy Saving Trust we can make sure our digital products are accessible just by making sure the correct Hypertext Markup Language elements are used for the correct purpose at all times. Read more about <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">why HTML-first approach is essential to creating accessible products</a>.</p>
 
 {% endcapture %}
 
