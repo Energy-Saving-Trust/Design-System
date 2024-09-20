@@ -1,125 +1,76 @@
-<style>
-  .icon-demo {
-    background-color: #f8f9fa;
-    background-image: radial-gradient(circle, #ccc 1px, rgba(0,0,0,0) 1px);
-    background-size: 15px 15px;
-    border: 1px solid #dee2e6;
-    padding: 34px;
-  }
+<h3>Preview</h3>
+<div class="icon-demo bg-body-secondary text-center rounded mb-4 js-svg-download-content">
+  {{ page.content | strip }}
+</div>
 
-  .icon-demo svg {
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    vertical-align: 0 !important;
-  }
-
-  .esti {
-    display: inline-block;
-    vertical-align: -.125em;
-    fill: currentcolor;
-
-    width: 1em;
-    height: 1em;
-  }
-
-  code {
-    background-color: #f8f9fa;
-  }
-
-</style>
-
-<div class="row">
-  <div class="col-7">
-    <h3>Preview</h3>
-    <div class="icon-demo bg-body-secondary text-center rounded mb-4 js-svg-download-content">
-      {{ page.content | strip }}
-    </div>
-
-    <h3>Examples</h3>
-    <div class="border rounded px-4 py-4">
-      <div class="mb-4">
-        <h1>{{ page.content | strip }} Heading</h1>
-      </div>
-
-      <div class="mb-4">
-        <p>This is inline text {{ page.content | strip }}</p>
-      </div>
-
-      <div class="mb-4">
-        <a href="#">Example link text{{ page.content | strip }}</a>
-      </div>
-
-      <div class="mb-4">
-        <a href="" class="btn btn-primary" download="">{{ page.content | strip }} Button</a>
-        <a href="" class="btn btn-secondary" download="">{{ page.content | strip }} Button</a>
-        <a href="" class="btn btn-success" download="">{{ page.content | strip }} Button</a>
-      </div>
-
-      <div class="input-group" style="width: 350px;">
-        <span class="input-group-text" id="basic-addon1">
-          {{ page.content | strip }}
-        </span>
-        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
-      </div>
-
-    </div>
-
-    <h3>About this icon</h3>
-
-    <div>
-      <table class="table">
-        <tr>
-          <td>Source</td>
-          <td>{{ page.source }}</td>
-        </tr>
-        <tr>
-          <td>Usage limitations</td>
-          <td>{{ page.licence }}</td>
-        </tr>
-        <tr>
-          <td>Filed under</td>
-          <td>{{ page.tags }}</td>
-        </tr>
-        <tr>
-          <td>Added on</td>
-          <td>{{ page.added }}</td>
-        </tr>
-        <tr>
-          <td>Last modified</td>
-          <td>{{ page.modified }}</td>
-        </tr>
-      </table>
-    </div>
-
-    <h3>Related files</h3>
-
-    <div>
-      <table>
-        <tr>
-          <td>AI</td>
-          <td>link</td>
-        </tr>
-        <tr>
-          <td>PNG</td>
-          <td>link</td>
-        </tr>
-      </table>
-    </div>
+<h3>Examples</h3>
+<div class="border rounded px-4 py-4">
+  <div class="mb-4">
+    <h1>{{ page.content | strip }} Heading</h1>
   </div>
-  <div class="col-5">
-    <h3>Download</h3>
-    <p>Download the SVG to use or edit.</p>
-    <a href="" class="btn btn-primary mb-4 js-download-svg" download="{{ page.title | replace: " ", "-"}}">Download SVG</a>
-    <h3>Icon font</h3>
-    <pre><code class="language-html">&lt;i class=&quot;esti esti-{{ page.class }}&quot;&gt;&lt;/i&gt;</code></pre>
-    <h3>Copy HTML</h3>
-    <p>Paste the SVG into your project's code.</p>
-    <pre><code class="language-html">{{ page.content | strip | escape }}</code></pre>
-    <hr>
+
+  <div class="mb-4">
+    <p>This is inline text {{ page.content | strip }}</p>
+  </div>
+
+  <div class="mb-4">
+    <a href="#">Example link text{{ page.content | strip }}</a>
+  </div>
+
+  <div class="mb-4">
+    <a href="" class="btn btn-primary" download="">{{ page.content | strip }} Button</a>
+    <a href="" class="btn btn-secondary" download="">{{ page.content | strip }} Button</a>
+    <a href="" class="btn btn-success" download="">{{ page.content | strip }} Button</a>
+  </div>
+
+  <div class="input-group" style="width: 350px;">
+    <span class="input-group-text" id="basic-addon1">
+      {{ page.content | strip }}
+    </span>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
+  </div>
+
+</div>
+
+<h3>Download</h3>
+<p>Download the SVG to use or edit.</p>
+<a href="" class="btn btn-primary js-download-svg" download="{{ page.title | replace: " ", "-"}}">Download SVG</a>
+
+
+<h3>Copy HTML</h3>
+<p>Paste the SVG into your project's code.</p>
+
+<div class="ds-example-wrapper">
+  <div class="ds-example-code" style="padding: 8px 25px 8px 12px;">
+    <pre><code>{{ page.content | strip | escape }}</code></pre>
   </div>
 </div>
 
+
+<h3>About this icon</h3>
+
+<dl class="row">
+  <dt class="col-sm-3">Source</dt>
+  <dd class="col-sm-9">{{ page.source }}</dd>
+
+  <dt class="col-sm-3">Category</dt>
+  <dd class="col-sm-9">
+    {% for category in page.categories %}
+      {{ category }}{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </dd>
+
+  <dt class="col-sm-3">Tags</dt>
+  <dd class="col-sm-9">
+    {% for tag in page.tags %}
+      {{ tag }}{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </dd>
+
+</dl>
+
+<button id="downloadZip">Download ZIP</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
 
@@ -135,6 +86,27 @@ $(document).ready(function() {
     var svgAsXML = (new XMLSerializer).serializeToString(svg);
     return "data:image/svg+xml," + encodeURIComponent(svgAsXML);
   }
+
+  document.getElementById("downloadZip").addEventListener("click", function() {
+        // Create a new JSZip instance
+        var zip = new JSZip();
+
+        // Add files to the zip
+        zip.file("hello.txt", "Hello World!");
+        zip.file("readme.txt", "This is a sample README file");
+
+        // Generate the zip and trigger the download
+        zip.generateAsync({ type: "blob" })
+           .then(function(content) {
+               // Create a link to download the zip
+               var element = document.createElement("a");
+               element.href = URL.createObjectURL(content);
+               element.download = "example.zip";
+               document.body.appendChild(element);
+               element.click();
+               document.body.removeChild(element);
+           });
+    });
 
 });
 

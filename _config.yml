@@ -1,4 +1,3 @@
-
 kramdown:
   input: Kramdown
 
@@ -18,3 +17,10 @@ collections:
   icons:
     output: true
     permalink: /guidelines/iconography/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "icons"
+    values:
+      layout: "documentation-page-icon"
