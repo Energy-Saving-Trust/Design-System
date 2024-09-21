@@ -44,7 +44,7 @@
   vertical-align: -.125em;
   color: $body-color;
   text-decoration: none !important;
-  width: 165px;
+  width: 164.5px;
 }
 
 a.icon-sample:hover svg {
@@ -52,7 +52,7 @@ a.icon-sample:hover svg {
 }
 
 a.icon-sample:hover .icon-sample-class {
-  color: $link-color;
+  color: $deepblue;
 }
 
 .icon-sample-preview {
@@ -60,7 +60,7 @@ a.icon-sample:hover .icon-sample-class {
   background-color: $off-white;
   border-radius: 6px;
   padding: 25px 0;
-  width: 165px
+  width: 165px;
 }
 
 .icon-sample-preview svg {
