@@ -1,0 +1,92 @@
+.content-body-icon {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 720px;
+    }
+}
+
+.icon-demo {
+  background-color: #f8f9fa;
+  background-image: radial-gradient(circle, #ccc 1px, rgba(0,0,0,0) 1px);
+  background-size: 15px 15px;
+  border: 1px solid #dee2e6;
+  padding: 34px;
+  svg {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: 0 !important;
+  }
+}
+
+.icon-sample-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 35px;
+}
+
+.icon-sample-grid-empty {
+  width: 100%;
+  background-color: $off-white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 48px 0;
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+  }
+}
+
+.icon-sample {
+  vertical-align: -.125em;
+  color: $body-color;
+  text-decoration: none !important;
+  width: 164.5px;
+}
+
+a.icon-sample:hover svg {
+  color: $deepblue;
+}
+
+a.icon-sample:hover .icon-sample-class {
+  color: $deepblue;
+}
+
+.icon-sample-preview {
+  text-align: center !important;
+  background-color: $off-white;
+  border-radius: 6px;
+  padding: 25px 0;
+  width: 165px;
+}
+
+.icon-sample-preview svg {
+  width: 32px;
+  height: 32px;
+  vertical-align: -.125em;
+  color: $body-color;
+}
+
+.icon-sample-preview.pictogram svg {
+  width: 88px;
+  height: 88px;
+}
+
+.icon-sample-class {
+  font-size: $small-font-size;
+  color: $text-muted;
+  text-decoration: none !important;
+  text-align: center !important;
+  padding-top: 10px;
+}
+
+.esti {
+  display: inline-block;
+  vertical-align: -.125em;
+  fill: currentcolor;
+  width: 1em;
+  height: 1em;
+}
