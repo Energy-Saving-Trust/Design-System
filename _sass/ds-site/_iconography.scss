@@ -90,3 +90,70 @@ a.icon-sample:hover .icon-sample-class {
   width: 1em;
   height: 1em;
 }
+
+//
+// SVG Sprite Generator
+//
+
+$sprite-item-width: 84px;
+$sprite-item-height: $sprite-item-width;
+$sprite-item-border: 4px;
+$sprite-item-spacing: 12px;
+$sprite-item-svg-size: 32px;
+
+$sprite-item-padding: ($sprite-item-width - ($sprite-item-border * 2) - $sprite-item-svg-size) / 2;
+
+.sprite-icon-grid {
+  @include clearfix();
+}
+
+.sprite-icon-item {
+  width: $sprite-item-width;
+  height: $sprite-item-height;
+  margin-right: $sprite-item-spacing;
+  margin-bottom: $sprite-item-spacing;
+  padding: $sprite-item-padding;
+  float: left;
+  border-radius: 6px;
+  border: $sprite-item-border solid $white;
+  svg {
+    width: $sprite-item-svg-size;
+    height: $sprite-item-svg-size;
+  }
+  &:hover {
+    background-color: $gray-900;
+    border: $sprite-item-border solid $gray-900;
+    cursor: pointer;
+    svg {
+      color: $white;
+    }
+  }
+  &.sprite-icon-item-selected {
+    background-color: $white;
+    border: $sprite-item-border solid $deeprose-600;
+    &:hover {
+      background-color: $white;
+      svg {
+        color: $gray-900;
+      }
+    }
+  }
+}
+
+
+.sprite-config-drop-area {
+  border: 2px dashed #ccc;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: $small-font-size;
+  color: $text-muted;
+  margin: 0 0 20px 0;
+  border-radius: 12px;
+  &.hover {
+    border-color: $gray-900;
+    color: $gray-900;
+    background-color: $off-white;
+  }
+
+}
