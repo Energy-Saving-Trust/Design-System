@@ -28,6 +28,14 @@
   </div>
 </div>
 
+<h3>Copy CSS</h3>
+<p>Paste the CSS into your project's code.</p>
+<div class="ds-example-wrapper">
+  <div class="ds-example-code js-svg-encoded-css" style="padding: 8px 25px 8px 12px;">
+
+  </div>
+</div>
+
 <h3>About this icon</h3>
 <dl class="row">
   <dt class="col-sm-3">Source</dt>
@@ -49,15 +57,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
+
     var svgNode = $('.js-svg-download-content svg').get(0);
     svg = svgDataURL(svgNode);
 
-    var $download = $('.js-download-svg');
-    $download.attr('href', svg);
+    var $downloadBtn = $('.js-download-svg');
+    $downloadBtn.attr('href', svg);
+
+    var $encodedContainer = $('.js-svg-encoded-css');
+    var classDisplayTpl = `.my-class {\n  background-image: url("${svg}");\n  background-repeat: no-repeat;\n}`;
+
+    classDisplayTplHighlighted = hljs.highlight(classDisplayTpl, {language: 'css'}).value;
+    $encodedContainer.html('<code><pre>' + classDisplayTplHighlighted + '</pre></code>');
 
     function svgDataURL(svg) {
       var svgAsXML = (new XMLSerializer).serializeToString(svg);
       return "data:image/svg+xml," + encodeURIComponent(svgAsXML);
     }
+
   });
 </script>
