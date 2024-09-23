@@ -3,7 +3,7 @@ title: SVG sprite generator
 layout: documentation-page
 ---
 
-SVG Sprite Generator is a tool that allows you to pick vector icons and compile them into a single, optimized SVG sprite. Instead of loading an entire icon library, you can select only the images you need.
+SVG Sprite Generator allows you to pick vector icons and compile them into a single, optimized SVG sprite. Instead of loading an entire icon library, you can select only the images you need.
 
 Select the icons you need for your project and hit download to save your sprite. Each download comes with a configuration file which you can always import to recreate the settings of your sprite later.
 
