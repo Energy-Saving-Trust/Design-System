@@ -54,6 +54,12 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   border-radius: $border-radius;
   font-size: 1rem;
   font-weight: 400;
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  &::-webkit-input-placeholder { 
+      visibility: hidden !important;
+  }
   &::placeholder {
     color: $grey-700;
   }

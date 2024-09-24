@@ -21,6 +21,7 @@ The Link component serves as an alternative to using a button for primary calls 
 {% capture code_render %}
 <div><a href="#" class="cta-link arrow-link h6">Sign-up now</a></div>
 <div><a href="#" class="cta-link h5">The United Kingdom has a new Labour government and a new prime minister in Keir Starmer</a></div>
+<p>According to <a href="#">the Met Office</a>, this tends to be around October, but the occasional cold snap may have you reaching for that boiler switch sooner.</p>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}

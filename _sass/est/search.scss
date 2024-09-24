@@ -38,11 +38,13 @@
     top: 1px;
     padding: 0 29px;
     border: none;
-    background-image: $search-button-icon;
+    background-image: escape-svg($search-button-icon);
     background-size: 22px;
     background-repeat: no-repeat;
-    background-color: transparent;
+    background-color: $search-button-color;
     background-position: center;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 }
 
