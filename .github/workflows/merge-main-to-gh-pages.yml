@@ -1,11 +1,7 @@
 name: Merge main to gh-pages
 
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - 'Deploy'
+  workflow_dispatch:
 
 jobs:
   merge-to-ghpages:
