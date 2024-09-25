@@ -8,7 +8,7 @@ on:
       - 'Deploy'
 
 jobs:
-  merge_to_ghpages:
+  merge-to-ghpages:
     permissions:
       actions: write
       checks: write
