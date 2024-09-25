@@ -1,0 +1,49 @@
+name: Merge main to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'Deploy'
+
+jobs:
+  merge_to_ghpages:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      issues: write
+      packages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Checkout gh-pages repository
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+          
+      - name: Set up Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Merge main to gh-pages
+        run: |
+          git merge origin/main
+          if [[ -n $(git status -s) ]]; then
+            echo "There are conflicts. Merge aborted."
+            exit 1
+          fi
+          git push origin
