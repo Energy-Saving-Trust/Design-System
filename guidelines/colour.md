@@ -120,7 +120,7 @@ Our digital colour palette is split into two distinct groups; Core colours and N
 
 ### Core colours
 
-Our digital colour palette extends our Core colours into a set of official swatches to allow for much richer and more refined user interfaces.
+Our digital colour palette extends our Core colours into a set of official swatches to allow for much richer and more refined user interfaces. In special circumstances, lighter tints of our colour palette may be used to increase the range of tones available. They should never be the dominant colour or used in isolation. Always start with our core colours and tonal sets before introducing tints. To ensure legibility, always check there is enough contrast between background tints and text colours.
 
 Each colour offers text contrast accessibility check.
 
