@@ -21,6 +21,10 @@
     <input type="text" class="form-control" id="address_2">
   </div>
   <div class="mb-4">
+    <label for="address_2b" class="form-label">Address line 3 (optional)</label>
+    <input type="text" class="form-control" id="address_2b">
+  </div>
+  <div class="mb-4">
     <label for="address_3" class="form-label">Town or city</label>
     <input type="text" class="form-control" id="address_3">
   </div>
