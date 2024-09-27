@@ -22,6 +22,7 @@ section: testing
 <div class="mb-4">
   <label for="exampleFormControlInput2" class="form-label">Where do you live?</label>
   <select class="form-select" name="exampleFormControlInput2" id="exampleFormControlInput2">
+    <option value="GB">United Kingdom</option>
     <option value="AF">Afghanistan</option>
     <option value="AL">Albania</option>
     <option value="DZ">Algeria</option>
@@ -253,7 +254,6 @@ section: testing
     <option value="UG">Uganda</option>
     <option value="UA">Ukraine</option>
     <option value="AE">United Arab Emirates</option>
-    <option value="GB">United Kingdom</option>
     <option value="US">United States</option>
     <option value="UM">United States Minor Outlying Islands</option>
     <option value="UY">Uruguay</option>
