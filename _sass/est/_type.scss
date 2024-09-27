@@ -104,6 +104,15 @@ ul.list-square li:before {
   @include list-unstyled();
 }
 
+.link-list {
+  li {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // Inline turns list items into inline-block
 .list-inline {
   @include list-unstyled();
