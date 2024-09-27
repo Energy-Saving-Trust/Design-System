@@ -22,6 +22,7 @@ section: testing
 <div class="mb-4">
   <label for="exampleFormControlInput2" class="form-label">Where do you live?</label>
   <select class="form-select" name="exampleFormControlInput2" id="exampleFormControlInput2">
+    <option value="GB">United Kingdom</option>
     <option value="AF">Afghanistan</option>
     <option value="AL">Albania</option>
     <option value="DZ">Algeria</option>
@@ -253,7 +254,6 @@ section: testing
     <option value="UG">Uganda</option>
     <option value="UA">Ukraine</option>
     <option value="AE">United Arab Emirates</option>
-    <option value="GB">United Kingdom</option>
     <option value="US">United States</option>
     <option value="UM">United States Minor Outlying Islands</option>
     <option value="UY">Uruguay</option>
@@ -276,7 +276,7 @@ section: testing
       <label for="id-textbox-1">Move in date</label>
       <p class="desc" id="id-description-1">Enter the date using the dd/mm/yyyy format. For example, 31/01/2024.</p>
       <div class="group">
-        <input type="text" placeholder="dd/mm/yyyy" id="id-textbox-1" aria-describedby="id-description-1">
+        <input type="date" placeholder="dd/mm/yyyy" id="id-textbox-1" aria-describedby="id-description-1">
         <button type="button" class="icon" aria-label="Choose Date">
           <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.1 2.9H20.9V0.5H18.5V2.9H6.5V0.5H4.1V2.9H2.9C1.58 2.9 0.5 3.98 0.5 5.3V24.5C0.5 25.82 1.58 26.9 2.9 26.9H22.1C23.42 26.9 24.5 25.82 24.5 24.5V5.3C24.5 3.98 23.42 2.9 22.1 2.9ZM22.1 24.5H2.9V8.9H22.1V24.5Z" fill="white"/>
