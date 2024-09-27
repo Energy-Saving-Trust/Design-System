@@ -5,3 +5,15 @@
 <script src="/assets/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
+
+<script>
+  const searchButtons = document.querySelectorAll('.search-button');
+  if (searchButtons.length > 0) {
+    searchButtons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.large-search-wrap').classList.toggle('show');
+      });
+    });
+  }
+</script>

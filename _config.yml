@@ -1,4 +1,3 @@
-
 kramdown:
   input: Kramdown
 
@@ -11,5 +10,17 @@ nav:
     url: "/components/"
   - name: "Patterns"
     url: "/patterns/"
-  - name: "Testing"
-    url: "/testing/"
+  - name: "About"
+    url: "/about/"
+
+collections:
+  icons:
+    output: true
+    permalink: /guidelines/iconography/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "icons"
+    values:
+      layout: "documentation-page-icon"

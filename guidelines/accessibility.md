@@ -19,7 +19,7 @@ Read more about [why HTML-first approach is essential to creating accessible pro
 
 ### 2. Colour
 
-- Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) to verify contrast ratios.
+- Use tools like the [Adobe Contrast Checker](https://color.adobe.com/create/color-contrast-analyzer) or the [Accessible Web Browser Extension](https://accessibleweb.com/color-contrast-checker/) to verify contrast ratios.
 - Ensure a minimum contrast ratio of 4.5:1 for text against background.
 - Use tools to check color contrast and make adjustments as necessary.
 - Text and interactive elements (buttons, links, clickable icons) should have a contrast ratio of at least 4.5:1 against their background.
@@ -58,7 +58,7 @@ Read more about [why HTML-first approach is essential to creating accessible pro
 
 **Clickable components**
 
-- Ensure buttons and interactive elements are large enough to be easily clickable
+- Ensure buttons and interactive elements are large enough to be easily clickable. Use the [Half Accessible Browser Extension](https://chromewebstore.google.com/detail/halfaccessible-accessibil/kofnlhenkilpdacklecdifdfigomanje?hl=en) to check the site meets the minimum touch target sizes.
 - Minimum size is 44 x 44 pixels.
 
 **Form Elements**
