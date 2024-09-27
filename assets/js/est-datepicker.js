@@ -180,28 +180,33 @@ class DatePickerDialog {
 
   updateGrid() {
     const fd = this.focusDay;
-
+  
     this.monthYearNode.textContent =
       this.monthLabels[fd.getMonth()] + ' ' + fd.getFullYear();
-
+  
     let firstDayOfMonth = new Date(fd.getFullYear(), fd.getMonth(), 1);
     let dayOfWeek = firstDayOfMonth.getDay();
-
+  
     firstDayOfMonth.setDate(firstDayOfMonth.getDate() - dayOfWeek);
-
+  
     const d = new Date(firstDayOfMonth);
-
+  
     for (let i = 0; i < this.days.length; i++) {
       const flag = d.getMonth() != fd.getMonth();
+  
+      // Compare with selectedDay to apply aria-selected="true"
+      const isSelected = this.isSameDay(d, this.selectedDay);
+  
       this.updateDate(
         this.days[i],
         flag,
         d,
-        this.isSameDay(d, this.selectedDay)
+        isSelected // Pass whether the day is selected
       );
+  
       d.setDate(d.getDate() + 1);
-
-      // Hide last row if all dates are disabled (e.g. in next month)
+  
+      // Hide last row if all dates are disabled (e.g., in the next month)
       if (i === 35) {
         if (flag) {
           this.lastRowNode.style.visibility = 'hidden';
@@ -211,34 +216,41 @@ class DatePickerDialog {
       }
     }
   }
+  
+  
+  
 
   updateDate(domNode, disable, day, selected) {
     let d = day.getDate().toString();
     if (day.getDate() <= 9) {
       d = '0' + d;
     }
-
+  
     let m = day.getMonth() + 1;
     if (day.getMonth() < 9) {
       m = '0' + m;
     }
-
+  
     domNode.tabIndex = -1;
-    domNode.removeAttribute('aria-selected');
+    domNode.removeAttribute('aria-selected'); // Ensure previous selection is cleared
+  
     domNode.setAttribute('data-date', day.getFullYear() + '-' + m + '-' + d);
-
+  
     if (disable) {
       domNode.classList.add('disabled');
       domNode.textContent = '';
     } else {
       domNode.classList.remove('disabled');
       domNode.textContent = day.getDate();
+      
       if (selected) {
+        // Mark the currently selected day with aria-selected="true"
         domNode.setAttribute('aria-selected', 'true');
         domNode.tabIndex = 0;
       }
     }
   }
+  
 
   moveFocusToDay(day) {
     const d = this.focusDay;
@@ -276,11 +288,21 @@ class DatePickerDialog {
   open() {
     this.dialogNode.style.display = 'block';
     this.dialogNode.style.zIndex = 2;
-
-    this.getDateFromTextbox();
-    this.updateGrid();
+  
+    // Check if a date is already selected (i.e., selectedDay exists)
+    if (this.selectedDay && this.selectedDay.getTime() !== new Date(0, 0, 1).getTime()) {
+      // Set focus to the selected date
+      this.focusDay = new Date(this.selectedDay);
+    } else {
+      // If no date is selected, initialize with the date in the input field
+      this.getDateFromTextbox();
+    }
+  
+    this.updateGrid(); // Refresh the grid and apply the aria-selected attribute
     this.lastDate = this.focusDay.getDate();
   }
+  
+  
 
   isOpen() {
     return window.getComputedStyle(this.dialogNode).display !== 'none';
@@ -812,13 +834,19 @@ class DatePickerDialog {
 
   handleDayClick(event) {
     if (!this.isDayDisabled(event.currentTarget) && event.which !== 3) {
-      this.setTextboxDate(event.currentTarget); // Ensure this is called
+      this.setTextboxDate(event.currentTarget); // Set the selected date
+      this.selectedDay = this.getDayFromDataDateAttribute(event.currentTarget); // Update selectedDay
+  
       this.close();
+      
+      // Refresh the grid to apply aria-selected
+      this.updateGrid();
     }
-
+  
     event.stopPropagation();
     event.preventDefault();
-  }
+  }  
+  
 
   handleDayFocus() {
     this.setMessage(this.messageCursorKeys);
