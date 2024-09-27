@@ -401,18 +401,33 @@ class DatePickerDialog {
 
   getDayFromDataDateAttribute(domNode) {
     const parts = domNode.getAttribute('data-date').split('-');
-    return new Date(parts[0], parseInt(parts[1]) - 1, parts[2]);
+    const year = parseInt(parts[0], 10);
+    const month = parseInt(parts[1], 10) - 1; // Month is zero-based in JS
+    const day = parseInt(parts[2], 10);
+  
+    // Create a date in UTC to avoid daylight saving time issues
+    const date = new Date(Date.UTC(year, month, day));
+  
+    return date;
   }
+  
 
   // Textbox methods
 
   setTextboxDate(dayNode) {
     const date = this.getDayFromDataDateAttribute(dayNode);
-    const formattedDate = date.toISOString().split('T')[0]; // Format to YYYY-MM-DD
+  
+    // Manually format the date as YYYY-MM-DD using UTC methods
+    const year = date.getUTCFullYear();
+    const month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
+    const day = date.getUTCDate().toString().padStart(2, '0');
+  
+    const formattedDate = `${year}-${month}-${day}`; // Format to YYYY-MM-DD
     this.textboxNode.value = formattedDate; // Set the value of the input
     this.selectedDay = date; // Update the selected day
     this.setDateForButtonLabel(); // Update button label
   }
+  
 
   getDateFromTextbox() {
     const parts = this.textboxNode.value.split('/');
