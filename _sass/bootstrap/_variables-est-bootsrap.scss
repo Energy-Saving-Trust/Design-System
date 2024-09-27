@@ -96,6 +96,7 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
+$deepblue-50: tint-color($deepblue, 90%) !default;
 $deepblue-100: tint-color($deepblue, 80%) !default;
 $deepblue-200: tint-color($deepblue, 60%) !default;
 $deepblue-300: tint-color($deepblue, 40%) !default;
@@ -136,6 +137,7 @@ $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
 
+$deeprose-50: tint-color($deeprose, 90%) !default;
 $deeprose-100: tint-color($deeprose, 80%) !default;
 $deeprose-200: tint-color($deeprose, 60%) !default;
 $deeprose-300: tint-color($deeprose, 40%) !default;
@@ -156,6 +158,7 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
+$honeyyellow-50: tint-color($honeyyellow, 90%) !default;
 $honeyyellow-100: tint-color($honeyyellow, 80%) !default;
 $honeyyellow-200: tint-color($honeyyellow, 60%) !default;
 $honeyyellow-300: tint-color($honeyyellow, 40%) !default;
@@ -166,6 +169,7 @@ $honeyyellow-700: shade-color($honeyyellow, 40%) !default;
 $honeyyellow-800: shade-color($honeyyellow, 60%) !default;
 $honeyyellow-900: shade-color($honeyyellow, 80%) !default;
 
+$grassygreen-50: tint-color($grassygreen, 90%) !default;
 $grassygreen-100: tint-color($grassygreen, 80%) !default;
 $grassygreen-200: tint-color($grassygreen, 60%) !default;
 $grassygreen-300: tint-color($grassygreen, 40%) !default;
@@ -176,6 +180,7 @@ $grassygreen-700: shade-color($grassygreen, 40%) !default;
 $grassygreen-800: shade-color($grassygreen, 60%) !default;
 $grassygreen-900: shade-color($grassygreen, 80%) !default;
 
+$clearskyblue-50: tint-color($clearskyblue, 90%) !default;
 $clearskyblue-100: tint-color($clearskyblue, 80%) !default;
 $clearskyblue-200: tint-color($clearskyblue, 60%) !default;
 $clearskyblue-300: tint-color($clearskyblue, 40%) !default;

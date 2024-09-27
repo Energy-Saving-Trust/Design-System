@@ -265,3 +265,92 @@
 .alignment-fix {
   padding-left: 90px;
 }
+
+.main-nav-white {
+  background-color: $grey-50;
+}
+
+.main-nav-deepblue {
+  background-color: $deepblue-50;
+}
+
+.main-nav-grassygreen {
+  background-color: $grassygreen-50;
+}
+
+.main-nav-honeyyellow {
+  background-color: $honeyyellow-50;
+}
+
+.main-nav-deeprose {
+  background-color: $deeprose-50;
+}
+
+.main-nav-clearskyblue {
+  background-color: $clearskyblue-50;
+}
+
+.header-product-white {
+  background-color: $white;
+}
+
+.header-product-deepblue {
+  background-color: $deepblue;
+}
+
+.header-product-deeprose {
+  background-color: $deeprose;
+}
+
+.header-product-grassygreen {
+  background-color: $grassygreen;
+}
+
+.header-product-honeyyellow {
+  background-color: $honeyyellow;
+}
+
+.header-product-clearskyblue {
+  background-color: $clearskyblue;
+}
+
+
+.product-title-description {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  .navbar-title {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+  }
+  .navbar-subtitle {
+    font-size: 0.82rem;
+    display: block;
+  }
+}
+
+.main-nav-product.navbar-expand-lg {
+  padding: 15px 0;
+}
+
+.header-product {
+  .nav .nav-item .nav-link {
+    padding: 8px 10px;
+    margin: 0;
+  }
+}
+
+#productNavigation {
+  .navbar-nav {
+    margin-top: 0;
+  }
+}
+
+.product-text-white {
+  * {
+    color: $white;
+  }
+}
+
