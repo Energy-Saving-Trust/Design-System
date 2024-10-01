@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('mobile-nav.js loaded');
   const burgerMenu = document.getElementById('burger-menu');
   const mobileMainNavigation = document.getElementById('mobileMainNavigation');
   const mobileControls = document.querySelector('.mobile-controls');

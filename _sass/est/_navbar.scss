@@ -163,14 +163,17 @@
 
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
-  padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
+  padding: 5px 10px 8px 10px;  
   @include font-size(var(--#{$prefix}navbar-toggler-font-size));
   line-height: 1;
   color: var(--#{$prefix}navbar-color);
   background-color: transparent; // remove default button style
-  border: var(--#{$prefix}border-width) solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
+  border: none;
   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
   @include transition(var(--#{$prefix}navbar-toggler-transition));
+  img {
+    width: 20px;
+  }
 
   &:hover {
     text-decoration: none;
@@ -178,8 +181,6 @@
 
   &:focus {
     text-decoration: none;
-    outline: 0;
-    box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
   }
 }
 
@@ -423,6 +424,23 @@
       text-decoration: none;
       margin: 3px 0;
       display: inline-block;
+    }
+  }
+}
+
+.product-nav-toggler {
+  .close-icon {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+  }
+  &.collapsed {
+    .close-icon {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
     }
   }
 }

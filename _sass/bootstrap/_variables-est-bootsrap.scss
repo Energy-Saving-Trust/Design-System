@@ -96,6 +96,7 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
+$deepblue-50: tint-color($deepblue, 90%) !default;
 $deepblue-100: tint-color($deepblue, 80%) !default;
 $deepblue-200: tint-color($deepblue, 60%) !default;
 $deepblue-300: tint-color($deepblue, 40%) !default;
@@ -136,6 +137,7 @@ $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
 
+$deeprose-50: tint-color($deeprose, 90%) !default;
 $deeprose-100: tint-color($deeprose, 80%) !default;
 $deeprose-200: tint-color($deeprose, 60%) !default;
 $deeprose-300: tint-color($deeprose, 40%) !default;
@@ -156,6 +158,7 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
+$honeyyellow-50: tint-color($honeyyellow, 90%) !default;
 $honeyyellow-100: tint-color($honeyyellow, 80%) !default;
 $honeyyellow-200: tint-color($honeyyellow, 60%) !default;
 $honeyyellow-300: tint-color($honeyyellow, 40%) !default;
@@ -166,6 +169,7 @@ $honeyyellow-700: shade-color($honeyyellow, 40%) !default;
 $honeyyellow-800: shade-color($honeyyellow, 60%) !default;
 $honeyyellow-900: shade-color($honeyyellow, 80%) !default;
 
+$grassygreen-50: tint-color($grassygreen, 90%) !default;
 $grassygreen-100: tint-color($grassygreen, 80%) !default;
 $grassygreen-200: tint-color($grassygreen, 60%) !default;
 $grassygreen-300: tint-color($grassygreen, 40%) !default;
@@ -176,6 +180,7 @@ $grassygreen-700: shade-color($grassygreen, 40%) !default;
 $grassygreen-800: shade-color($grassygreen, 60%) !default;
 $grassygreen-900: shade-color($grassygreen, 80%) !default;
 
+$clearskyblue-50: tint-color($clearskyblue, 90%) !default;
 $clearskyblue-100: tint-color($clearskyblue, 80%) !default;
 $clearskyblue-200: tint-color($clearskyblue, 60%) !default;
 $clearskyblue-300: tint-color($clearskyblue, 40%) !default;
@@ -1679,7 +1684,9 @@ $hint-link-active-bg-color:         $hint-body-bg-color !default;
 // Search
 $search-input-text-color:           #1F201F !default;
 $search-input-placeholder-color:    $grey-700;
-$search-button-icon:                url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22' fill='%23{$carousel-control-color}'><path d='M15.912 14.0755C17.1828 12.3411 17.752 10.1907 17.5057 8.05461C17.2594 5.9185 16.2157 3.95418 14.5835 2.55464C12.9512 1.15509 10.8508 0.42354 8.70247 0.506332C6.5541 0.589124 4.51621 1.48016 2.9965 3.00117C1.47679 4.52218 0.587341 6.56099 0.506098 8.70972C0.424855 10.8585 1.15781 12.9586 2.55832 14.5901C3.95884 16.2215 5.92363 17.264 8.05961 17.5088C10.1956 17.7536 12.3452 17.1828 14.0785 15.9105H14.0772C14.1165 15.963 14.1585 16.0129 14.2058 16.0615L19.2587 21.1151C19.5048 21.3614 19.8387 21.4999 20.1868 21.5C20.535 21.5001 20.8689 21.3619 21.1152 21.1158C21.3615 20.8697 21.4999 20.5358 21.5 20.1876C21.5001 19.8394 21.3619 19.5054 21.1158 19.2591L16.0629 14.2054C16.016 14.1579 15.9655 14.1153 15.912 14.0755ZM16.2506 9.0297C16.2506 9.97778 16.0639 10.9166 15.7011 11.7925C15.3384 12.6684 14.8066 13.4643 14.1363 14.1347C13.466 14.805 12.6703 15.3368 11.7945 15.6996C10.9187 16.0625 9.98005 16.2492 9.03211 16.2492C8.08416 16.2492 7.1455 16.0625 6.26972 15.6996C5.39393 15.3368 4.59817 14.805 3.92787 14.1347C3.25757 13.4643 2.72587 12.6684 2.3631 11.7925C2.00034 10.9166 1.81363 9.97778 1.81363 9.0297C1.81363 7.11497 2.57415 5.27866 3.92787 3.92474C5.2816 2.57083 7.11765 1.8102 9.03211 1.8102C10.9466 1.8102 12.7826 2.57083 14.1363 3.92474C15.4901 5.27866 16.2506 7.11497 16.2506 9.0297Z' fill='%23{$carousel-control-color}'/></svg>") !default;
+$search-button-color:               $grey-900;
+$search-button-icon-color:          #ffffff;
+$search-button-icon:                url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'><path d='M15.912 14.0755C17.1828 12.3411 17.752 10.1907 17.5057 8.05461C17.2594 5.9185 16.2157 3.95418 14.5835 2.55464C12.9512 1.15509 10.8508 0.42354 8.70247 0.506332C6.5541 0.589124 4.51621 1.48016 2.9965 3.00117C1.47679 4.52218 0.587341 6.56099 0.506098 8.70972C0.424855 10.8585 1.15781 12.9586 2.55832 14.5901C3.95884 16.2215 5.92363 17.264 8.05961 17.5088C10.1956 17.7536 12.3452 17.1828 14.0785 15.9105H14.0772C14.1165 15.963 14.1585 16.0129 14.2058 16.0615L19.2587 21.1151C19.5048 21.3614 19.8387 21.4999 20.1868 21.5C20.535 21.5001 20.8689 21.3619 21.1152 21.1158C21.3615 20.8697 21.4999 20.5358 21.5 20.1876C21.5001 19.8394 21.3619 19.5054 21.1158 19.2591L16.0629 14.2054C16.016 14.1579 15.9655 14.1153 15.912 14.0755ZM16.2506 9.0297C16.2506 9.97778 16.0639 10.9166 15.7011 11.7925C15.3384 12.6684 14.8066 13.4643 14.1363 14.1347C13.466 14.805 12.6703 15.3368 11.7945 15.6996C10.9187 16.0625 9.98005 16.2492 9.03211 16.2492C8.08416 16.2492 7.1455 16.0625 6.26972 15.6996C5.39393 15.3368 4.59817 14.805 3.92787 14.1347C3.25757 13.4643 2.72587 12.6684 2.3631 11.7925C2.00034 10.9166 1.81363 9.97778 1.81363 9.0297C1.81363 7.11497 2.57415 5.27866 3.92787 3.92474C5.2816 2.57083 7.11765 1.8102 9.03211 1.8102C10.9466 1.8102 12.7826 2.57083 14.1363 3.92474C15.4901 5.27866 16.2506 7.11497 16.2506 9.0297Z' fill='#{$search-button-icon-color}'/></svg>") !default;
 $search-sidebar-button-border:      #E9EBED !default;
 
 // Carousel

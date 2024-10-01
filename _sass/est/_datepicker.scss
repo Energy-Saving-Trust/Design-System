@@ -1,7 +1,7 @@
 $year-chev: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.20492 2.46532e-07L0.794922 1.41L5.37492 6L0.79492 10.59L2.20492 12L8.20492 6L2.20492 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
 $month-chev: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.49001 1.30959e-06L6.08001 1.41L10.66 6L6.08001 10.59L7.49001 12L13.49 6L7.49001 1.30959e-06Z' fill='%231B1F22'/%3E%3Cpath d='M1.40996 2.46532e-07L-4.30665e-05 1.41L4.57996 6L-4.46716e-05 10.59L1.40995 12L7.40996 6L1.40996 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
 $year-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.20492 2.46532e-07L0.794922 1.41L5.37492 6L0.79492 10.59L2.20492 12L8.20492 6L2.20492 2.46532e-07Z' fill='%23ffffff'/%3E%3C/svg%3E") !default;
-$month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.49001 1.30959e-06L6.08001 1.41L10.66 6L6.08001 10.59L7.49001 12L13.49 6L7.49001 1.30959e-06Z' fill='%23ffffff'/%3E%3Cpath d='M1.40996 2.46532e-07L-4.30665e-05 1.41L4.57996 6L-4.46716e-05 10.59L1.40995 12L7.40996 6L1.40996 2.46532e-07Z' fill='%231B1F22'/%3E%3C/svg%3E") !default;
+$month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.49001 1.30959e-06L6.08001 1.41L10.66 6L6.08001 10.59L7.49001 12L13.49 6L7.49001 1.30959e-06Z' fill='%23ffffff'/%3E%3Cpath d='M1.40996 2.46532e-07L-4.30665e-05 1.41L4.57996 6L-4.46716e-05 10.59L1.40995 12L7.40996 6L1.40996 2.46532e-07Z' fill='%23FFFFFF'/%3E%3C/svg%3E") !default;
 
 
 .sr-only {
@@ -54,6 +54,12 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   border-radius: $border-radius;
   font-size: 1rem;
   font-weight: 400;
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  &::-webkit-input-placeholder { 
+      visibility: hidden !important;
+  }
   &::placeholder {
     color: $grey-700;
   }
@@ -104,7 +110,6 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   font-weight: 600;
   color: $grey-900;
   text-transform: none;
-  font-weight: bold;
   border: none;
 }
 
@@ -224,9 +229,9 @@ $month-chev-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 12' fill='none
   border: 2px solid black;
 }
 
-.datepicker-dialog .fa-calendar-alt {
-  // color: hsl(216deg 89% 51%);
-}
+// .datepicker-dialog .fa-calendar-alt {
+//   // color: hsl(216deg 89% 51%);
+// }
 
 .datepicker-dialog .month-year {
   display: inline-block;

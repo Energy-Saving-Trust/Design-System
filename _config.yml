@@ -10,8 +10,8 @@ nav:
     url: "/components/"
   - name: "Patterns"
     url: "/patterns/"
-  - name: "Testing"
-    url: "/testing/"
+  - name: "About"
+    url: "/about/"
 
 collections:
   icons:
