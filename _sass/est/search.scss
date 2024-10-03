@@ -4,7 +4,7 @@
     -webkit-appearance: none;
     appearance: none;
   }
-  
+
   /* Remove the clear button (x) in Firefox */
   input[type="search"]::-moz-search-cancel-button {
     -moz-appearance: none;
@@ -34,7 +34,7 @@
   .search-button {
     height: calc(100% - 2px);
     position: absolute;
-    right: 0;
+    right: 1px;
     top: 1px;
     padding: 0 29px;
     border: none;
@@ -43,8 +43,7 @@
     background-repeat: no-repeat;
     background-color: $search-button-color;
     background-position: center;
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    border-radius: $border-radius;
   }
 }
 
