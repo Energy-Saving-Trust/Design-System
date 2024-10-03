@@ -17,7 +17,7 @@ When collaborating with agencies or third-party vendors, you can share the Desig
 
 When prototyping in Figma, you can use our Design System library, which includes pre-built components, patterns, and page templates to speed up the process.
 
-1. Access our [Figma Library design file](#).
+1. [Request access](mailto:design@est.org.uk) our Figma library.
 2. Duplicate the design file or add it to your Figma project.
 
 ## Developing
