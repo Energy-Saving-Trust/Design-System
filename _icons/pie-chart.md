@@ -9,6 +9,6 @@ tags:
   - analytics
 source: Energy Saving Trust
 ---
-<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="esti esti-pie-chart" xmlns="http://www.w3.org/2000/svg">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" id="esti-pie-chart" class="esti esti-pie-chart" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15C9.75304 15 11.3556 14.3556 12.5836 13.2907L7.95308 8.66019L2.71422 12.5893C3.99762 14.0662 5.88976 15 8 15ZM2.11363 11.7898L7.16667 8L2.11363 4.21022C1.40895 5.30248 1 6.60348 1 8C1 9.39652 1.40895 10.6975 2.11363 11.7898ZM8.5 7.79289L13.2907 12.5836C14.3556 11.3556 15 9.75304 15 8C15 4.30212 12.1326 1.27396 8.5 1.01758V7.79289ZM7.5 1.01758V7L2.71422 3.41066C3.89537 2.05143 5.59214 1.15223 7.5 1.01758ZM8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0Z"/>
 </svg>
