@@ -1,4 +1,4 @@
-name: Sass to CSS Compiler v2
+name: Sass to CSS compiler
 
 on:
   workflow_dispatch:
