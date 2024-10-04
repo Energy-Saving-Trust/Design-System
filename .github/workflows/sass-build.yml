@@ -34,7 +34,7 @@ jobs:
         git config --local user.name "GitHub Actions"
         git add dist/css/*.css
         git commit -m "Compile Sass to CSS"
-        git push origin ${{ github.head_ref }}
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.head_ref }}
 
   create-pr:
     needs: compile-sass
