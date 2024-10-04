@@ -63,7 +63,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: update-site-css
-        base: master
+        base: main
         title: "Update compiled CSS"
         body: "This PR updates the compiled CSS from the latest Sass file."
         draft: false
