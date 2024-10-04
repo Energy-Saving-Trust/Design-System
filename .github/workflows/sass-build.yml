@@ -36,6 +36,12 @@ jobs:
       run: |
         sass _sass/site.scss:dist/css/site.css --no-source-map
 
+    # Set who is using Git
+    - name: Set up Git
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
     # Commit and push the CSS changes
     - name: Push changes
       run: |
