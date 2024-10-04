@@ -10,13 +10,7 @@ jobs:
   compile-sass:
     runs-on: ubuntu-latest
 
-    steps:
-    # Troubleshooting token permissions
-    - name: Check permissions
-      run: |
-        echo "Checking permissions for GITHUB_TOKEN"
-        gh auth status
-        
+    steps:     
     # Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v3
