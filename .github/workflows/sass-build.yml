@@ -51,7 +51,7 @@ jobs:
     - name: Push changes
       run: |
         git checkout -b update-css
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Energy-Saving-Trust/Design-System.git update-css
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Energy-Saving-Trust/Design-System.git HEAD:update-css
         
   create-pr:
     needs: compile-sass
