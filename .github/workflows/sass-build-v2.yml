@@ -1,0 +1,61 @@
+name: Sass to CSS Compiler v2
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    # Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Compile Sass to CSS
+    - name: Compile Sass to CSS
+      run: |
+        mkdir -p dist/css
+        npx sass _sass/site.scss dist/css/site.css
+
+    # Configure Git
+    - name: Configure Git
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "GitHub Actions"
+
+    # Commit the changes
+    - name: Commit compiled CSS
+      run: |
+        git checkout -b update-site-css
+        git add dist/css/site.css
+        git commit -m "Compile Sass to CSS"
+
+    # Push the changes to a new branch
+    - name: Push changes to branch
+      run: |
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} update-site-css
+
+    # Create a pull request
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: update-site-css
+        base: master
+        title: "Update compiled CSS"
+        body: "This PR updates the compiled CSS from the latest Sass file."
+        draft: false
