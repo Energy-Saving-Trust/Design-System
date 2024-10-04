@@ -49,7 +49,7 @@ jobs:
     - name: Commit compiled CSS
       run: |
         git checkout -b update-site-css
-        git add dist/css/site.css
+        git add dist/css/*
         git commit -m "Compile Sass to CSS"
 
     # Push the changes to a new branch
