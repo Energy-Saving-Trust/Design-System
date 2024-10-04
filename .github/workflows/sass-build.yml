@@ -28,15 +28,11 @@ jobs:
         sass _sass/site.scss:dist/css/site.css --no-source-map
 
     # Commit and push the CSS changes
-    - name: Commit and push changes
+    - name: Push changes
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "GitHub Actions"
-        git add dist/css/*.css
-        git commit -m "Compile Sass to CSS"
-        git push https://${{ secrets.GITHUB_TOKEN }}@github.com/Energy-Saving-Trust/Design-System.git HEAD:main
-
-
+        git checkout -b update-css
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Energy-Saving-Trust/Design-System.git update-css
+        
   create-pr:
     needs: compile-sass
     runs-on: ubuntu-latest
@@ -56,4 +52,3 @@ jobs:
         title: "Update compiled CSS"
         body: "This PR updates the compiled CSS from the latest Sass changes."
         base: main
-        branch-suffix: short-commit-hash
