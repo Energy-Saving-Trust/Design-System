@@ -18,7 +18,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: _sass/site.scss
-          destination: /dist/css/site.css
+          destination: dist/css/site.css
 
       - name: Add and Commit changes back to main branch
         run: |
