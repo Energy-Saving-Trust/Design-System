@@ -21,9 +21,9 @@ jobs:
       with:
         node-version: '16'
 
-    # Install dependencies
-    - name: Install dependencies
-      run: npm install
+    # Install Sass
+    - name: Install Sass
+      run: npm install -g sass
 
     # Compile Sass to CSS
     - name: Compile Sass to CSS
