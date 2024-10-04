@@ -25,7 +25,7 @@ jobs:
     # Compile Sass to CSS
     - name: Compile Sass files to CSS
       run: |
-        sass sass/site.scss:dist/css/site.css --no-source-map
+        sass _sass/site.scss:dist/css/site.css --no-source-map
 
     # Commit and push the CSS changes
     - name: Commit and push changes
