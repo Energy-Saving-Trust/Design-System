@@ -1,38 +1,58 @@
-name: Sass build
+name: Sass to CSS Compiler
 
 on:
-  workflow_dispatch:
-
-permissions:
-  contents: read
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  build_css:
+  compile-sass:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source Git branch
-        uses: actions/checkout@v2
-        with:
-            ref: main
-            fetch-depth: 10
-            submodules: true
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.6.0
-        with:
-          source: _sass/site.scss
-          destination: dist/css/site.css
+    # Set up Node.js to run Sass
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
 
-      - name: Add and Commit changes back to main branch
-        run: |
-          git config --local user.email 'action@github.com'
-          git config --local user.name 'GitHub Action'
-          git add dist/css/*
-          git commit -m 'Updates compiled CSS files'
+    # Install Sass
+    - name: Install Sass
+      run: npm install -g sass
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+    # Compile Sass to CSS
+    - name: Compile Sass files to CSS
+      run: |
+        sass sass/site.scss:dist/css/site.css --no-source-map
+
+    # Commit and push the CSS changes
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "GitHub Actions"
+        git add dist/css/*.css
+        git commit -m "Compile Sass to CSS"
+        git push origin ${{ github.head_ref }}
+
+  create-pr:
+    needs: compile-sass
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Create Pull Request
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: "Update compiled CSS"
+        branch: update-css
+        title: "Update compiled CSS"
+        body: "This PR updates the compiled CSS from the latest Sass changes."
+        base: main
+        branch-suffix: short-commit-hash
