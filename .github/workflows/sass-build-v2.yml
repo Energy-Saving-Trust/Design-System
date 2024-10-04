@@ -59,11 +59,6 @@ jobs:
 
     # Create a pull request
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v6
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: update-site-css
-        base: main
-        title: "Update compiled CSS"
-        body: "This PR updates the compiled CSS from the latest Sass file."
-        draft: false
+      run: gh pr create -B main -H update-site-css --title 'Update compiled CSS' --body 'This PR updates the compiled CSS from the latest Sass file.'
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
