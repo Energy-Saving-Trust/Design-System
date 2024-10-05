@@ -37,7 +37,7 @@ jobs:
     - name: Compile Sass to CSS
       run: |
         mkdir -p dist/css
-        npx sass _sass/site.scss dist/css/site.css
+        npx sass _sass/site.scss dist/css/est-ds.css
 
     # Configure Git
     - name: Configure Git
