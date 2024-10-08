@@ -341,6 +341,17 @@ $cyans: (
   "cyan-800": $cyan-800,
   "cyan-900": $cyan-900
 ) !default;
+
+
+$est-brand-headers:
+  "grassy-green"    $grassygreen-500     $grassygreen-100,
+  "honey-yellow"    $honeyyellow-500     $honeyyellow-100,
+  "clear-sky-blue"  $clearskyblue-500    $clearskyblue-100,
+  "deep-rose"       $deeprose-500        $deeprose-100,
+  "deep-blue"       $deepblue-500        $deepblue-100,
+  "grey"            $grey-500            $grey-100,
+  "white"           $white               $grey-100;
+
 // fusv-enable
 
 // scss-docs-start theme-color-variables

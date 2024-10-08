@@ -1,0 +1,356 @@
+//
+// EST Header for Digital Tools.
+//
+
+.est-header {
+  //
+}
+
+//
+// EST Header variants background colour definitions.
+//
+
+@each $name, $colour, $accent in $est-brand-headers {
+  .est-header-#{$name} {
+    .est-header-island {
+      background-color: $colour;
+      padding-top: 15px;
+      height: 160px;
+    }
+    .est-primary-navigation {
+      background-color: $accent;
+      .dropdown-menu-hamburger {
+        background-color: $accent;
+      }
+    }
+  }
+}
+
+//
+// Brand area including logo and multiple partner logos.
+//
+
+.est-header-brand {
+  padding-top: 55px;
+  .est-logo {
+    display: block;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-right: 25px;
+    svg, img {
+      height: 100%;
+      width: auto;
+      color: #000;
+    }
+  }
+  .est-partner-logo {
+    display: block;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-right: 25px;
+
+    img,
+    svg {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+}
+
+//
+// Programme name and tagline definitions.
+// Note: tagline element (div.est-programme-tagline) is optional.
+//
+
+.est-programme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-top: 6px;
+  .est-programme-name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  .est-programme-tagline {
+    /* Tagline indent optical adjustment */
+    padding-left: 2px;
+    font-size: 13px;
+    font-weight: 500;
+    display: none;
+  }
+}
+
+//
+// Utility area links
+//
+
+.est-header-utilities {
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: 100%;
+  li {
+    display: block;
+    float: right;
+    padding: 0;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px 12px;
+      &:visited {
+        color: #000;
+      }
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+      &:active {
+        color: #000;
+      }
+      &:focus {
+        color: #000;
+        outline: #000;
+      }
+    }
+  }
+}
+
+//
+// Primary navigation
+//
+
+.est-primary-navigation {
+  text-align: right;
+  height: 54px;
+  div.container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    > ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        flex: 0 0 auto;
+        width: auto;
+        padding: 0;
+        margin: 0 3px 0 3px;
+        &.active {
+          border-bottom: 4px solid #000;
+        }
+        a {
+          font-weight: 600;
+          text-decoration: none;
+          color: #000;
+          padding: 15px 6px 11px 6px;
+          display: block;
+          border-bottom: 4px solid transparent;
+          &:visited {
+            color: #000;
+          }
+          &:hover {
+            color: #000;
+          }
+          &:active {
+            color: #000;
+          }
+          &:focus {
+            color: #000;
+            outline: #000;
+          }
+        }
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+      }
+
+      &.right-margin {
+        margin-right: 30px;
+      }
+    }
+
+  }
+
+}
+
+//
+// Type colour adjustments for Deep Blue and Deep Rose themes.
+// Most optimal contrast is achieveved with white foreground.
+//
+
+.est-header-grey,
+.est-header-deep-blue,
+.est-header-deep-rose {
+
+  .est-header-brand {
+    color: #fff;
+    .est-logo {
+      svg {
+        color: #fff;
+      }
+    }
+  }
+  .est-header-utilities {
+    li {
+      a {
+        color: #fff !important;
+        &:visited {
+          color: #fff !important;
+        }
+        &:hover {
+          color: #fff !important;
+        }
+        &:active {
+          color: #fff !important;
+        }
+        &:focus {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+/*
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+*/
+
+.est-primary-navigation {
+
+  div.container {
+    > ul {
+      flex-wrap: wrap !important;
+      li {
+        &:before {
+          content: none;
+        }
+        a svg {
+          margin-top: -3px;
+        }
+
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "sm")) {
+  .est-header-island {
+    height: 160px;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .est-primary-navigation {
+    div.container {
+      > ul {
+        flex-direction: row !important;
+        li {
+          height: 54px;
+          a {
+            padding: 6px 12px 0px 12px;
+            margin: 10px 0px 0px 0px;
+            line-height: 22px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .est-header-brand {
+    padding-top: 35px;
+    .est-logo {
+      height: 60px;
+      margin-right: 40px;
+    }
+    .est-partner-logo {
+      height: 60px;
+      margin-right: 40px;
+    }
+  }
+
+  .est-programme {
+    margin-top: -5px;
+    .est-programme-name {
+      font-size: 27px;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+    .est-programme-tagline {
+      /* Tagline indent optical adjustment */
+      padding-left: 2px;
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+    }
+  }
+
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .est-programme {
+    .est-programme-tagline {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "xl")) {
+
+}
+
+@media (min-width: map-get($grid-breakpoints, "xxl")) {
+
+}
+
+.est-product-burger {
+  background-color: transparent;
+  border: none;
+  padding: 6px 6px 5px 6px;
+  margin: 10px 0px 11px 0px;
+  font-weight: 600;
+  display: flex;
+
+  .burger-lines {
+    margin-top: 3px;
+    div {
+      width: 20px;
+      height: 2px;
+      margin-bottom: 4px;
+      border-bottom: 2px solid $body-color;
+      transition: 0.4s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .burger-text {
+    line-height: 22px;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .est-product-burger {
+    // display: none;
+  }
+}

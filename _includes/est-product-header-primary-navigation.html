@@ -1,0 +1,18 @@
+<ul>
+  {% for item in site.nav %}
+    {% if item.url == page.dir %}
+      <li class="active"><a href="{{ item.url }}" class="active">{{ item.name }}</a></li>
+    {% else %}
+      <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<button class="est-product-burger" id="est-product-burger" type="button">
+  <div class="burger-lines">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <div class="burger-text">Menu</div>
+</button>
