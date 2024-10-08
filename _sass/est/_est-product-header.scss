@@ -3,7 +3,7 @@
 //
 
 .est-header {
-
+  //
 }
 
 //
@@ -129,17 +129,17 @@
   height: 54px;
   div.container {
     position: relative;
+    display: flex;
+    justify-content: end;
     > ul {
       margin: 0;
       padding: 0;
-      height: 54px;
-      overflow: hidden;
-
+      display: flex;
       li {
-        display: inline-block;
+        flex: 0 0 auto;
+        width: auto;
         padding: 0;
         margin: 0 3px 0 3px;
-        height: 54px;
         &.active {
           border-bottom: 4px solid #000;
         }
@@ -148,14 +148,13 @@
           text-decoration: none;
           color: #000;
           padding: 15px 6px 11px 6px;
-          display: inline-block;
+          display: block;
           border-bottom: 4px solid transparent;
           &:visited {
             color: #000;
           }
           &:hover {
             color: #000;
-            //border-bottom: 4px solid #000;
           }
           &:active {
             color: #000;
@@ -164,7 +163,6 @@
             color: #000;
             outline: #000;
           }
-
         }
 
         &:first-of-type {
@@ -175,14 +173,12 @@
           margin-right: 0;
         }
 
-
       }
 
       &.right-margin {
         margin-right: 30px;
       }
     }
-
 
   }
 
@@ -241,60 +237,45 @@ $grid-breakpoints: (
 
   div.container {
     > ul {
+      flex-wrap: wrap !important;
       li {
         &:before {
           content: none;
         }
-        &.home-b {
-          display: none;
-        }
         a svg {
           margin-top: -3px;
-      }
+        }
 
       }
     }
   }
 }
-
-$primary-nav-height: 55px;
-
-$primary-nav-li-padding-top: 12px;
-
 
 @media (min-width: map-get($grid-breakpoints, "sm")) {
   .est-header-island {
     height: 160px;
   }
-
-  .est-primary-navigation {
-    div.container {
-      > ul li {
-        height: 55px;
-
-        a {
-          padding: 6px 12px 0px 12px;
-          margin: 10px 0px 0px 0px;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-
-        &.home-a {
-          display: none;
-        }
-
-        &.home-b {
-          display: inline-block;
-        }
-      }
-    }
-
-  }
-
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
+  .est-primary-navigation {
+    div.container {
+      > ul {
+        flex-direction: row !important;
+        li {
+          height: 54px;
+          a {
+            padding: 6px 12px 0px 12px;
+            margin: 10px 0px 0px 0px;
+            line-height: 22px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
   .est-header-brand {
     padding-top: 35px;
     .est-logo {
@@ -341,65 +322,35 @@ $primary-nav-li-padding-top: 12px;
 
 }
 
-
-.hamburger-dropdown-wrapper {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: none;
-}
-
-.hamburger {
-  height: 50px;
-  margin: 2px 5px 2px 5px;
-  padding: 8px 6px 8px 6px;
-  border: none;
-  border-radius: 4px;
+.est-product-burger {
   background-color: transparent;
-  color: #000;
-  &:focus {
-    // box-shadow: 0 0 0 0.25rem;
-    // background-color:rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 6px 6px 5px 6px;
+  margin: 10px 0px 11px 0px;
+  font-weight: 600;
+  display: flex;
+
+  .burger-lines {
+    margin-top: 3px;
+    div {
+      width: 20px;
+      height: 2px;
+      margin-bottom: 4px;
+      border-bottom: 2px solid $body-color;
+      transition: 0.4s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
-  &.show {
-    background-color:rgba(0, 0, 0, 0.05);
-  }
-  svg {
-    color: #000;
+
+  .burger-text {
+    line-height: 22px;
   }
 }
 
-
-.dropdown-menu-hamburger {
-  padding: 10px 0;
-  border-radius: 6px;
-  // border: 1px solid #333;
-  border: none;
-  @include box-shadow(0 6px 12px rgba(0, 0, 0, .175));
-  a {
-    font-weight: 600;
-    padding: 10px 20px;
-    white-space: nowrap;
-    display: inline-block;
-    text-decoration: none;
-
-    &:visited {
-      color: #000;
-    }
-    &:hover {
-      color: #000;
-      //border-bottom: 4px solid #000;
-    }
-    &:active {
-      color: #000;
-    }
-    &:focus {
-      color: #000;
-      outline: #000;
-    }
-    &.active {
-      // border-bottom: 4px solid #000;
-    }
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .est-product-burger {
+    // display: none;
   }
-
 }
