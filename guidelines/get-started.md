@@ -24,5 +24,5 @@ When prototyping in Figma, you can use our Design System library, which includes
 
 To install the code and start developing with the Design System follow these instructions.
 
-1. Go to our [Github repository](https://github.com/Energy-Saving-Trust/Design-System)
+1. Go to our [Github repository](https://github.com/Energy-Saving-Trust/Design-System).
 2. Download the latest code package from the `/dist` directory.
