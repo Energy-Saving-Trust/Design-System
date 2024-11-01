@@ -1,0 +1,103 @@
+//
+// EST charts
+//
+
+
+//
+// EPC display component for tools
+//
+
+$epc-color-sap-band-g: #ED1C24;
+$epc-color-sap-band-f: #F15A24;
+$epc-color-sap-band-e: #FBB03B;
+$epc-color-sap-band-d: #FCEE21;
+$epc-color-sap-band-c: #39B54A;
+$epc-color-sap-band-b: #009245;
+$epc-color-sap-band-a: #006837;
+
+$epc-colors: (
+  "band-a": $epc-color-sap-band-a,
+  "band-b": $epc-color-sap-band-b,
+  "band-c": $epc-color-sap-band-c,
+  "band-d": $epc-color-sap-band-d,
+  "band-e": $epc-color-sap-band-e,
+  "band-f": $epc-color-sap-band-f,
+  "band-g": $epc-color-sap-band-g
+) !default;
+
+$epc-bar-height: 25px;
+$epc-bar-base-width: 50px;
+$epc-bar-base-increment: 25px;
+$epc-color: $white;
+$epc-bar-text-color: $white;
+$epc-bar-text-size: $epc-bar-height * 2 / 3;
+
+.epc-rating {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+
+  thead, tbody, tfoot, tr, td, th {
+    border-style: none;
+    border-width: 0px;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+  }
+
+  th {
+    font-weight: 600;
+    padding-bottom: 12px;
+  }
+
+  .epc-bar {
+    height: $epc-bar-height;
+    padding: 0 8px 0 8px;
+    margin: 1px 0 1px 0;
+    font-size: $epc-bar-text-size;
+    font-weight: 600;
+    float: left;
+    border-radius: 3px;
+    text-align: right;
+  }
+
+  .epc-label {
+    padding-left: 7px;
+    padding-right: 0px;
+    font-size: 18px;
+    height: 26px;
+    width: 37px;
+    text-align: center;
+    clip-path: polygon(0% 50%, 30% 0%, 100% 0%, 100% 100%, 30% 100%);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+  }
+
+  @each $band, $epc-band-color in $epc-colors {
+    .epc-bar-#{$band} {
+      background-color: $epc-band-color;
+      color: color-contrast($epc-band-color);
+      width: $epc-bar-base-width;
+    }
+    $epc-bar-base-width: $epc-bar-base-width + $epc-bar-base-increment;
+    .epc-color-#{$band} {
+      background-color: $epc-band-color;
+      color: color-contrast($epc-band-color);
+    }
+  }
+
+  .epc-scale-explained {
+    color: $text-muted;
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-90deg-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z'/%3E%3C/svg%3E");      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+//525C66
