@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttit
   <thead>
     <tr>
       <th scope="col">Energy efficiency rating</th>
-      <th scope="col" style="padding-left: 30px;padding-right: 30px;">Current</th>
+      <th scope="col">Current</th>
       <th scope="col">Potential</th>
     </tr>
   </thead>

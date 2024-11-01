@@ -2,16 +2,15 @@
 // EST charts
 //
 
-
 //
 // EPC display component for tools
 //
 
-$epc-color-sap-band-g: #ED1C24;
-$epc-color-sap-band-f: #F15A24;
-$epc-color-sap-band-e: #FBB03B;
-$epc-color-sap-band-d: #FCEE21;
-$epc-color-sap-band-c: #39B54A;
+$epc-color-sap-band-g: #ed1c24;
+$epc-color-sap-band-f: #f15a24;
+$epc-color-sap-band-e: #fbb03b;
+$epc-color-sap-band-d: #fcee21;
+$epc-color-sap-band-c: #39b54a;
 $epc-color-sap-band-b: #009245;
 $epc-color-sap-band-a: #006837;
 
@@ -36,7 +35,12 @@ $epc-bar-text-size: $epc-bar-height * 2 / 3;
   border-collapse: collapse !important;
   border-spacing: 0 !important;
 
-  thead, tbody, tfoot, tr, td, th {
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
     border-style: none;
     border-width: 0px;
     border-collapse: collapse !important;
@@ -46,12 +50,16 @@ $epc-bar-text-size: $epc-bar-height * 2 / 3;
   th {
     font-weight: 600;
     padding-bottom: 12px;
+    &:nth-child(2) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .epc-bar {
     height: $epc-bar-height;
     padding: 0 8px 0 8px;
-    margin: 1px 0 1px 0;
+    margin: 1px 10px 1px 0;
     font-size: $epc-bar-text-size;
     font-weight: 600;
     float: left;
@@ -70,6 +78,7 @@ $epc-bar-text-size: $epc-bar-height * 2 / 3;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
+    border-radius: 3px;
   }
 
   @each $band, $epc-band-color in $epc-colors {
