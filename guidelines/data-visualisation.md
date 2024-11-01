@@ -9,6 +9,8 @@ section: guidelines
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttitor, scelerisque tellus sit amet, accumsan urna. Suspendisse nec imperdiet sapien, eget auctor tortor.
 
 
+## EPC energy-efficiency rating chart
+
 {% capture code_render %}
 <table class="epc-rating">
   <thead>
@@ -20,7 +22,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttit
   </thead>
   <tbody>
     <tr>
-      <td class="epc-scale-explained" colspan="3">Very energy efficient - lower running costs</td>
+      <td class="epc-scale-explained" colspan="3">Very energy efficient</td>
     </tr>
     <tr>
       <td>
@@ -78,7 +80,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttit
       <td></td>
     </tr>
     <tr>
-      <td class="epc-scale-explained" colspan="3">Not energy efficient - higher running costs</td>
+      <td class="epc-scale-explained" colspan="3">Not energy efficient</td>
     </tr>
   </tbody>
 </table>
