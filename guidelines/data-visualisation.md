@@ -94,7 +94,7 @@ Data visualisation uses charts, graphs, maps, and diagrams to represent informat
 
 {% include component-example.html code_render=code_render code_example=code_example %}
 
-## Titles and labels
+## Captions and labels
 
 {% capture code_render %}
 <table class="epc-rating-chart">
@@ -306,7 +306,7 @@ The horizontal energy efficiency rating chart is available in both small and lar
 
 {% include component-example.html code_render=code_render code_example=code_example %}
 
-## Examples
+## Usage examples
 
 {% capture code_render %}
 <h3>Energy efficiency of your property</h3>
