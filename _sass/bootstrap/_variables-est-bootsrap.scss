@@ -343,6 +343,28 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+//
+// EPC display colours
+//
+
+$epc-color-sap-band-g: #ed1c24;
+$epc-color-sap-band-f: #f15a24;
+$epc-color-sap-band-e: #fbb03b;
+$epc-color-sap-band-d: #fcee21;
+$epc-color-sap-band-c: #39b54a;
+$epc-color-sap-band-b: #009245;
+$epc-color-sap-band-a: #006837;
+
+$epc-colors: (
+  "band-a": $epc-color-sap-band-a,
+  "band-b": $epc-color-sap-band-b,
+  "band-c": $epc-color-sap-band-c,
+  "band-d": $epc-color-sap-band-d,
+  "band-e": $epc-color-sap-band-e,
+  "band-f": $epc-color-sap-band-f,
+  "band-g": $epc-color-sap-band-g
+) !default;
+
 // scss-docs-start theme-color-variables
 $primary:       $gray-900 !default;
 $secondary:     $gray-900 !default;
