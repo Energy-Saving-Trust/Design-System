@@ -2,11 +2,42 @@
 title: Data visualisation
 layout: documentation-page
 section: guidelines
+
+color_tokens:
+  - color_token_group: "EPC colour scale"
+    color_token:
+      - variable_name: "$epc-color-sap-band-a"
+        hex: "#006837"
+        role: "EPC rating A"
+      - variable_name: "$epc-color-sap-band-b"
+        hex: "#009245"
+        role: "EPC rating B"
+      - variable_name: "$epc-color-sap-band-c"
+        hex: "#39b54a"
+        role: "EPC rating C"
+      - variable_name: "$epc-color-sap-band-d"
+        hex: "#fcee21"
+        role: "EPC rating D"
+      - variable_name: "$epc-color-sap-band-e"
+        hex: "#fbb03b"
+        role: "EPC rating E"
+      - variable_name: "$epc-color-sap-band-f"
+        hex: "#f15a24"
+        role: "EPC rating F"
+      - variable_name: "$epc-color-sap-band-g"
+        hex: "#ed1c24"
+        role: "EPC rating G"
 ---
 
 Data visualisation uses charts, graphs, maps, and diagrams to represent information visually, making complex data easier to understand. It helps users explore, monitor, and explain data by revealing patterns, trends, comparisons, and progress.
 
-## The Energy Performance Certificate (EPC) rating chart
+## Energy efficiency rating scale
+
+The energy efficiency rating scale is one of the most recognisable visual aids for communicating how efficiently a building uses energy.
+
+This rating scale is one of the key elements of Energy Performance Certificates (EPCs) where it helps property owners, renters, and buyers quickly understand a building’s energy performance, allowing them to make informed decisions and potentially take steps to improve energy efficiency if needed.
+
+## Base example
 
 {% capture code_render %}
 <table class="epc-rating-chart">
@@ -173,7 +204,7 @@ Data visualisation uses charts, graphs, maps, and diagrams to represent informat
 
 {% include component-example.html code_render=code_render %}
 
-## Horizontal
+## Horizontal scale
 
 {% capture code_render %}
 <div class="epc-rating-chart-horizontal">
@@ -189,7 +220,7 @@ Data visualisation uses charts, graphs, maps, and diagrams to represent informat
 
 {% include component-example.html code_render=code_render %}
 
-## Size variants
+## Sizes
 
 The horizontal energy efficiency rating chart is available in both small and large variants. Use the `.epc-rating-lg` or `.epc-rating-sm` classes to apply the respective sizes.
 
@@ -306,35 +337,99 @@ The horizontal energy efficiency rating chart is available in both small and lar
 
 {% include component-example.html code_render=code_render code_example=code_example %}
 
-## Usage examples
+## Label example
 
 {% capture code_render %}
 <h3>Energy efficiency of your property</h3>
+<p>The energy efficiency of a property tells us how much energy it uses per square meter. The energy consumption per square meter allows for fair comparison of the efficiency of properties with different floor areas.</p>
+<p>An EPC (Energy Performance Certificate) rating measures both a property's energy efficiency and environmental impact. An EPC rating of <strong>F</strong> indicates that a property is very energy inefficient, meaning it consumes a large amount of energy, leading to higher utility costs and a significant environmental impact.</p>
+
 <div class="d-flex gap-4 mt-4">
   <div class="epc-rating epc-rating-lg epc-rating-right epc-rating-band-f">F</div>
-  <div class="d-flex flex-column">
-    <div class="fw-bold fs-2 lh-1 mt-auto">580</div>
-    <div class="fw-light fs-7 lh-1 pb-2 pt-1">kWh / m<sup>2</sup> per year</div>
+  <div class="my-auto">
+    <strong class="fw-bold fs-2">580</strong>
+    <small class="fw-light fs-7">kWh/m<sup>2</sup> per year</small>
   </div>
 </div>
 {% endcapture %}
 {% include component-example.html code_render=code_render  %}
 
+## EPC colour scale
 
+### Colour tokens
 
-## Colour scales
+{% for group in page.color_tokens %}
+  <table class="design-token-table">
+    <thead>
+      <tr>
+        <th class="first-column">Colour</th>
+        <th class="second-column">Sass variable</th>
+        <th class="third-column">Hex code</th>
+        <th class="last-column">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for token in group.color_token %}
+      <tr>
+        <td>
+          <div class="color-token-preview" style="background-color:{{ token.hex }}"></div>
+        </td>
+        <td><code>{{ token.variable_name }}</code><button class="btn-clipboard js-btn-clipboard" title="Copy variable name"></button></td>
+        <td><code>{{ token.hex | upcase }}</code><button class="btn-clipboard js-btn-clipboard" title="Copy HEX colour value"></button></td>
+        <td>{{ token.role }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endfor %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttitor, scelerisque tellus sit amet, accumsan urna. Suspendisse nec imperdiet sapien, eget auctor tortor.
+<h3>HEX codes maps</h3>
+<div class="ds-example-wrapper">
+  <div class="ds-example-code">
+    <pre style="white-space: break-spaces;"><code class="language-javascript">
+{%- for group in page.color_tokens -%}
+{%- for token in group.color_token -%}
+{%- if forloop.first == true -%}// JavaScript ['A'...'G'] array
+const colors = [
+{%- endif -%}
+{{- token.hex | upcase | prepend: '"' | append: '"' -}}
+{%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}
+{%- endfor %}];
 
+// R vector
+colors <- c(
+{% for group in page.color_tokens -%}
+{%- for token in group.color_token -%}
+{{ token.role | replace: "EPC rating ", "" | prepend: '  "' | append: '" = ' -}}
+{{ token.hex | upcase | prepend: '"' | append: '"' -}}
+{% unless forloop.last %},{% endunless %}
+{% endfor -%})
+{%- endfor -%}
+      </code></pre>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="/assets/js/libs/clipboard.min.js"></script>
+<script type="text/javascript">
 
-### Categorical colour scales
+  $(document).ready(function() {
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttitor, scelerisque tellus sit amet, accumsan urna. Suspendisse nec imperdiet sapien, eget auctor tortor.
+    var clipboard = new ClipboardJS('.js-btn-clipboard', {
+      target: function(trigger) {
+        return trigger.previousElementSibling;
+      }
+    });
 
-### Sequential colour scales
+    clipboard.on('success', function(e) {
+      $(e.trigger).addClass("copied")
+      e.clearSelection();
+      setTimeout(
+        function() {
+          $(e.trigger).removeClass("copied")
+        }, 3000);
+    });
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttitor, scelerisque tellus sit amet, accumsan urna. Suspendisse nec imperdiet sapien, eget auctor tortor.
+  });
 
-### Diverging colour scales
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut orci porttitor, scelerisque tellus sit amet, accumsan urna. Suspendisse nec imperdiet sapien, eget auctor tortor.
+</script>
