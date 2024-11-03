@@ -314,19 +314,19 @@ pre {
   margin-top: 0; // 1
   margin-bottom: 1rem; // 2
   overflow: auto; // 3
-  @include font-size($code-font-size);
+  font-size: $code-font-size;
   color: $pre-color;
 
   // Account for some code outputs that place code tags in pre tags
   code {
-    @include font-size(inherit);
+    font-size: $code-font-size;
     color: inherit;
     word-break: normal;
   }
 }
 
 code {
-  @include font-size($code-font-size);
+  font-size: $code-font-size;
   color: var(--#{$prefix}code-color);
   word-wrap: break-word;
 

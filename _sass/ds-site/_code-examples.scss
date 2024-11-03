@@ -52,6 +52,11 @@
   background-color: #f8f9fa;
   position: relative;
   padding: 25px 25px 25px 25px;
+
+  code,
+  pre {
+    font-size: $code-font-size !important;
+  }
 }
 
 pre {

@@ -348,7 +348,7 @@ The horizontal energy efficiency rating chart is available in both small and lar
   <div class="epc-rating epc-rating-lg epc-rating-right epc-rating-band-f">F</div>
   <div class="my-auto">
     <strong class="fw-bold fs-2">580</strong>
-    <small class="fw-light fs-7">kWh/m<sup>2</sup> per year</small>
+    <small class="fs-7">kWh/m<sup>2</sup> per year</small>
   </div>
 </div>
 {% endcapture %}
