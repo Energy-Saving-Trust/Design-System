@@ -153,7 +153,7 @@ This rating scale is one of the key elements of Energy Performance Certificates 
       </td>
       <td></td>
       <td>
-        <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-sm epc-rating-band-b">71</div>
+        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-b est-epc-rating-label-sm">71 B</div>
       </td>
     </tr>
     <tr>
@@ -162,7 +162,7 @@ This rating scale is one of the key elements of Energy Performance Certificates 
       </td>
       <td></td>
       <td>
-        <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-sm epc-rating-band-c">C</div>
+        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">C</div>
       </td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ This rating scale is one of the key elements of Energy Performance Certificates 
         <div class="epc-rating-chart-bar epc-rating-chart-bar-band-d">D</div>
       </td>
       <td>
-        <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-sm epc-rating-band-d">D</div>
+        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-d est-epc-rating-label-sm">D</div>
       </td>
       <td></td>
     </tr>
@@ -204,135 +204,121 @@ This rating scale is one of the key elements of Energy Performance Certificates 
 
 {% include component-example.html code_render=code_render %}
 
-## Horizontal scale
+## Energy efficiency rating labels
+
+### Base label
 
 {% capture code_render %}
-<div class="epc-rating-chart-horizontal">
-  <div class="epc-rating epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-band-a">A</div>
-</div>
+<div class="est-epc-rating-label">A</div>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render %}
 
-## Sizes
+### Band rating variants
 
-The horizontal energy efficiency rating chart is available in both small and large variants. Use the `.epc-rating-lg` or `.epc-rating-sm` classes to apply the respective sizes.
+Add `.est-epc-rating-label-band-*` class to set a rating on a label.
 
 {% capture code_render %}
-<div class="epc-rating-chart-horizontal mb-4">
-  <div class="epc-rating epc-rating-sm epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-a">A</div>
-</div>
-
-<div class="epc-rating-chart-horizontal mb-4">
-  <div class="epc-rating epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-band-a">A</div>
-</div>
-
-<div class="epc-rating-chart-horizontal">
-  <div class="epc-rating epc-rating-lg epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-a">A</div>
+<div class="d-flex gap-4 flex-wrap">
+  <div class="est-epc-rating-label est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-a">A</div>
 </div>
 {% endcapture %}
 
 {% capture code_example %}
-<div class="epc-rating-chart-horizontal">
-  <div class="epc-rating epc-rating-sm epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-sm epc-rating-band-a">A</div>
-</div>
-
-<div class="epc-rating-chart-horizontal">
-  <div class="epc-rating epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-band-a">A</div>
-</div>
-
-<div class="epc-rating-chart-horizontal">
-  <div class="epc-rating epc-rating-lg epc-rating-band-g">G</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-f">F</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-e">E</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-d">D</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-c">C</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-b">B</div>
-  <div class="epc-rating epc-rating-lg epc-rating-band-a">A</div>
-</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-g">G</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-f">F</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-e">E</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-d">D</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-c">C</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-b">B</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-a">A</div>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render code_example=code_example %}
 
-## Energy efficiency labels
+### Sizes
+
+Rating labels are also available in both small and large variants. Add `.est-epc-rating-label-lg` or `.est-epc-rating-label-sm` for additional sizes.
+
+{% capture code_render %}
+<div class="d-flex gap-4 flex-wrap">
+  <div class="est-epc-rating-label est-epc-rating-label-band-d est-epc-rating-label-lg">67 D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-lg">C</div>
+</div>
+{% endcapture %}
+
+{% capture code_example %}
+<div class="est-epc-rating-label est-epc-rating-label-band-d est-epc-rating-label-lg">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-lg">C</div>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render code_example=code_example %}
+
+{% capture code_render %}
+<div class="d-flex gap-4 flex-wrap">
+<div class="est-epc-rating-label est-epc-rating-label-band-d est-epc-rating-label-sm">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-sm">C</div>
+</div>
+{% endcapture %}
+
+{% capture code_example %}
+<div class="est-epc-rating-label est-epc-rating-label-band-d est-epc-rating-label-sm">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-sm">C</div>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render code_example=code_example %}
+
+### Shape and direction variants
+
+Rating labels can be also styled with `.est-epc-rating-label-left` or `.est-epc-rating-label-no-fins` classes.
 
 {% capture code_render %}
 <div class="row">
-  <div class="col-3">
-    <div class="epc-rating epc-rating-left epc-rating-sm epc-rating-band-a mb-4">A</div>
-    <div class="epc-rating epc-rating-left epc-rating-band-b mb-4">B</div>
-    <div class="epc-rating epc-rating-left epc-rating-lg epc-rating-band-c mb-4">C</div>
+  <div class="col-3 d-flex flex-column gap-4 align-items-start">
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-d">67 D</div>
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
   </div>
-  <div class="col-3">
-    <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-sm epc-rating-band-a mb-4">A</div>
-    <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-band-b mb-4">B</div>
-    <div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-lg epc-rating-band-c mb-4">C</div>
+  <div class="col-3 d-flex flex-column gap-4 align-items-start">
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-d">67 D</div>
+    <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
   </div>
-  <div class="col-3">
-    <div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-sm epc-rating-band-d mb-4">D</div>
-    <div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-band-e mb-4">E</div>
-    <div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-lg epc-rating-band-f mb-4">C</div>
+  <div class="col-3 d-flex flex-column gap-4 align-items-start">
+    <div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+    <div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-d">67 D</div>
+    <div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
   </div>
-  <div class="col-3">
-    <div class="epc-rating epc-rating-right epc-rating-sm epc-rating-band-d mb-4">D</div>
-    <div class="epc-rating epc-rating-right epc-rating-band-e mb-4">E</div>
-    <div class="epc-rating epc-rating-right epc-rating-lg epc-rating-band-f mb-4">C</div>
+  <div class="col-3 d-flex flex-column gap-4 align-items-start">
+    <div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+    <div class="est-epc-rating-label est-epc-rating-label-band-d">67 D</div>
+    <div class="est-epc-rating-label est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
   </div>
 </div>
 {% endcapture %}
 
 {% capture code_example %}
-<div class="epc-rating epc-rating-left epc-rating-sm epc-rating-band-a">A</div>
-<div class="epc-rating epc-rating-left epc-rating-band-b">B</div>
-<div class="epc-rating epc-rating-left epc-rating-lg epc-rating-band-c">C</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-d">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
 
-<div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-sm epc-rating-band-a">A</div>
-<div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-band-b">B</div>
-<div class="epc-rating epc-rating-left epc-rating-no-fins epc-rating-lg epc-rating-band-c">C</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-d">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
 
-<div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-sm epc-rating-band-d">D</div>
-<div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-band-e">E</div>
-<div class="epc-rating epc-rating-right epc-rating-no-fins epc-rating-lg epc-rating-band-f">C</div>
+<div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+<div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-d">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-no-fins est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
 
-<div class="epc-rating epc-rating-right epc-rating-sm epc-rating-band-d">D</div>
-<div class="epc-rating epc-rating-right epc-rating-band-e">E</div>
-<div class="epc-rating epc-rating-right epc-rating-lg epc-rating-band-f">F</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-c est-epc-rating-label-sm">79 C</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-d">67 D</div>
+<div class="est-epc-rating-label est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
 {% endcapture %}
 
 {% include component-example.html code_render=code_render code_example=code_example %}
@@ -344,8 +330,8 @@ The horizontal energy efficiency rating chart is available in both small and lar
 <p>The energy efficiency of a property tells us how much energy it uses per square meter. The energy consumption per square meter allows for fair comparison of the efficiency of properties with different floor areas.</p>
 <p>An EPC (Energy Performance Certificate) rating measures both a property's energy efficiency and environmental impact. An EPC rating of <strong>F</strong> indicates that a property is very energy inefficient, meaning it consumes a large amount of energy, leading to higher utility costs and a significant environmental impact.</p>
 
-<div class="d-flex gap-4 mt-4">
-  <div class="epc-rating epc-rating-lg epc-rating-right epc-rating-band-f">F</div>
+<div class="d-flex gap-5 mt-4">
+  <div class="est-epc-rating-label est-epc-rating-label-band-f est-epc-rating-label-lg">F</div>
   <div class="my-auto">
     <strong class="fw-bold fs-2">580</strong>
     <small class="fs-7">kWh/m<sup>2</sup> per year</small>
@@ -353,6 +339,86 @@ The horizontal energy efficiency rating chart is available in both small and lar
 </div>
 {% endcapture %}
 {% include component-example.html code_render=code_render  %}
+
+## Horizontal scale
+
+{% capture code_render %}
+<div class="epc-rating-chart-horizontal">
+  <div class="est-epc-rating-label est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-a">A</div>
+</div>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render %}
+
+## Sizes
+
+The horizontal energy efficiency rating chart is available in both small and large variants. Use the `.est-epc-rating-label-lg` or `.est-epc-rating-label-sm` classes to apply the respective sizes.
+
+{% capture code_render %}
+<div class="epc-rating-chart-horizontal mb-4">
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-a">A</div>
+</div>
+
+<div class="epc-rating-chart-horizontal mb-4">
+  <div class="est-epc-rating-label est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-a">A</div>
+</div>
+
+<div class="epc-rating-chart-horizontal">
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-a">A</div>
+</div>
+{% endcapture %}
+
+{% capture code_example %}
+<div class="epc-rating-chart-horizontal">
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-f">F</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-e">E</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-d">D</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-c">C</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-b">B</div>
+  <div class="est-epc-rating-label est-epc-rating-label-sm est-epc-rating-label-band-a">A</div>
+</div>
+
+<div class="epc-rating-chart-horizontal">
+  <div class="est-epc-rating-label est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-band-f">F</div>
+  ...
+  <div class="est-epc-rating-label est-epc-rating-label-band-a">A</div>
+</div>
+
+<div class="epc-rating-chart-horizontal">
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-g">G</div>
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-f">F</div>
+  ...
+  <div class="est-epc-rating-label est-epc-rating-label-lg est-epc-rating-label-band-a">A</div>
+</div>
+{% endcapture %}
+
+{% include component-example.html code_render=code_render code_example=code_example %}
 
 ## EPC colour scale
 
