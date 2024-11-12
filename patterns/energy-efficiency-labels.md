@@ -1,7 +1,7 @@
 ---
-title: Data visualisation
+title: Energy efficiency labels
 layout: documentation-page
-section: guidelines
+section: patterns
 
 color_tokens:
   - color_token_group: "EPC colour scale"
@@ -29,13 +29,9 @@ color_tokens:
         role: "EPC rating G"
 ---
 
-Data visualisation uses charts, graphs, maps, and diagrams to represent information visually, making complex data easier to understand. It helps users explore, monitor, and explain data by revealing patterns, trends, comparisons, and progress.
+The energy efficiency rating labels are one of the most recognisable visual aids for communicating how efficiently a building uses energy.
 
-## Energy efficiency rating scale
-
-The energy efficiency rating scale is one of the most recognisable visual aids for communicating how efficiently a building uses energy.
-
-This rating scale is one of the key elements of Energy Performance Certificates (EPCs) where it helps property owners, renters, and buyers quickly understand a building’s energy performance, allowing them to make informed decisions and potentially take steps to improve energy efficiency if needed.
+The energy efficiency rating scale is one of the key elements of Energy Performance Certificates (EPCs) where it helps property owners, renters, and buyers quickly understand a building’s energy performance, allowing them to make informed decisions and potentially take steps to improve energy efficiency if needed.
 
 ## Base example
 
@@ -161,16 +157,14 @@ This rating scale is one of the key elements of Energy Performance Certificates 
         <div class="epc-rating-chart-bar epc-rating-chart-bar-band-c">C</div>
       </td>
       <td></td>
-      <td>
-        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-c est-epc-rating-label-sm">C</div>
-      </td>
+      <td></td>
     </tr>
     <tr>
       <td>
         <div class="epc-rating-chart-bar epc-rating-chart-bar-band-d">D</div>
       </td>
       <td>
-        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-d est-epc-rating-label-sm">D</div>
+        <div class="est-epc-rating-label est-epc-rating-label-left est-epc-rating-label-no-fins est-epc-rating-label-band-d est-epc-rating-label-sm">62 D</div>
       </td>
       <td></td>
     </tr>
