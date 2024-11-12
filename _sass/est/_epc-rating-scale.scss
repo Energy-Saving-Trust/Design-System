@@ -179,6 +179,7 @@ $est-epc-svg-left-arrow-template:             "<svg width='360' height='60' view
 
 @each $rating, $color in $epc-colors {
   .est-epc-rating-label-#{$rating} {
+    color: color-contrast($color);
     @include epc-rating-label-rating-variant($color, right, false);
     &.est-epc-rating-label-left {
       @include epc-rating-label-rating-variant($color, left, false);
