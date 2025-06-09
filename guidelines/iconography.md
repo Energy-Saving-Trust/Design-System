@@ -5,7 +5,7 @@ section: guidelines
 ---
 
 
-A set of icons and pictograms have been designed especially for Energy Saving Trust to compliment our core brand assets, and to help add personality and warmth to our communications. They are useful where there is lack of budget for photography as well as help supplement it.
+<b>We use Bootstrap as our base icon library: https://icons.getbootstrap.com/</b>. In addition, a set of icons and pictograms have been designed especially for Energy Saving Trust to compliment our core brand assets, and to help add personality and warmth to our communications. They are useful where there is lack of budget for photography as well as help supplement it. There are additional design assets available in our brand hub. Reach out to design@est.org.uk to request access to the brand hub.
 
 Whether icons, pictograms or illustrations should be used depends on both the size of use and purpose.
 
