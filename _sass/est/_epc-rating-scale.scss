@@ -1,0 +1,255 @@
+//
+// EPC display component for tools
+//
+$epc-bar-height: 26px;
+$epc-bar-base-width: 52px;
+$epc-bar-base-increment: 26px;
+$epc-color: $white;
+$epc-bar-text-color: $white;
+$epc-bar-text-size: $epc-bar-height * 2 / 3;
+
+.epc-rating-chart {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-style: none;
+    border-width: 0px;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+  }
+
+  th {
+    font-weight: 600;
+    padding-bottom: 12px;
+    &:nth-child(2) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  td {
+    &:nth-child(2) {
+      padding-left: 35px;
+    }
+    &:nth-child(3) {
+      padding-left: 5px;
+    }
+  }
+
+  .epc-rating-chart-bar {
+    height: $epc-bar-height;
+    padding: 0 8px 0 8px;
+    margin: 2px 10px 2px 0;
+    font-size: $epc-bar-text-size;
+    font-weight: 600;
+    float: left;
+    border-radius: 3px;
+    text-align: right;
+  }
+
+  @each $band, $epc-band-color in $epc-colors {
+    .epc-rating-chart-bar-#{$band} {
+      background-color: $epc-band-color;
+      color: color-contrast($epc-band-color);
+      width: $epc-bar-base-width;
+    }
+    $epc-bar-base-width: $epc-bar-base-width + $epc-bar-base-increment;
+    .epc-color-#{$band} {
+      background-color: $epc-band-color;
+      color: color-contrast($epc-band-color);
+    }
+  }
+
+  .epc-scale-explained {
+    color: $text-muted;
+  }
+}
+
+@each $band, $epc-color in $epc-colors {
+  .epc-rating-#{$band} {
+    background-color: $epc-color;
+    color: color-contrast($epc-color);
+    &:before,
+    &:after {
+      background-color: $epc-color;
+    }
+  }
+}
+
+//
+// Horizontal energy efficiency rating scale
+//
+
+$est-epc-rating-label-color:            $black;
+$est-epc-rating-label-font-size:        24px;
+$est-epc-rating-label-line-height:      1.5;
+$est-epc-rating-label-font-weight:      600;
+$est-epc-rating-label-min-width:        72px;
+$est-epc-rating-label-height:           48px;
+
+
+//
+// Energy efficiency rating base label
+//
+
+$est-epc-svg-right-arrow-template:            "<svg width='360' height='60' viewBox='0 0 360 60' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill='#HEX_COLOR' d='M348.671 4.97508C347.146 1.92602 344.03 0 340.621 0H4.00552C1.03198 0 -0.901978 3.12925 0.427826 5.78885L10.2973 25.5279C11.705 28.3431 11.705 31.6569 10.2973 34.4721L0.427826 54.2111C-0.901978 56.8708 1.03198 60 4.00552 60H340.621C344.03 60 347.146 58.074 348.671 55.0249L358.947 34.4721C360.355 31.6569 360.355 28.3431 358.947 25.5279L348.671 4.97508Z'/></svg>";
+$est-epc-svg-left-arrow-template:             "<svg width='360' height='60' viewBox='0 0 360 60' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill='#HEX_COLOR' d='M11.3325 4.97508C12.857 1.92602 15.9734 0 19.3823 0H355.998C358.971 0 360.905 3.12925 359.576 5.78885L349.706 25.5279C348.298 28.3431 348.298 31.6569 349.706 34.4721L359.576 54.2111C360.905 56.8708 358.971 60 355.998 60H19.3823C15.9734 60 12.857 58.074 11.3325 55.0249L1.05606 34.4721C-0.351574 31.6569 -0.351573 28.3431 1.05606 25.5279L11.3325 4.97508Z'/></svg>";
+
+.est-epc-rating-label {
+  min-width: $est-epc-rating-label-min-width;
+  height: $est-epc-rating-label-height;
+  padding: 6px 12px 6px 26px;
+  font-size: $est-epc-rating-label-font-size;
+  line-height: $est-epc-rating-label-line-height;
+  font-weight: $est-epc-rating-label-font-weight;
+  text-align: center;
+  color: $est-epc-rating-label-color;
+  background-position: left;
+  background-size: auto 100%;
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 48px;
+    width: 12px;
+    right: -12px;
+    background-position: right;
+    background-size: auto 100%;
+  }
+}
+
+
+//
+// Band rating variants
+//
+
+@mixin epc-rating-label-rating-variant($epc-color, $direction: right, $no-fins: false) {
+
+  @if $direction == right and $no-fins == false {
+    $svg-arrow: str-replace($est-epc-svg-right-arrow-template, "#HEX_COLOR", $epc-color);
+    $svg-background-arrow: url("data:image/svg+xml," + $svg-arrow) !default;
+    background-image: escape-svg($svg-background-arrow);
+    &:after {
+      background-image: escape-svg($svg-background-arrow);
+    }
+  }
+
+  @if $direction == right and $no-fins == true {
+    $svg-arrow: str-replace($est-epc-svg-right-arrow-template, "#HEX_COLOR", $epc-color);
+    $svg-background-arrow: url("data:image/svg+xml," + $svg-arrow) !default;
+    background-image: none;
+    background-color: $epc-color;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    &:after {
+      background-image: escape-svg($svg-background-arrow);
+    }
+  }
+
+  @if $direction == left and $no-fins == false {
+    $svg-arrow: str-replace($est-epc-svg-left-arrow-template, "#HEX_COLOR", $epc-color);
+    $svg-background-arrow: url("data:image/svg+xml," + $svg-arrow) !default;
+    background-image: escape-svg($svg-background-arrow);
+    &:after {
+      background-image: escape-svg($svg-background-arrow);
+    }
+  }
+
+  @if $direction == left and $no-fins == true {
+    $svg-arrow: str-replace($est-epc-svg-left-arrow-template, "#HEX_COLOR", $epc-color);
+    $svg-background-arrow: url("data:image/svg+xml," + $svg-arrow) !default;
+    background-color: transparent;
+    background-image: escape-svg($svg-background-arrow);
+    &:after {
+      background-color: $epc-color;
+      background-image: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+@each $rating, $color in $epc-colors {
+  .est-epc-rating-label-#{$rating} {
+    color: color-contrast($color);
+    @include epc-rating-label-rating-variant($color, right, false);
+    &.est-epc-rating-label-left {
+      @include epc-rating-label-rating-variant($color, left, false);
+    }
+  }
+
+  .est-epc-rating-label-#{$rating}.est-epc-rating-label-no-fins {
+    @include epc-rating-label-rating-variant($color, right, true);
+    &.est-epc-rating-label-left {
+      @include epc-rating-label-rating-variant($color, left, true);
+    }
+  }
+}
+
+//
+// Band rating sizes
+//
+
+@mixin epc-rating-label-rating-size($height, $min-width, $appendix-width, $font-size, $line-height, $padding) {
+  height: $height;
+  min-width: $min-width;
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  &:after {
+    height: $height;
+    width: $appendix-width;
+    right: -($appendix-width);
+  }
+}
+
+.est-epc-rating-label-sm {
+  $height: 28px;
+  $min-width: 48px;
+  $appendix-width: 10px;
+  $font-size: 22px;
+  $line-height: 24px;
+  $padding: 3px 2px 3px 12px;
+
+  @include epc-rating-label-rating-size($height, $min-width, $appendix-width, $font-size, $line-height, $padding);
+}
+
+.est-epc-rating-label-lg {
+  $height: 70px;
+  $min-width: $est-epc-rating-label-min-width;
+  $appendix-width: 22px;
+  $font-size: 36px;
+  $line-height: 1.5;
+  $padding: 8px 8px 8px 34px;
+
+  @include epc-rating-label-rating-size($height, $min-width, $appendix-width, $font-size, $line-height, $padding);
+}
+
+//
+// Horizontal scale
+//
+
+.epc-rating-chart-horizontal {
+
+  .est-epc-rating-label {
+    margin-right: 2px;
+  }
+
+  .est-epc-rating-label-sm {
+    margin-right: 3px;
+  }
+
+  .est-epc-rating-label-lg {
+    margin-right: 8px;
+  }
+
+}

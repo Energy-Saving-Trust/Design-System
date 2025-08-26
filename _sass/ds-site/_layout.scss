@@ -37,8 +37,17 @@
     margin-block-end: $spacer;
   }
 
-  code {
-    @extend code;
-    font-size: 17px;
+   p,
+   li {
+    > code {
+      // @extend code;
+      font-size: $code-font-size;
+      padding: .2em .4em;
+      margin: 0;
+      white-space: break-spaces;
+      background-color: $grey-100;
+      border-radius: 6px;
+     }
+
    }
 }
