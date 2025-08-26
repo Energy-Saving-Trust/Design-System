@@ -35,6 +35,10 @@ Whether icons, pictograms or illustrations should be used depends on both the si
   <div class="icon-sample-grid-empty js-icon-sample-grid-empty" style="display:none;">Nothing found, try searching again.</div>
 </div>
 
+## Experimental
+
+[SVG Sprite Generator](/guidelines/iconography/svg-sprite-generator.html)
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 <script>
